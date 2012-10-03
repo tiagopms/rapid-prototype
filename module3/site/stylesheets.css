@@ -1,0 +1,163 @@
+html, body {
+}
+
+body {
+	margin: 0;
+}
+
+.content {
+	margin-left: auto;
+	margin-right: auto;	
+	width: 800px;
+}
+
+.login-box {
+	margin-left:auto;
+	margin-right: auto;
+	width: 400px;
+	border: 2px solid black;
+	border-radius: 15px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.login-box .username label {
+	display: block;	
+}
+
+.error, .success {
+	margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#Login {
+	width: 400px;
+}
+
+.error {
+        color: #FF3333;
+}
+
+.success {
+        color: green;
+}
+
+.home-header {
+	height: 40px;
+	border: 2px solid black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 20px;
+	
+}
+
+.section {
+	border: 2px solid black;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	position: relative;
+	top: -2px;
+}
+
+.welcome {
+	float: left;	
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.logout {
+	float: right;
+	position: relative;
+	top: -9px;
+	margin-right: 5px;
+}
+
+ul.files {
+	list-style-type: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+}
+
+.files li {
+}
+
+.files li:nth-child(odd) {
+	background-color: #F0FFF0;	
+}
+
+.files li:nth-child(even) {
+	background-color: #F0F0FF;
+}
+
+.link, .date, .download, .delete {
+	display: inline-block;
+}
+
+.link {
+	width: 250px;
+}
+
+.link input {
+	width: 250px;
+	border: none;
+	background-color: transparent;
+	text-align: left;
+	color: blue;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.link input:hover {
+	background-color: yellow;
+}
+
+.files-title {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-weight: bold;
+}
+
+.date {
+	width: 250px;
+}
+
+.download {
+	width: 100px;
+}
+
+.delete {
+	width: 65px;
+}
+
+.paginate {
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+	text-align: center;
+}
+
+.paginate ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.paginate li {
+	display: inline-block;
+	margin-left: 3px;
+}
+
+.upload {
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+	text-align: center;
+}
+
+.upload #file {
+	min-width: 300px;
+}
+
