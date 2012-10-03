@@ -1,14 +1,12 @@
 <?php
-	$title = "Home";
+	$title = "Story";
 	$redirect = "login.php";
 	$user_logged = true;
-	$elements_by_page = 5;
 	include "header.php";
 	$user = $_SESSION['user_id'];
         require 'database.php';
 ?>
 	<div class="home-header">
-		
 		<div class="welcome">
 			<?php
 				$stmt = $mysqli->prepare("SELECT username FROM accounts WHERE id=?");
@@ -44,52 +42,32 @@
 		</div>
 	</div>
 	<div class="section">
-		<ul class="files">
-			<li>
-				<div class="titles">Titles</div>
-			</li>
+		<div class="story">
 	<?php
+                if (isset($_GET['story']) && $_GET['story'] > 0) {
+                        $story_id = $_GET['story'];
+                } else {
+                        $story_id = 1;
+                }
 		
-		$stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories");
+		$stmt = $mysqli->prepare("SELECT COUNT(*), title, commit_time, text, account_id FROM stories WHERE id=?");
 		if(!$stmt){
 			printf("Query Prep Failed: %s\n", $mysqli->error);
 			exit;
 		}
-
+		
+		$stmt->bind_param('s', $story_id);
 		$stmt->execute();
-		$stmt->bind_result($len);
+		$stmt->bind_result($found, $title, $commit_time, $story_text, $commiter_id);
 		$stmt->fetch();
-
-		echo $len;
-		$pages = ceil($len / $elements_by_page);
 		
-		$stmt->close();
-		
-		if (isset($_GET['page']) && $_GET['page'] <= $pages && $_GET['page'] > 0) {
-			$current_page = $_GET['page'];
-		} else {
-			$current_page = 1;
-		}
-		 
-		$stmt = $mysqli->prepare("SELECT id, title, commit_time, text, account_id FROM stories ORDER BY commit_time DESC");
-		if(!$stmt){
-			printf("Query Prep Failed: %s\n", $mysqli->error);
-			exit;
-		}
-
-		$stmt->execute();
-		$stmt->bind_result($story_id, $title, $commit_time, $story_text, $commiter_id);
-		
-		$counter = 0;
-		while($stmt->fetch()){
-			if($counter >= ($current_page - 1)*$elements_by_page && $counter < ($current_page)*$elements_by_page) {
+		if($found){
 	?>
-			<li class="story">
+			<div class="story">
 				<div class="title">
-					<form action="story.php" method="GET">
-						<input type="hidden" value="<?php echo $story_id; ?>" name="story"/>
-						<input type="submit" value="<?php echo $title; ?>"/>
-					</form>
+					<span>
+						<?php echo htmlentities($title); ?>
+					</span>
 				</div>
 				<div class="date">
 					<?php
@@ -97,6 +75,12 @@
 						echo date("d F Y - h:ia", $story_time);
 					?>
 				</div>
+				<div class="text_body">
+					<textarea rows='10' cols='90'>
+						<?php echo htmlentities($story_text); ?>
+					</textarea>
+				</div>
+				
 				<div class="like">
 					<form action="check_like.php" method="POST">
 						<input type="hidden" value="<?php echo 'true'; ?>" name="positive"/>
@@ -114,26 +98,30 @@
 						<input type="submit" value="Delete"/>
 					 </form>
 				</div>
-			</li></br>
+			</div></br>
 	<?php
-			}
-			$counter++;
-		}$stmt->close();
+		} else {
+			$_SESSION['error'] = 'Invalid story';
+			header('Location: home.php');
+			exit();
+		}
+		$stmt->close();
+		
 	?>
-		</ul>
-		<div class="paginate">
-			<ul>
-				<?php
-					for($i = 1; $i <= $pages; $i++) {
-						if($i != $current_page) {
-							echo '<li><a href="'.htmlentities($_SERVER['PHP_SELF']).'?page='.$i.'">'.$i.'</a></li>';
-						} else {
-							echo '<li><span class="current">'.$i.'</span></li>';
-						}
-					}
-				?>
-			</ul>
+		<div class="coment">
+			<form action="check_coment.php" method="POST">
+                                <span class="body_text">
+                                        <label for="coment_text">Coment:</label>
+                                        <TEXTAREA name="coment_text", rows="3", cols="80"> </TEXTAREA>
+                                </span></br>
+                                <span class="submit_button">
+                                        <input type="hidden" name="story_id" value="<?php echo $story_id; ?>" />
+                                        <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                                        <input type="submit" name="signup" value="Submit"/>
+                                </span>
+                        </form>
 		</div>
+
 		<div class="commit_story">
 			<form action="commit_story.php" method="POST">
 				<p>
