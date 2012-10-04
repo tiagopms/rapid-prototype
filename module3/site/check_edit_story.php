@@ -58,7 +58,7 @@
                     exit;
                 }
                 
-                $stmt->bind_param('ss', $body_text, $title, $category_id, $story_id);
+                $stmt->bind_param('ssss', $body_text, $title, $category_id, $story_id);
                 $stmt->execute();
                 $stmt->close();
                 

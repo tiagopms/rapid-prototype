@@ -468,3 +468,10 @@ article a {
 .time-comment {
 	clear: both;
 }
+
+.comment header .like {
+	float: right;
+	top: 150px;
+	position: absolute;
+	
+}
