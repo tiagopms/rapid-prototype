@@ -175,7 +175,8 @@
                                 <div class="like">
                                         <form action="check_like_comment.php" method="POST">
                                                 <input type="hidden" value="<?php echo 'true'; ?>" name="positive"/>
-                                                <input type="hidden" value="<?php echo $story_id; ?>" name="comment_id"/>
+                                                <input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
+                                                <input type="hidden" value="<?php echo $comment_id; ?>" name="comment_id"/>
                                                 <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
                                                 <input type="submit" value="Like"/>
                                          </form>
@@ -184,7 +185,8 @@
                                 <div class="dislike">
                                         <form action="check_like_comment.php" method="POST">
                                                 <input type="hidden" value="<?php echo 'false'; ?>" name="positive"/>
-                                                <input type="hidden" value="<?php echo $story_id; ?>" name="comment_id"/>
+                                                <input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
+                                                <input type="hidden" value="<?php echo $comment_id; ?>" name="comment_id"/>
                                                 <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
                                                 <input type="submit" value="Dislike"/>
                                          </form>
