@@ -76,9 +76,7 @@
 					?>
 				</div>
 				<div class="text_body">
-					<textarea rows='10' cols='90'>
-						<?php echo htmlentities($story_text); ?>
-					</textarea>
+					<textarea rows='10' cols='90'><?php echo htmlentities($story_text); ?></textarea>
 				</div>
 				
 				<div class="like">
@@ -96,6 +94,12 @@
 						<input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
 						<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
                                                 <input type="submit" value="Dislike"/>
+                                         </form>
+                                </div>
+                                <div class="edit">
+                                        <form action="edit_story.php" method="POST">
+                                                <input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
+                                                <input type="submit" value="Edit"/>
                                          </form>
                                 </div>
                                 <div class="delete">
