@@ -12,9 +12,9 @@
          
         while($stmt->fetch()){
         	if ($user_logged) {
-        		echo '<li><a href="home.php?category='.$category_id.'"> '.$category_name.' </a></li>'
+        		echo '<li><a href="home.php?category='.$category_id.'"> '.$category_name.' </a></li>';
         	} else {
-                echo '<li><a href="login.php?category='.$category_id.'"> '.$category_name.' </a></li>'
+                echo '<li><a href="login.php?category='.$category_id.'"> '.$category_name.' </a></li>';
             }
         }
         
