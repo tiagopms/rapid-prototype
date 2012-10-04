@@ -103,7 +103,7 @@
             } else {
                 $likes_word = "";
             }
-            $commiter_gravatar = md5($email);
+            $commiter_gravatar = md5($commiter_email);
 
 ?>
             <article>
