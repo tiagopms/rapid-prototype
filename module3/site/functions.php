@@ -25,19 +25,4 @@ function is_admin($mysqli, $id) {
     return $found;
 }
 
-function liked_story($mysqli, $accound_id, $story_id) {
-    $stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories_likes WHERE story_id=? AND account_id=?");
-    if(!$stmt){
-        printf("Query Prep 1 Failed: %s\n", $mysqli->error);
-        exit;
-    }
-                
-    $stmt->bind_param('ss', $accound_id, $story_id);
-    $stmt->execute();
-    $stmt->bind_result($found);
-    $stmt->fetch();
-    $stmt->close();
-    return $found;
-}
-
 ?>

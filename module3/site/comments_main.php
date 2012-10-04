@@ -49,21 +49,16 @@
             <article class="comment">
                 <header>
                     <span class="likes <?php echo htmlentities($likes_word); ?>"><?php echo htmlentities($number_of_likes); ?></span>
-                    <?php
-                        //if ($user_logged && !liked_comment($user, $story_id)) {
-                    ?>
-                            <span class="like">
-                                <form action="check_like_comment.php" method="post"> 
-                                    <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                                    <input type="hidden" value="<?php echo htmlentities($comment_id); ?>" name="comment_id"/>
-                                    <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
-                                    <input class="submit-like" type="submit" name="positive" value="+">
-                                    <input class="submit-dislike" type="submit" name="negative" value="-">
-                                </form>
-                            </span>
-                    <?php
-                        //}
-                    ?>
+                    <span class="like">
+                        <form action="check_like_comment.php" method="post"> 
+                            <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
+                            <input type="hidden" value="<?php echo htmlentities($comment_id); ?>" name="comment_id"/>
+                            <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                            <input class="submit-like" type="submit" name="positive" value="+">
+                            <input class="submit-dislike" type="submit" name="negative" value="-">
+                        </form>
+                    </span>
+
                     <div class="user-expand">
                         <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo htmlentities($commenter_gravatar); ?>?s=50&d=mm">
                     </div>
