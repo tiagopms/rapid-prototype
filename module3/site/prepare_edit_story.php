@@ -31,4 +31,5 @@
 	    header('Location: story.php?story='.$story_id);
 	    exit();
 	} 
+	$submit_page = "check_edit_story.php";
 ?>

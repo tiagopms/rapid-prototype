@@ -3,7 +3,7 @@
         <div class="title"><h2><a href="#"> Commit new Story </a></h2></div>
     </header>
     <div class="article-content">
-        <form class="default-form" action="check_commit_story.php" method="post">
+        <form class="default-form" action="<?php echo htmlentities($submit_page); ?>" method="post">
             <div class="story-title">
                 <label for="title">Title:</label>
                 <input type="text" name="title" id="title" value="<?php echo htmlentities($story_title); ?>">
@@ -37,7 +37,7 @@
                 <label for="body_text">Body text:</label>
                 <textarea class="body_text" name="body_text", rows="20", cols="100"><?php echo htmlentities($story_body_text); ?></textarea>
             </div>
-            
+            <input type="hidden" name="story_id" value="<?php echo htmlentities($story_id); ?>" />
             <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
             <input class="submit-default" type="submit" value="Submit">
         </form>            
