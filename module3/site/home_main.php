@@ -20,7 +20,6 @@
     $stmt->bind_result($len);
     $stmt->fetch();
 
-    echo $len;
     $pages = ceil($len / $elements_by_page);
     
     $stmt->close();
@@ -175,5 +174,5 @@
 </div>
 
 <div class="commit_story">
-    <a href="commit_story.php"> "Commit new story" </a>
+    <a href="commit_story.php"> Commit new story </a>
 </div>

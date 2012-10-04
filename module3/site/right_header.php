@@ -1,6 +1,6 @@
 <?php
 	if ($user_logged) {
-		$stmt = $mysqli->prepare("SELECT username, email, admin FROM accounts WHERE id=?");
+		$stmt = $mysqli->prepare("SELECT username, email_address, admin FROM accounts WHERE id=?");
 		if(!$stmt){
 			printf("Query Prep Failed: %s\n", $mysqli->error);
 			exit;
@@ -17,10 +17,8 @@
 		echo '<span class="welcome"> Hello, '.$name.'! </span>';
 ?>
 		<a href="my_stories.php">View my Stories</a>
-		<form action="logout.php" method="POST">
-			<p>
-				<input type="submit" value="Logout"/>
-			</p>
+		<form class="form-logout" action="logout.php" method="POST">
+			<input class="logout-button" type="submit" value="Logout"/>
 		</form>
 		<a href="change_password.php">Change Password</a>
 <?php

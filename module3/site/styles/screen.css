@@ -181,7 +181,8 @@ aside a:active, aside a#current:active
 }
 
 .wrapper-articles {
-	margin: 10px;	
+	margin: 10px;
+	min-height: 800px;	
 }
 
 
@@ -421,4 +422,24 @@ article a {
 	word-wrap: break-word;
 	height: 50px;
 	
+}
+
+.form-logout, .logout-button {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.logout-button {
+	display: inline;
+	background-color: transparent;
+	/*text-decoration: underline;*/
+	border: none;
+	cursor: pointer;
+	cursor: hand;
+	display: inline-block;
+   	margin-right: 20px;
+   	margin-top: 5px;
+	color: #FFAA00;
+	text-decoration: none;
 }
