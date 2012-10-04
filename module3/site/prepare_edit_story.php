@@ -1,6 +1,7 @@
 <?php
 	if (!isset($_GET['story_id'])) {
 		header('Location: home.php');
+		$_SESSION['error'] = 'Invalid request.';
 		exit();
 	}
 	$story_id = $_GET["story_id"];
