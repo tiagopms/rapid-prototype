@@ -111,6 +111,13 @@
 						<input type="hidden" value="<?php echo 'false'; ?>" name="positive"/>
 						<input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
 						<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+						<input type="submit" value="Dislike"/>
+					 </form>
+				</div>
+				<div class="delete">
+					<form action="check_delete_story.php" method="POST">
+						<input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
+						<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
 						<input type="submit" value="Delete"/>
 					 </form>
 				</div>

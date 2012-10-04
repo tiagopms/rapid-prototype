@@ -95,9 +95,16 @@
 						<input type="hidden" value="<?php echo 'false'; ?>" name="positive"/>
 						<input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
 						<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
-						<input type="submit" value="Delete"/>
-					 </form>
-				</div>
+                                                <input type="submit" value="Dislike"/>
+                                         </form>
+                                </div>
+                                <div class="delete">
+                                        <form action="check_delete_story.php" method="POST">
+                                                <input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
+                                                <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                                                <input type="submit" value="Delete"/>
+                                         </form>
+                                </div>
 			</div></br>
 	<?php
 		} else {
@@ -122,6 +129,80 @@
                         </form>
 		</div>
 
+	<?php
+		
+		$stmt = $mysqli->prepare("
+					SELECT comments.id, text, commit_time, username, email_address, accounts.id as user_id, (IFNULL(likes_table.likes, 0) - IFNULL(dislikes_table.dislikes, 0)) as number_likes
+					FROM comments
+					    JOIN accounts on (comments.account_id=accounts.id)
+					    LEFT OUTER JOIN (
+						SELECT COUNT(*) as likes, story_id
+						FROM stories_likes
+						WHERE positive='true'
+						GROUP BY story_id
+					    ) AS likes_table ON (comments.id=likes_table.story_id)
+					    LEFT OUTER JOIN (
+						SELECT COUNT(*) as dislikes, story_id
+						FROM stories_likes
+						WHERE positive='false'
+						GROUP BY story_id
+					    ) AS dislikes_table ON (comments.id=dislikes_table.story_id)
+					WHERE comments.story_id=?
+					ORDER BY commit_time DESC");
+		if(!$stmt){
+			printf("Query Prep Failed: %s\n", $mysqli->error);
+			exit;
+		}
+		
+		$stmt->bind_param('s', $story_id);
+		$stmt->execute();
+		$stmt->bind_result($comment_id, $text, $commit_time, $username, $email, $commiter_id, $number_of_likes);
+		
+		while($stmt->fetch()) {
+		
+	?>
+                                <div class="title">
+                                        <span>
+                                                <?php echo htmlentities($text); ?>
+                                        </span>
+                                </div>
+                                <div class="date">
+                                        <?php
+                                                $story_time = strtotime($commit_time);
+                                                echo date("d F Y - h:ia", $story_time);
+                                        ?>
+                                </div>
+                                <div class="like">
+                                        <form action="check_like_comment.php" method="POST">
+                                                <input type="hidden" value="<?php echo 'true'; ?>" name="positive"/>
+                                                <input type="hidden" value="<?php echo $story_id; ?>" name="comment_id"/>
+                                                <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                                                <input type="submit" value="Like"/>
+                                         </form>
+
+                                </div>
+                                <div class="dislike">
+                                        <form action="check_like_comment.php" method="POST">
+                                                <input type="hidden" value="<?php echo 'false'; ?>" name="positive"/>
+                                                <input type="hidden" value="<?php echo $story_id; ?>" name="comment_id"/>
+                                                <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                                                <input type="submit" value="Dislike"/>
+                                         </form>
+                                </div>
+                                <div class="delete">
+                                        <form action="check_delete_comment.php" method="POST">
+                                                <input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
+                                                <input type="hidden" value="<?php echo $comment_id; ?>" name="comment_id"/>
+                                                <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                                                <input type="submit" value="Delete"/>
+                                         </form>
+                                </div>
+
+        <?php
+                }
+                $stmt->close();
+        ?>
+		
 		<div class="commit_story">
 			<form action="commit_story.php" method="POST">
 				<p>
