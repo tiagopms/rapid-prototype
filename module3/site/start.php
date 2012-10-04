@@ -9,6 +9,7 @@
     if ($user_logged) {
     	$user = $_SESSION['user_id'];
     }
-    include "functions.php";
     require 'database.php';
+    include "functions.php";
+    
 ?>
