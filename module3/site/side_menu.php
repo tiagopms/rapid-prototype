@@ -1,6 +1,13 @@
 <h2>Categories</h2>
 <ul>
 	<?php
+        $current_category = (isset($_GET['category'])) ? $_GET['category'] : -1;
+        $current_category_id = ($current_category == -1) ? ' id="current" ' : "";
+        if ($user_logged) {
+            echo '<li><a'.$current_category_id.' href="home.php"> All </a></li>';
+        } else {
+            echo '<li><a'.$current_category_id.' href="login.php"> All </a></li>';
+        }
         $stmt = $mysqli->prepare("select id, name from categories");
         if(!$stmt){
             printf("Query Prep Failed: %s\n", $mysqli->error);
@@ -11,10 +18,11 @@
         $stmt->bind_result($category_id, $category_name);
          
         while($stmt->fetch()){
+            $current_category_id = ($current_category == $category_id) ? ' id="current" ' : "";
         	if ($user_logged) {
-        		echo '<li><a href="home.php?category='.$category_id.'"> '.$category_name.' </a></li>';
+        		echo '<li><a'.$current_category_id.' href="home.php?category='.$category_id.'"> '.$category_name.' </a></li>';
         	} else {
-                echo '<li><a href="login.php?category='.$category_id.'"> '.$category_name.' </a></li>';
+                echo '<li><a'.$current_category_id.' href="login.php?category='.$category_id.'"> '.$category_name.' </a></li>';
             }
         }
         
