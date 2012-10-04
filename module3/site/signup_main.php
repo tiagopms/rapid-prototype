@@ -3,7 +3,7 @@
         <div class="title"><h2><a href="#"> Sign Up </a></h2></div>
     </header>
     <div class="article-content">
-        <form class="default-form" action="login_post.php" method="post">
+        <form class="default-form" action="check_signup.php" method="post">
             <div class="username">
                 <label for="username">Username:</label>
                 <input type="text" name="username" id="username">
