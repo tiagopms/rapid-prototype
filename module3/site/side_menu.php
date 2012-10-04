@@ -28,8 +28,4 @@
         
         $stmt->close();
     ?>
-    <li><a id="current" href="#"> loren ipsum </a></li>
-    <li><a href="#"> loren ipsum </a></li>
-    <li><a href="#"> loren ipsum </a></li>
-    <li><a href="#"> loren ipsum </a></li>
 </ul>
