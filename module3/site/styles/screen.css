@@ -443,3 +443,7 @@ article a {
 	color: #FFAA00;
 	text-decoration: none;
 }
+
+.body_text {
+	width: 98%;
+}

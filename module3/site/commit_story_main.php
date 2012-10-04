@@ -4,7 +4,7 @@
     </header>
     <div class="article-content">
         <form class="default-form" action="check_commit_story.php" method="post">
-            <div class="title">
+            <div class="story-title">
                 <label for="title">Title:</label>
                 <input type="text" name="title" id="title">
             </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="body_text">
                 <label for="body_text">Body text:</label>
-                <textarea name="body_text", rows="20", cols="100"> </textarea>
+                <textarea class="body_text" name="body_text", rows="20", cols="100"> </textarea>
             </div>
             
             <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
