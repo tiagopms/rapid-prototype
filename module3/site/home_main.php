@@ -96,9 +96,9 @@
     $counter = 0;
     while($stmt->fetch()){
         if($counter >= ($current_page - 1)*$elements_by_page && $counter < ($current_page)*$elements_by_page) {
-            if (number_likes > 0) {
+            if ($number_likes > 0) {
                 $likes_word = "positive";
-            } else if (number_likes < 0) {
+            } else if ($number_likes < 0) {
                 $likes_word = "negative";
             } else {
                 $likes_word = "";
@@ -136,10 +136,10 @@
                                     <span class="edit"><a href="edit_story.php?story=<?php echo htmlentities($story_id); ?>"> edit </a></span>
                                     <span class="separator"> - </span>
                                     <span class="remove">
-                                        <form action="check_delete_story.php" method="POST">
+                                        <form class="form-remove" action="check_delete_story.php" method="POST">
                                             <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
                                             <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
-                                            <input type="submit" value="Like"/>
+                                            <input class="submit-remove" type="submit" value="remove"/>
                                          </form>
                                     </span>
                             <?php

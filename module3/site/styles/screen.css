@@ -444,6 +444,23 @@ article a {
 	text-decoration: none;
 }
 
+.form-remove, .submit-remove {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.submit-remove  {
+	display: inline-block;
+	background-color: transparent;
+	/*text-decoration: underline;*/
+	border: none;
+	cursor: pointer;
+	cursor: hand;
+	color: #33FF33;
+	text-decoration: none;
+}
+
 .body_text {
 	width: 603px;
 }
