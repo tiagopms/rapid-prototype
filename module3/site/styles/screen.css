@@ -464,3 +464,7 @@ article a {
 .body_text {
 	width: 603px;
 }
+
+.time-comment {
+	clear: both;
+}
