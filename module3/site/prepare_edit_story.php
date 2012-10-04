@@ -26,7 +26,7 @@
     $stmt->fetch();
     $stmt->close();
 
-    if ($story_account_id != $id && !is_admin($mysqli, $id)) {
+    if ($story_account_id != $id && !$admin) {
         $_SESSION['error'] = 'You don\'t have permission for that';
         header('Location: story.php?story='.$story_id);
         exit();

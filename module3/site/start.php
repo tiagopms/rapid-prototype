@@ -6,10 +6,22 @@
         exit();
     }
     $elements_by_page = 5;
-    if ($user_logged) {
-    	$user = $_SESSION['user_id'];
-    }
     require 'database.php';
     include "functions.php";
+    if ($user_logged) {
+    	$user = $_SESSION['user_id'];
+        $stmt = $mysqli->prepare("SELECT username, email_address, admin FROM accounts WHERE id=?");
+        if(!$stmt){
+            printf("Query Prep Failed: %s\n", $mysqli->error);
+            exit;
+        }
+
+        $stmt->bind_param('s', $user);
+        $stmt->execute();
+        $stmt->bind_result($name, $email, $admin);
+        $stmt->fetch();
+        $stmt->close();
+    }
+    
     
 ?>
