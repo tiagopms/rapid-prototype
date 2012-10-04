@@ -471,6 +471,7 @@ article a {
 
 .comment header .like {
 	float: right;
-
+	margin-top: 36px;
+	margin-right: -55px;
 	
 }
