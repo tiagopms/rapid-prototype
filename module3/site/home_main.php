@@ -138,7 +138,7 @@
                                     <span class="remove">
                                         <form class="form-remove" action="check_delete_story.php" method="POST">
                                             <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                                            <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                                            <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
                                             <input class="submit-remove" type="submit" value="remove"/>
                                          </form>
                                     </span>
