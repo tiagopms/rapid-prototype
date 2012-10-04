@@ -9,7 +9,7 @@
         exit();
     }
     
-    if (isset($_POST['positive']) && isset($_POST['comment_id']) && isset($_POST['story_id'])) {
+    if (isset($_POST['comment_id']) && isset($_POST['story_id'])) {
         $comment_id = $_POST["comment_id"];
         $story_id = $_POST["story_id"];
         if (isset($_REQUEST['positive'])) {
