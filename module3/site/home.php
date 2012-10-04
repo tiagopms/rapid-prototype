@@ -43,6 +43,9 @@
 			</form>
 		</div>
 	</div>
+	<div class="other">
+		<a href="admin.php">Admin</a>
+	</div>
 	<div class="section">
 		<ul class="files">
 			<li>
