@@ -8,4 +8,21 @@ function random_token() {
 	}
 	return $token;
 }
+
+function is_admin($id) {
+	$stmt = $mysqli->prepare("SELECT COUNT(*) FROM accounts WHERE id=? and admin='true'");
+    if(!$stmt){
+            printf("Query Prep 1 Failed: %s\n", $mysqli->error);
+            exit;
+    }
+
+    $stmt->bind_param('s', $id);
+    $stmt->execute();
+    $stmt->bind_result($found);
+    $stmt->fetch();
+
+    $stmt->close();
+    return $found;
+}
+
 ?>

@@ -1,9 +1,8 @@
 <?php
-    session_start();
-    include "functions.php";
+    $redirect = "login.php";
+    $user_logged = true; 
+    include "start.php";
 
-    require 'database.php';
-    
     if ($_POST['token'] != $_SESSION['token']) {
         $_SESSION['error'] = 'Invalid request.';
         header('Location: login.php');
@@ -29,8 +28,8 @@
         } else {
             $stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories WHERE id=?");
             if(!$stmt){
-                    printf("Query Prep 1 Failed: %s\n", $mysqli->error);
-                    exit;
+                printf("Query Prep 1 Failed: %s\n", $mysqli->error);
+                exit;
             }
 
             $stmt->bind_param('s', $story_id);
@@ -39,9 +38,9 @@
             $stmt->fetch();
 
             if (!$found) {
-                    $_SESSION['error'] = 'Invalid request';
-                    header('Location: story.php');
-                    exit();
+                $_SESSION['error'] = 'Invalid request';
+                header('Location: story.php');
+                exit();
             } else {
                 $stmt->close();
                 

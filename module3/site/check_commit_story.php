@@ -1,9 +1,8 @@
 <?php
-    session_start();
-    include "functions.php";
+    $redirect = "login.php";
+    $user_logged = true; 
+    include "start.php";
 
-    require 'database.php';
-    
     if ($_POST['token'] != $_SESSION['token']) {
         $_SESSION['error'] = 'Invalid request.';
         header('Location: login.php');

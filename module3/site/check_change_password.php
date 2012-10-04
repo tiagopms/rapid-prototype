@@ -1,8 +1,7 @@
 <?php
-    session_start();
-    include "functions.php";
-
-    require 'database.php';
+    $redirect = "login.php";
+    $user_logged = true; 
+    include "start.php";
 
     if ($_POST['token'] != $_SESSION['token']) {
         $_SESSION['error'] = 'Invalid request.';
@@ -22,15 +21,15 @@
         
         $id = $_SESSION["user_id"];
         
-        if ($old_password == "" || $new_password== "") {
+        if ($old_password == "" || $new_password == "") {
             $_SESSION['error'] = 'All fields are necessary.';
             header('Location: change_password.php');
             exit();
         } else {
             $stmt = $mysqli->prepare("SELECT crypt_pass FROM accounts WHERE id=?");
             if(!$stmt){
-                    printf("Query Prep Failed: %s\n", $mysqli->error);
-                    exit;
+                printf("Query Prep Failed: %s\n", $mysqli->error);
+                exit;
             }
 
             $stmt->bind_param('s', $id);
