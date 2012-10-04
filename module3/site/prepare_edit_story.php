@@ -1,10 +1,10 @@
 <?php
-	if (!isset($_GET['story_id'])) {
+	if (!isset($_GET['story'])) {
 		header('Location: home.php');
-		$_SESSION['error'] = 'Invalid request.';
+		$_SESSION['error'] = 'Invalid id.';
 		exit();
 	}
-	$story_id = $_GET["story_id"];
+	$story_id = $_GET["story"];
 	$id = $_SESSION["user_id"];
 
 	if ($story_id == "") {
