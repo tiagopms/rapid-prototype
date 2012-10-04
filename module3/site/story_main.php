@@ -59,7 +59,7 @@
     <header class="header-article-expand">
         <span class="likes <?php echo htmlentities($likes_word); ?>"><?php echo htmlentities($number_likes); ?></span>
         <?php
-            if ($user_logged && !liked_story($user, $story_id)) {
+            if ($user_logged && !liked_story($mysqli, $user, $story_id)) {
         ?>
                 <span class="like">
                     <form action="check_like.php" method="post"> 

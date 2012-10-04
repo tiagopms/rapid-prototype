@@ -50,7 +50,7 @@
                 <header>
                     <span class="likes <?php echo htmlentities($likes_word); ?>"><?php echo htmlentities($number_of_likes); ?></span>
                     <?php
-                        if ($user_logged && !liked_comment($user, $story_id, $comment_id)) {
+                        //if ($user_logged && !liked_comment($user, $story_id)) {
                     ?>
                             <span class="like">
                                 <form action="check_like_comment.php" method="post"> 
@@ -62,7 +62,7 @@
                                 </form>
                             </span>
                     <?php
-                        }
+                        //}
                     ?>
                     <div class="user-expand">
                         <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo htmlentities($commenter_gravatar); ?>?s=50&d=mm">

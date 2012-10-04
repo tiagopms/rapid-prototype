@@ -9,7 +9,7 @@ function random_token() {
     return $token;
 }
 
-function is_admin($id) {
+function is_admin($mysqli, $id) {
     $stmt = $mysqli->prepare("SELECT COUNT(*) FROM accounts WHERE id=? and admin='true'");
     if(!$stmt){
         printf("Query Prep 1 Failed: %s\n", $mysqli->error);
@@ -25,7 +25,7 @@ function is_admin($id) {
     return $found;
 }
 
-function liked_story($accound_id, $story_id) {
+function liked_story($mysqli, $accound_id, $story_id) {
     $stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories_likes WHERE story_id=? AND account_id=?");
     if(!$stmt){
         printf("Query Prep 1 Failed: %s\n", $mysqli->error);
@@ -39,4 +39,5 @@ function liked_story($accound_id, $story_id) {
     $stmt->close();
     return $found;
 }
+
 ?>
