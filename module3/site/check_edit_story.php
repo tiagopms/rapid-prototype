@@ -9,8 +9,10 @@
         exit();
     }
         
-    if (isset($_POST['story_id']) && isset($_POST['body_text'])) {
+    if (isset($_POST['story_id']) && isset($_POST['body_text']) && isset($_POST['title']) && isset($_POST['category'])) {
         $story_id = $_POST["story_id"];
+        $title = $_POST["title"];
+        $category_id = $_POST["category"];
         $body_text = $_POST["body_text"];
         
         $id = $_SESSION["user_id"];
@@ -50,13 +52,13 @@
                 header('Location: story.php?story='.$story_id);
                 exit();
             } else {
-                $stmt = $mysqli->prepare("UPDATE stories SET text=? WHERE id=?");
+                $stmt = $mysqli->prepare("UPDATE stories SET text=?, title=?, category_id=? WHERE id=?");
                 if(!$stmt){
                     printf("Query Prep 2 Failed: %s\n", $mysqli->error);
                     exit;
                 }
                 
-                $stmt->bind_param('ss', $body_text, $story_id);
+                $stmt->bind_param('ss', $body_text, $title, $category_id, $story_id);
                 $stmt->execute();
                 $stmt->close();
                 
