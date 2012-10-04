@@ -87,7 +87,7 @@
                 </span>
             </span>
             <span class="info-line2">
-                <span class="category"><a href="#"> category </a></span>
+                <span class="category"><a href="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>?category=<?php echo htmlentities($category_id); ?>"> <?php echo htmlentities($category_name); ?> </a></span>
                 <?php
                     if ($user_logged && ($admin=="true" || $commiter_id==$user)) {
                 ?>
