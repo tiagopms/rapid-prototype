@@ -25,6 +25,24 @@
 		if ($admin == "true") {
 			echo '<a class="admin-cp" href="admincp.php"> Admin CP </a>';
 		}
+	} else {
+?>
+		<form class="login-form" action="check_login.php" method="post">
+            <div class="input-login">
+                <div class="username">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="password">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </div>
+            <input class="submit-login" type="submit" value="Login" name="login">
+        </form>
+        <a href="lost_password.php">Lost Password?</a>
+        <a href="signup.php">Sign up</a>
+<?php
 	}
 ?>
 

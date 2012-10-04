@@ -130,7 +130,7 @@
                             <span class="category"><a href="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>?category=<?php echo htmlentities($category_id); ?>"> <?php echo htmlentities($category_name); ?> </a></span>
                             
                             <?php
-                                if ($admin || $commiter_id==$user) {
+                                if ($user_logged && ($admin || $commiter_id==$user)) {
                             ?>
                                     <span class="separator"> - </span>
                                     <span class="edit"><a href="edit_story.php?story=<?php echo htmlentities($story_id); ?>"> edit </a></span>
