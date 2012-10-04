@@ -64,6 +64,7 @@
                     </div>
 
                     <div class="user-name"> <?php echo htmlentities($username); ?> </div>
+                    <div class="clear"> </div>
                     <span class="time-comment">
                         <time datetime="<?php echo htmlentities($commit_time); ?>">
                             <?php
