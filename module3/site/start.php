@@ -5,4 +5,5 @@
         header("Location: $redirect");
         exit();
     }
+    $elements_by_page = 5;
 ?>

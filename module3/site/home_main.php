@@ -173,6 +173,12 @@
     </ul>
 </div>
 
-<div class="commit_story">
-    <a href="commit_story.php"> Commit new story </a>
-</div>
+<?php
+    if ($user_logged) {
+?>
+        <div class="commit_story">
+            <a href="commit_story.php"> Commit new story </a>
+        </div>
+<?php
+    }
+?>
