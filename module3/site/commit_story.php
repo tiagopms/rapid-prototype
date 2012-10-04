@@ -1,5 +1,5 @@
 <?php
-    $title = "Sign Up";
+    $title = "Commit new story";
     $redirect = "login.php";
     $user_logged = true; 
     include "start.php";

@@ -1,5 +1,5 @@
 <?php
-        $title = "Sign Up";
+        $title = "Recover Password";
         $redirect = "home.php";
         $user_logged = false; 
         include "start.php";

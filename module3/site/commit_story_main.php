@@ -1,6 +1,6 @@
 <article>
     <header>
-        <div class="title"><h2><a href="#"> Sign Up </a></h2></div>
+        <div class="title"><h2><a href="#"> Commit new Story </a></h2></div>
     </header>
     <div class="article-content">
         <form class="default-form" action="check_commit_story.php" method="post">
