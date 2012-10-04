@@ -1,0 +1,20 @@
+
+        <li class="story">
+            <div class="like">
+                <form action="check_like.php" method="POST">
+                    <input type="hidden" value="<?php echo 'true'; ?>" name="positive"/>
+                    <input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
+                    <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                    <input type="submit" value="Like"/>
+                 </form>
+
+            </div>
+            <div class="dislike">
+                <form action="check_like.php" method="POST">
+                    <input type="hidden" value="<?php echo 'false'; ?>" name="positive"/>
+                    <input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
+                    <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                    <input type="submit" value="Delete"/>
+                 </form>
+            </div>
+        </li></br>

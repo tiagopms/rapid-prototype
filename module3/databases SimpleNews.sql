@@ -26,8 +26,8 @@ CREATE TABLE stories (
     account_id MEDIUMINT UNSIGNED NOT NULL,
     category_id MEDIUMINT UNSIGNED NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN key (account_id) REFERENCES accounts (id),
-    FOREIGN key (category_id) REFERENCES categories (id)
+    FOREIGN key (account_id) REFERENCES accounts (id) ON DELETE CASCADE,
+    FOREIGN key (category_id) REFERENCES categories (id) ON DELETE CASCADE
 ) engine = INNODB DEFAULT character SET = utf8 COLLATE = utf8_general_ci;
 
 CREATE TABLE comments (
@@ -37,23 +37,24 @@ CREATE TABLE comments (
     account_id MEDIUMINT UNSIGNED NOT NULL,
     story_id MEDIUMINT UNSIGNED NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN key (account_id) REFERENCES accounts (id),
-    FOREIGN key (story_id) REFERENCES stories (id)
+    FOREIGN key (account_id) REFERENCES accounts (id) ON DELETE CASCADE,
+    FOREIGN key (story_id) REFERENCES stories (id) ON DELETE CASCADE
 ) engine = INNODB DEFAULT character SET = utf8 COLLATE = utf8_general_ci;
 
 CREATE TABLE stories_likes (
     account_id MEDIUMINT UNSIGNED NOT NULL,
     story_id MEDIUMINT UNSIGNED NOT NULL,
+    positive ENUM('true','false') NOT NULL,
     PRIMARY KEY (account_id, story_id),
-    FOREIGN key (account_id) REFERENCES accounts (id),
-    FOREIGN key (story_id) REFERENCES stories (id)
+    FOREIGN key (account_id) REFERENCES accounts (id) ON DELETE CASCADE,
+    FOREIGN key (story_id) REFERENCES stories (id) ON DELETE CASCADE
 ) engine = INNODB DEFAULT character SET = utf8 COLLATE = utf8_general_ci;
 
 CREATE TABLE comments_likes (
     account_id MEDIUMINT UNSIGNED NOT NULL,
     comment_id MEDIUMINT UNSIGNED NOT NULL,
+    positive ENUM('true','false') NOT NULL,
     PRIMARY KEY (account_id, comment_id),
-    FOREIGN key (account_id) REFERENCES accounts (id),
-    FOREIGN key (comment_id) REFERENCES comments (id)
+    FOREIGN key (account_id) REFERENCES accounts (id) ON DELETE CASCADE,
+    FOREIGN key (comment_id) REFERENCES comments (id) ON DELETE CASCADE
 ) engine = INNODB DEFAULT character SET = utf8 COLLATE = utf8_general_ci;
-
