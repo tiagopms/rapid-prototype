@@ -1,11 +1,14 @@
 <?php
-    $stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories");
+    $stmt = $mysqli->prepare(
+        "SELECT COUNT(*) FROM stories
+        WHERE account_id=?"
+    );
     
     if(!$stmt){
         printf("Query Prep Failed: %s\n", $mysqli->error);
         exit;
     }
-
+    $stmt->bind_param('s', $user);
     $stmt->execute();
     $stmt->bind_result($len);
     $stmt->fetch();

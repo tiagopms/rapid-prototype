@@ -21,7 +21,7 @@
     $stmt->fetch();
 
     $pages = ceil($len / $elements_by_page);
-    
+
     $stmt->close();
     
     if (isset($_GET['page']) && $_GET['page'] <= $pages && $_GET['page'] > 0) {
