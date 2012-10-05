@@ -104,7 +104,7 @@
                 $likes_word = "";
             }
             $commiter_gravatar = md5($commiter_email);
-
+            $slice_text = keep_x_lines(substr($story_text, 0, 129));
 ?>
             <article>
                 <header>
@@ -150,7 +150,7 @@
                     </div>
 
                 </header>
-                <p class="article-content"><?php echo htmlentities($story_text); ?></p>
+                <p class="article-content"><?php echo htmlentities($slice_text); ?></p>
             </article>
 <?php
         }
