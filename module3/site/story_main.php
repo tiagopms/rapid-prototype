@@ -58,14 +58,20 @@
 <article>
     <header class="header-article-expand">
         <span class="likes <?php echo htmlentities($likes_word); ?>"><?php echo htmlentities($number_likes); ?></span>
-        <span class="like">
-            <form action="check_like.php" method="post"> 
-                <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
-                <input class="submit-like" type="submit" name="positive" value="+">
-                <input class="submit-dislike" type="submit" name="negative" value="-">
-            </form>
-        </span>
+        <?php
+            if ($user_logged) {
+        ?>
+                <span class="like">
+                    <form action="check_like.php" method="post"> 
+                        <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
+                        <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                        <input class="submit-like" type="submit" name="positive" value="+">
+                        <input class="submit-dislike" type="submit" name="negative" value="-">
+                    </form>
+                </span>
+        <?php
+            }
+        ?>
    
         <div class="user-expand">
             <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo htmlentities($commiter_gravatar);?>?s=70&d=mm">

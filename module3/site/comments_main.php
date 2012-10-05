@@ -98,7 +98,7 @@
     <?php
         }
         if ($count == 0) {
-            echo "No comments";
+            echo "There is no comments yet";
         }
         $stmt->close();
     ?>
