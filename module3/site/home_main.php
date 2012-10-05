@@ -150,7 +150,7 @@
                     </div>
 
                 </header>
-                <p class="article-content"><?php echo htmlentities($slice_text); ?></p>
+                <p class="article-content"><?php echo nl2br(htmlentities($slice_text)); ?></p>
             </article>
 <?php
         }
