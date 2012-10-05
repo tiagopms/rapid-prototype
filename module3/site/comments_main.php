@@ -42,6 +42,8 @@
         $stmt->execute();
         $stmt->bind_result($comment_id, $text, $commit_time, $username, $email, $commiter_id, $number_of_likes);
         
+        $count = mysql_num_rows($stmt);
+        echo $count;
         while($stmt->fetch()) {
             if ($number_of_likes > 0) {
                 $likes_word = "positive";
