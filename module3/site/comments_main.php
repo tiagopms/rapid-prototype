@@ -52,7 +52,7 @@
                     <span class="like">
                         <form action="check_like_comment.php" method="post"> 
                             <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                            <input type="hidden" value="<?php echo htmlentities($comment_id); ?>" name="coment_id"/>
+                            <input type="hidden" value="<?php echo htmlentities($comment_id); ?>" name="comment_id"/>
                             <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
                             <input class="submit-like" type="submit" name="positive" value="+">
                             <input class="submit-dislike" type="submit" name="negative" value="-">
