@@ -1,11 +1,17 @@
 <div class="comments">
-    <h3> Comment </h3>
-    <form class="default-form" action="check_coment.php" method="post">
-        <textarea name="coment_text" class="body_text" rows="4"></textarea>
-        <input type="hidden" name="story_id" value="<?php echo htmlentities($story_id); ?>" />
-        <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
-        <input class="submit-default" type="submit" value="Comment">
-    </form>
+    <?php
+        if ($user_logged) {
+    ?>
+            <h3> Comment </h3>
+            <form class="default-form" action="check_coment.php" method="post">
+                <textarea name="coment_text" class="body_text" rows="4"></textarea>
+                <input type="hidden" name="story_id" value="<?php echo htmlentities($story_id); ?>" />
+                <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                <input class="submit-default" type="submit" value="Comment">
+            </form>
+    <?php
+        }
+    ?>
     <h3> Comments </h3>
     <?php
         $stmt = $mysqli->prepare(
