@@ -37,7 +37,7 @@
             $stmt->bind_result($crypt_pass);
             $stmt->fetch();
 
-            if(!crypt($old_password, $crypt_pass) == $crypt_pass) {
+            if(crypt($old_password, $crypt_pass) != $crypt_pass) {
                 $_SESSION['error'] = 'Wrong password';
                 header('Location: change_password.php');
                 exit();
@@ -49,7 +49,6 @@
                     printf("Query Prep 2 Failed: %s\n", $mysqli->error);
                     exit;
                 }
-                $_SESSION['error'] = $id;
                 
                 $crypt_new_pass = crypt($new_password);
                 
