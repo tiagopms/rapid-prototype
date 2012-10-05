@@ -2,7 +2,19 @@
     session_start();
     date_default_timezone_set('America/Chicago');
     if (isset($_SESSION['user_id']) xor $user_logged) {
-        header("Location: $redirect");
+        $c = 0;
+        $param = "";
+        foreach($_GET as $name => $value) {
+            $c += 1;
+            if ($c == 1) {
+                $param .= "?";
+            } else {
+                $param .= "&";
+            }
+            $param .= "$name=$value";
+        }
+
+        header("Location: $redirect$param");
         exit();
     }
     $elements_by_page = 5;
