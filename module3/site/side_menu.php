@@ -2,7 +2,7 @@
 <ul>
 	<?php
         $current_category = (isset($_GET['category'])) ? $_GET['category'] : -1;
-        $current_category_id = ($current_category == -1 && isset($all_is_possible)) ? ' id="current" ' : "";
+        $current_category_id = (($current_category == -1) && isset($all_is_possible)) ? ' id="current" ' : "";
         if ($user_logged) {
             echo '<li><a'.$current_category_id.htmlentities($current_category_id).' href="home.php"> All </a></li>';
         } else {
