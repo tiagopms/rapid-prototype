@@ -114,7 +114,7 @@
                     </div>
 
                 </header>
-                <p class="article-content"><?php echo nl2br(htmlentities($slice_text)); ?></p>
+                <p class="article-content"><?php echo nl2br(detect_links(htmlentities($slice_text))); ?></p>
             </article>
 <?php
         }
