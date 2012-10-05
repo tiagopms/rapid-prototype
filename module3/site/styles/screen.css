@@ -476,3 +476,20 @@ article a {
 	margin-right: -55px;
 	
 }
+
+.paginate {
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+	text-align: center;
+}
+
+.paginate ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.paginate li {
+	display: inline-block;
+	margin-left: 3px;
+}
