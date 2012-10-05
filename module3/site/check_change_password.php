@@ -19,8 +19,6 @@
             exit();
         }
         
-        $id = $_SESSION["user_id"];
-        
         if ($old_password == "" || $new_password == "") {
             $_SESSION['error'] = 'All fields are necessary.';
             header('Location: change_password.php');
@@ -32,7 +30,7 @@
                 exit;
             }
 
-            $stmt->bind_param('s', $id);
+            $stmt->bind_param('s', $user);
             $stmt->execute();
             $stmt->bind_result($crypt_pass);
             $stmt->fetch();
@@ -52,7 +50,7 @@
                 
                 $crypt_new_pass = crypt($new_password);
                 
-                $stmt->bind_param('ss', $crypt_new_pass, $id);
+                $stmt->bind_param('ss', $crypt_new_pass, $user);
                 $stmt->execute();
                 $stmt->close();
                 
