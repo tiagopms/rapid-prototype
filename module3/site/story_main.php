@@ -115,7 +115,7 @@
 
     </header>
     <div class="article-content">
-        <p><?php echo nl2br(htmlentities($story_text)); ?></p>
+        <p><?php echo nl2br(detect_links(htmlentities($story_text))); ?></p>
         <?php include "comments_main.php"; ?>
     </div>
 </article>

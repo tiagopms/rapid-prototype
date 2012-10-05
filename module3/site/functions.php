@@ -15,5 +15,8 @@ function keep_x_lines($str, $num=3) {
     return implode("\n", $firsts);
 }
 
+function detect_links($content) {
+	return preg_replace('/\s((http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.\/]+\.[a-zA-Z\/]{2,3}(\/\S*)?)/', '<a href="${1}">${1}</a>', $content);
+}
 
 ?>
