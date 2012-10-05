@@ -20,6 +20,9 @@
     $elements_by_page = 5;
     require 'database.php';
     include "functions.php";
+    if (!isset($user_logged)) {
+        $user_logged = isset($_SESSION['user_id']);
+    }
     if ($user_logged) {
     	$user = $_SESSION['user_id'];
         $stmt = $mysqli->prepare("SELECT username, email_address, admin FROM accounts WHERE id=?");
