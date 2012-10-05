@@ -475,3 +475,7 @@ article a {
 	margin-right: -55px;
 	
 }
+
+.article-content p {
+	word-wrap: break-word;
+}

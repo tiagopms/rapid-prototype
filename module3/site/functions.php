@@ -9,4 +9,11 @@ function random_token() {
     return $token;
 }
 
+function keep_x_lines($str, $num=3) {
+    $lines = explode("\n", $str);
+    $firsts = array_slice($lines, 0, $num);
+    return implode("\n", $firsts);
+}
+
+
 ?>
