@@ -84,6 +84,9 @@
                 }
             }
         }
+    } else {
+        $_SESSION['error'] = 'Invalid post.';
+        
     }
 
     header('Location: home.php');
