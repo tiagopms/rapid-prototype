@@ -60,8 +60,8 @@
         <span class="likes <?php echo htmlentities($likes_word); ?>"><?php echo htmlentities($number_likes); ?></span>
         <span class="like">
             <form action="check_like.php" method="post"> 
-                <input type="hidden" value="<?php echo $story_id; ?>" name="story_id"/>
-                <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
+                <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
                 <input class="submit-like" type="submit" name="positive" value="+">
                 <input class="submit-dislike" type="submit" name="negative" value="-">
             </form>
@@ -109,7 +109,7 @@
 
     </header>
     <div class="article-content">
-        <p><?php echo htmlentities($story_text); ?></p>
+        <p><?php echo nl2br(htmlentities($story_text)); ?></p>
         <?php include "comments_main.php"; ?>
     </div>
 </article>
