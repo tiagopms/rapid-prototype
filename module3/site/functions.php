@@ -16,7 +16,9 @@ function keep_x_lines($str, $num=3) {
 }
 
 function detect_links($content) {
-	return preg_replace('/\s((http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.\/]+\.[a-zA-Z\/]{2,3}(\/\S*)?)/', '<a href="${1}">${1}</a>', $content);
+	var $regex = '/\b((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:''".,<>?«»“”‘’]))/ig';
+
+	return preg_replace($regex, '<a href="${1}">${1}</a>', $content);
 }
 
 ?>
