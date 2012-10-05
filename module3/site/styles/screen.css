@@ -203,7 +203,7 @@ article .article-content {
 	margin: 0;
 	padding: 10px;
 	background-color: #099;
-
+	word-wrap: break-word;
 	border-radius: 0 0 10px 10px;
 }
 
@@ -474,8 +474,4 @@ article a {
 	margin-top: 36px;
 	margin-right: -55px;
 	
-}
-
-.article-content p {
-	word-wrap: break-word;
 }
