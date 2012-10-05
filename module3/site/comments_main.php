@@ -83,7 +83,7 @@
                     </span>
                 </header>
                 <p class="comment-content">
-                    <?php echo nl2br(htmlentities($text)); ?>
+                    <?php echo nl2br(detect_links(htmlentities($text))); ?>
                 </p>
                 <div class="delete">
                     <form action="check_delete_comment.php" method="POST">
