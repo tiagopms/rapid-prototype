@@ -41,9 +41,10 @@
         $stmt->bind_param('s', $story_id);
         $stmt->execute();
         $stmt->bind_result($comment_id, $text, $commit_time, $username, $email, $commiter_id, $number_of_likes);
-        
+        $count = 0;
 
         while($stmt->fetch()) {
+            $count += 1;
             if ($number_of_likes > 0) {
                 $likes_word = "positive";
             } else if ($number_of_likes < 0) {
@@ -96,8 +97,9 @@
             </article>
     <?php
         }
-        $count = $mysqli->num_rows;
-        echo $count;
+        if ($count == 0) {
+            echo "No comments";
+        }
         $stmt->close();
     ?>
 </div>
