@@ -13,17 +13,17 @@
             FROM comments
                 JOIN accounts on (comments.account_id=accounts.id)
                 LEFT OUTER JOIN (
-                SELECT COUNT(*) as likes, story_id
-                FROM stories_likes
-                WHERE positive='true'
-                GROUP BY story_id
-                ) AS likes_table ON (comments.id=likes_table.story_id)
+                    SELECT COUNT(*) as likes, comment_id
+                    FROM comments_likes
+                    WHERE positive='true'
+                    GROUP BY story_id
+                ) AS likes_table ON (comments.id=likes_table.comment_id)
                 LEFT OUTER JOIN (
-                SELECT COUNT(*) as dislikes, story_id
-                FROM stories_likes
-                WHERE positive='false'
-                GROUP BY story_id
-                ) AS dislikes_table ON (comments.id=dislikes_table.story_id)
+                    SELECT COUNT(*) as dislikes, comment_id
+                    FROM comments_likes
+                    WHERE positive='false'
+                    GROUP BY story_id
+                ) AS dislikes_table ON (comments.id=dislikes_table.comment_id)
             WHERE comments.story_id=?
             ORDER BY commit_time DESC"
         );
