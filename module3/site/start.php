@@ -2,6 +2,7 @@
     session_start();
     date_default_timezone_set('America/Chicago');
     if (isset($_SESSION['user_id']) xor $user_logged) {
+        $_SESSION['error'] = 'redirect.';
         $c = 0;
         $param = "";
         foreach($_GET as $name => $value) {
