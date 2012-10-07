@@ -53,6 +53,38 @@
 					</span>
 				</form>
 			</div>
+			<div class="add_admin">
+				<span class="title">
+					<label for="title">Add admin:</label>
+				</span>
+				<form action="check_add_admin.php" method="POST">
+					<span class="user">
+						<label for="user">Username:</label>
+						<select name="new_admin_id" id="user">
+							<?php
+								$stmt = $mysqli->prepare("select id, username from accounts where admin='false'");
+								if(!$stmt){
+									printf("Query Prep 2 Failed: %s\n", $mysqli->error);
+									exit;
+								}
+								 
+								$stmt->execute();
+								$stmt->bind_result($new_admin_id, $new_admin_username);
+								 
+								while($stmt->fetch()){
+									echo '<option value="'.$new_admin_id.'">'.$new_admin_username.'</option>';
+								}
+								
+								$stmt->close();
+							?>
+						</select> 
+					</span>
+					<span class="submit_button">
+						<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+						<input type="submit" name="signup" value="Submit"/>
+					</span>
+				</form>
+			</div>
 			<span class="back_button">
 				<a href="home.php">Back</a>
 			</span>
