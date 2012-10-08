@@ -5,12 +5,12 @@
     <div class="article-content">
         <form class="default-form" action="check_signup.php" method="post">
             <div class="username">
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username">
+                <label for="username_signup">Username:</label>
+                <input type="text" name="username" id="username_signup">
             </div>
             <div class="password">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
+                <label for="password_signup">Password:</label>
+                <input type="password" name="password" id="password_signup">
             </div>
             <div class="repeat-password">
                 <label for="check_password">Repeat Password:</label>
