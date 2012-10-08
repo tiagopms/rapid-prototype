@@ -1,8 +1,7 @@
 <?php
-    session_start();
-    include "functions.php";
-    
-    require 'database.php';
+    $redirect = "home.php";
+    $user_logged = false; 
+    include "start.php";
     
     if (isset($_POST['username']) && isset($_POST['password'])) {
         $login = $_POST["username"];

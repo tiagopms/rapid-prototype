@@ -1,8 +1,7 @@
 <?php
-    session_start();
-    include "functions.php";
-
-    require 'database.php';
+    $redirect = "home.php";
+    $user_logged = false; 
+    include "start.php";
 
     if (isset($_POST['username']) && isset($_POST['email'])) {
         $login = $_POST["username"];
@@ -15,8 +14,8 @@
         } else {
             $stmt = $mysqli->prepare("SELECT COUNT(*) FROM accounts WHERE username=? and email_address=?");
             if(!$stmt){
-                    printf("Query Prep 1 Failed: %s\n", $mysqli->error);
-                    exit;
+                printf("Query Prep 1 Failed: %s\n", $mysqli->error);
+                exit();
             }
 
             $stmt->bind_param('ss', $login, $email);
@@ -25,9 +24,9 @@
             $stmt->fetch();
 
             if (!$found) {
-                    $_SESSION['error'] = 'Username and email doesn\'t match';
-                    header('Location: lost_password.php');
-                    exit();
+                $_SESSION['error'] = 'Username and email doesn\'t match';
+                header('Location: lost_password.php');
+                exit();
             } else {
                 $stmt->close();
                 
@@ -37,7 +36,7 @@
                 $stmt = $mysqli->prepare("UPDATE accounts SET crypt_pass=? WHERE username=? and email_address=?");
                 if(!$stmt){
                     printf("Query Prep 2 Failed: %s\n", $mysqli->error);
-                    exit;
+                    exit();
                 }
             
                 $stmt->bind_param('sss', $crypt_new_pass, $login, $email);
@@ -47,7 +46,7 @@
                 $subject = "New Password from SimpleNews!";
                 $body = "Hi,\n\nYour new password is: ".$new_pass."\n\nHave a nice day!\n";
                 if (mail($email, $subject, $body)) {
-                                    $_SESSION['success'] = "Message sent successfully!";
+                    $_SESSION['success'] = "Message sent successfully!";
                 } else {
                     $_SESSION['error'] = 'Message sent failed';
                 }

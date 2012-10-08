@@ -1,27 +1,20 @@
 <?php
-    $current_category = (isset($_GET['category'])) ? $_GET['category'] : -1;
-
-    if ($current_category == -1) {
-        $stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories");
-    } else {
-        $stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories WHERE category_id=?");
-        
-    }
+    $stmt = $mysqli->prepare(
+        "SELECT COUNT(*) FROM stories
+        WHERE account_id=?"
+    );
     
     if(!$stmt){
         printf("Query Prep Failed: %s\n", $mysqli->error);
         exit;
     }
-    
-    if ($current_category != -1) {
-        $stmt->bind_param('s', $current_category);
-    }
+    $stmt->bind_param('s', $user);
     $stmt->execute();
     $stmt->bind_result($len);
     $stmt->fetch();
 
     $pages = ceil($len / $elements_by_page);
-
+    
     $stmt->close();
     
     if (isset($_GET['page']) && $_GET['page'] <= $pages && $_GET['page'] > 0) {
@@ -29,67 +22,38 @@
     } else {
         $current_page = 1;
     }
-     
-    if ($current_category == -1) {
-        $stmt = $mysqli->prepare(
-            "SELECT stories.id AS story_id, title, commit_time, text, username, email_address, accounts.id AS user_id, (IFNULL(likes_table.likes, 0) - IFNULL(dislikes_table.dislikes, 0)) AS number_likes, IFNULL(comments_table.number_comments, 0) AS coments, categories.name, categories.id
-            FROM stories
-                JOIN accounts ON (stories.account_id=accounts.id)
-                LEFT OUTER JOIN (
-                    SELECT COUNT(*) AS likes, story_id
-                    FROM stories_likes
-                    WHERE positive='true'
-                    GROUP BY story_id
-                ) AS likes_table ON (stories.id=likes_table.story_id)
-                LEFT OUTER JOIN (
-                    SELECT COUNT(*) AS dislikes, story_id
-                    FROM stories_likes
-                    WHERE positive='false'
-                    GROUP BY story_id
-                ) AS dislikes_table ON (stories.id=dislikes_table.story_id)
-                LEFT OUTER JOIN (
-                    SELECT COUNT(*) AS number_comments, story_id
-                    FROM comments
-                    GROUP BY story_id
-                ) AS comments_table ON (stories.id=comments_table.story_id)
-                JOIN categories ON (stories.category_id=categories.id)
-            ORDER BY commit_time DESC;"
-        );
-    } else {
-        $stmt = $mysqli->prepare(
-            "SELECT stories.id AS story_id, title, commit_time, text, username, email_address, accounts.id AS user_id, (IFNULL(likes_table.likes, 0) - IFNULL(dislikes_table.dislikes, 0)) AS number_likes, IFNULL(comments_table.number_comments, 0) AS coments, categories.name, categories.id
-            FROM stories
-                JOIN accounts ON (stories.account_id=accounts.id)
-                LEFT OUTER JOIN (
-                    SELECT COUNT(*) AS likes, story_id
-                    FROM stories_likes
-                    WHERE positive='true'
-                    GROUP BY story_id
-                ) AS likes_table ON (stories.id=likes_table.story_id)
-                LEFT OUTER JOIN (
-                    SELECT COUNT(*) AS dislikes, story_id
-                    FROM stories_likes
-                    WHERE positive='false'
-                    GROUP BY story_id
-                ) AS dislikes_table ON (stories.id=dislikes_table.story_id)
-                LEFT OUTER JOIN (
-                    SELECT COUNT(*) AS number_comments, story_id
-                    FROM comments
-                    GROUP BY story_id
-                ) AS comments_table ON (stories.id=comments_table.story_id)
-                JOIN categories ON (stories.category_id=categories.id)
-            WHERE category_id=?    
-            ORDER BY commit_time DESC;"
-        );
-    }
+    $stmt = $mysqli->prepare(
+        "SELECT stories.id AS story_id, title, commit_time, text, username, email_address, accounts.id AS user_id, (IFNULL(likes_table.likes, 0) - IFNULL(dislikes_table.dislikes, 0)) AS number_likes, IFNULL(comments_table.number_comments, 0) AS coments, categories.name, categories.id
+        FROM stories
+            JOIN accounts ON (stories.account_id=accounts.id)
+            LEFT OUTER JOIN (
+                SELECT COUNT(*) AS likes, story_id
+                FROM stories_likes
+                WHERE positive='true'
+                GROUP BY story_id
+            ) AS likes_table ON (stories.id=likes_table.story_id)
+            LEFT OUTER JOIN (
+                SELECT COUNT(*) AS dislikes, story_id
+                FROM stories_likes
+                WHERE positive='false'
+                GROUP BY story_id
+            ) AS dislikes_table ON (stories.id=dislikes_table.story_id)
+            LEFT OUTER JOIN (
+                SELECT COUNT(*) AS number_comments, story_id
+                FROM comments
+                GROUP BY story_id
+            ) AS comments_table ON (stories.id=comments_table.story_id)
+            JOIN categories ON (stories.category_id=categories.id)
+        WHERE accounts.id=?
+        ORDER BY commit_time DESC;"
+    );
+    
 
     if(!$stmt){
         printf("Query Prep Failed: %s\n", $mysqli->error);
         exit;
     }
-    if ($current_category != -1) {
-        $stmt->bind_param('s', $current_category);
-    }
+    $stmt->bind_param('s', $user);
     $stmt->execute();
     $stmt->bind_result($story_id, $title, $commit_time, $story_text, $commiter_username, $commiter_email, $commiter_id, $number_likes, $number_comments, $category_name, $category_id);
     

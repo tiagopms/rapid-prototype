@@ -203,7 +203,7 @@ article .article-content {
 	margin: 0;
 	padding: 10px;
 	background-color: #099;
-
+	word-wrap: break-word;
 	border-radius: 0 0 10px 10px;
 }
 
@@ -272,6 +272,7 @@ article a {
 	margin-right: 15px;
 	background-color: #AAAAAA;
 	border: 1px solid white;
+	color: black;
 }
 
 
@@ -416,7 +417,7 @@ article a {
 	padding-right: 0;	
 	margin: 0;
 	background-color: #099;	
-	width: 455px;
+	width: 375px;
 	overflow: visible;
 	font-size: 1.5em;
 	word-wrap: break-word;
@@ -463,4 +464,32 @@ article a {
 
 .body_text {
 	width: 603px;
+}
+
+.time-comment {
+	clear: both;
+}
+
+.comment header .like {
+	float: right;
+	margin-top: 36px;
+	margin-right: -55px;
+	
+}
+
+.paginate {
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+	text-align: center;
+}
+
+.paginate ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.paginate li {
+	display: inline-block;
+	margin-left: 3px;
 }

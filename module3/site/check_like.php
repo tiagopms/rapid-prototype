@@ -1,8 +1,7 @@
 <?php
-    session_start();
-    include "functions.php";
-
-    require 'database.php';
+    $redirect = "login.php";
+    $user_logged = true; 
+    include "start.php";
     
     if ($_POST['token'] != $_SESSION['token']) {
         $_SESSION['error'] = 'Invalid request.';
@@ -10,9 +9,13 @@
         exit();
     }
 
-    if (isset($_POST['positive']) && isset($_POST['story_id'])) {
+    if (isset($_POST['story_id'])) {
         $story_id = $_POST["story_id"];
-        $positive = $_POST["positive"];
+        if (isset($_REQUEST['positive'])) {
+            $positive = 'true';    
+        } else {
+            $positive = 'false'; 
+        }
         
         $id = $_SESSION["user_id"];
         
@@ -23,8 +26,8 @@
         } else {
             $stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories WHERE id=?");
             if(!$stmt){
-                    printf("Query Prep 1 Failed: %s\n", $mysqli->error);
-                    exit;
+                printf("Query Prep 1 Failed: %s\n", $mysqli->error);
+                exit;
             }
 
             $stmt->bind_param('s', $story_id);
@@ -33,9 +36,9 @@
             $stmt->fetch();
 
             if (!$found) {
-                    $_SESSION['error'] = 'Invalid request';
-                    header('Location: login.php');
-                    exit();
+                $_SESSION['error'] = 'Invalid request';
+                header('Location: login.php');
+                exit();
             } else {
                 $stmt->close();
                 $stmt = $mysqli->prepare("SELECT COUNT(*) FROM stories_likes WHERE account_id=? and story_id=?");
