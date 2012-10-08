@@ -90,7 +90,7 @@
                                 </time>
                             </span>
                         </span>
-                        <span class="info-line2">
+                        <div class="info-line2">
                             <span class="category"><a href="<?php echo process_text($_SERVER['PHP_SELF']); ?>?category=<?php echo process_text($category_id); ?>"> <?php echo process_text($category_name); ?> </a></span>
                             
                             <?php
@@ -99,18 +99,18 @@
                                     <span class="separator"> - </span>
                                     <span class="edit"><a href="edit_story.php?story=<?php echo process_text($story_id); ?>"> edit </a></span>
                                     <span class="separator"> - </span>
-                                    <span class="remove">
+                                    <div class="remove">
                                         <form class="form-remove" action="check_delete_story.php" method="POST">
                                             <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
                                             <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
                                             <input class="submit-remove" type="submit" value="remove"/>
                                          </form>
-                                    </span>
+                                    </div>
                             <?php
                                 }
                             ?>
 
-                        </span>
+                        </div>
                     </div>
 
                 </header>
