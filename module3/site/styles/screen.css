@@ -499,3 +499,7 @@ article a {
 	display: inline-block;
 	margin-left: 3px;
 }
+
+.remove {
+	display: inline;
+}
