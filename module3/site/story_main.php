@@ -61,14 +61,14 @@
         <?php
             if ($user_logged) {
         ?>
-                <span class="like">
+                <div class="like">
                     <form action="check_like.php" method="post"> 
                         <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
                         <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
                         <input class="submit-like" type="submit" name="positive" value="+">
                         <input class="submit-dislike" type="submit" name="negative" value="-">
                     </form>
-                </span>
+                </div>
         <?php
             }
         ?>
