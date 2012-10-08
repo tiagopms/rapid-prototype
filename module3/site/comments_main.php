@@ -105,14 +105,7 @@
                 </p>
                 <?php
                     $is_user = $commiter_id == $user;
-                    echo var_dump($is_user);
-                    
-                    echo $is_user || var_dump($admin);
                     if ($admin == "true" || $is_user) {
-                        echo $admin;
-                        echo $commiter_id;
-                        echo $user;
-                        echo 'a'.($commiter_id == $user);
                 ?>
                         <div class="edit-comment" id="edit-comment-<?php echo process_text($comment_id); ?>">
                             <form action="check_edit_comment.php" method="POST">
