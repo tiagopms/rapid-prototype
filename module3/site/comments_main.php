@@ -86,7 +86,7 @@
                     </span>
 
                     <div class="user-expand">
-                        <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo process_text($commenter_gravatar); ?>?s=50&d=mm">
+                        <img alt="user image"  class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo process_text($commenter_gravatar); ?>?s=50&d=mm">
                     </div>
 
                     <div class="user-name"> <?php echo process_text($username); ?> </div>

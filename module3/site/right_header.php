@@ -1,7 +1,7 @@
 <?php
     if ($user_logged) {
         $gravatar = md5($email);
-        echo '<img class="header-img" src="http://en.gravatar.com/avatar/'.process_text($gravatar).'?s=70&d=mm">';
+        echo '<img alt="user image"  class="header-img" src="http://en.gravatar.com/avatar/'.process_text($gravatar).'?s=70&d=mm">';
         echo '<span class="welcome"> Hello, '.process_text($name).'! </span>';
 ?>
         <a href="my_stories.php">View my Stories</a>

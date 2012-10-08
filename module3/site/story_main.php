@@ -74,7 +74,7 @@
         ?>
    
         <div class="user-expand">
-            <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo process_text($commiter_gravatar);?>?s=70&d=mm">
+            <img alt="user image"  class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo process_text($commiter_gravatar);?>?s=70&d=mm">
         </div>
         <div class="title"> <a href="story.php?story=<?php echo process_text($story_id); ?>"> <?php echo process_text($title); ?> </a> </div>
         
