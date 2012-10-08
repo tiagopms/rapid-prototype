@@ -1,3 +1,21 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".edit-comment").hide();
+        $(".edit-comment-link").click(function() {
+            var id = $(this).attr('id').split("-")[1];
+            if ($(this).text() == "Edit") {
+                $(this).text("Cancel editing");
+                $("#show-comment-"+id).hide(); 
+                $("#edit-comment-"+id).show();
+            } else {
+                $(this).text("Edit");
+                $("#show-comment-"+id).show(); 
+                $("#edit-comment-"+id).hide();
+            }
+        });
+    });
+    
+</script>
 <div class="comments">
     <?php
         if ($user_logged) {
@@ -82,8 +100,15 @@
                         </time>
                     </span>
                 </header>
-                <p class="comment-content">
+                <p class="comment-content" id="show-comment-<?php echo process_text($comment_id); ?>">
                     <?php echo nl2br(detect_links(process_text($text))); ?>
+                </p>
+                <p class="edit-comment" id="edit-comment-<?php echo process_text($comment_id); ?>">
+                    <form action="check_edit_comment.php" method="POST">
+                        <textarea name="coment_text" class="body_text" rows="4"><?php echo process_text($text); ?></textarea>
+                        <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
+                        <input type="submit" value="Delete"/>
+                    </form>
                 </p>
                 <div class="delete">
                     <form action="check_delete_comment.php" method="POST">
@@ -93,6 +118,7 @@
                         <input type="submit" value="Delete"/>
                      </form>
                 </div>
+                <a class="edit-comment-link" id="link-<?php echo process_text($comment_id); ?>">Edit</a>
 
             </article>
     <?php

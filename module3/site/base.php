@@ -7,6 +7,7 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <link href="styles/screen.css" rel="stylesheet" type="text/css">
+        <script src="jquery.js"></script>
     </head>
  
     <body>
