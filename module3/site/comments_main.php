@@ -75,7 +75,7 @@
             <article class="comment">
                 <header>
                     <span class="likes <?php echo process_text($likes_word); ?>"><?php echo process_text($number_of_likes); ?></span>
-                    <span class="like">
+                    <div class="like">
                         <form action="check_like_comment.php" method="post"> 
                             <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
                             <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
@@ -83,7 +83,7 @@
                             <input class="submit-like" type="submit" name="positive" value="+">
                             <input class="submit-dislike" type="submit" name="negative" value="-">
                         </form>
-                    </span>
+                    </div>
 
                     <div class="user-expand">
                         <img alt="user image"  class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo process_text($commenter_gravatar); ?>?s=50&d=mm">
