@@ -108,7 +108,7 @@
                         echo $admin;
                         echo $commiter_id;
                         echo $user;
-                        echo ($commiter_id == $user);
+                        echo 'a'.($commiter_id == $user);
                 ?>
                         <div class="edit-comment" id="edit-comment-<?php echo process_text($comment_id); ?>">
                             <form action="check_edit_comment.php" method="POST">
