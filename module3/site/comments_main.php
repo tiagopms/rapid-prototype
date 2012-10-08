@@ -105,6 +105,8 @@
                 </p>
                 <?php
                     if ($admin || ($commiter_id == $user)) {
+                        echo $admin;
+                        echo $commiter_id;
                 ?>
                         <div class="edit-comment" id="edit-comment-<?php echo process_text($comment_id); ?>">
                             <form action="check_edit_comment.php" method="POST">
