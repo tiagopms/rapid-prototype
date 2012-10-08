@@ -56,6 +56,12 @@ h2 {
 	color: #FF9090;
 }
 
+.success {
+	display: block;
+	color: #33FF33;
+}
+
+
 .right-header {
 	display: block;
 	float: right;
