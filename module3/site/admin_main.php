@@ -53,8 +53,8 @@
     </header>
     <div class="article-content">
         <form class="default-form" action="check_add_admin.php" method="post">
-            <div class="user">
-                <label for="user">Category:</label>
+            <div class="user_name">
+                <label for="user">User:</label>
                 <select name="new_admin_id" id="user">
                     <?php
                         $stmt = $mysqli->prepare("select id, username from accounts where admin='false'");
