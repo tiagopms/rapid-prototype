@@ -14,6 +14,11 @@
         $story_id = $_POST["story_id"];
         $comment_text = $_POST['coment_text'];
 
+        if ($comment_text == "") {
+            $_SESSION['error'] = 'Can\'t submit empty coment.';
+            header('Location: story.php');
+            exit();
+        }
         if ($comment_id == "" && $story_id == "") {
             $_SESSION['error'] = 'Invalid request.';
             header('Location: home.php');
