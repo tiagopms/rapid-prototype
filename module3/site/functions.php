@@ -25,7 +25,8 @@ function detect_links($content) {
 }
 
 function process_text($text) {
-    return htmlentities(mb_convert_encoding($text, 'UTF-8', 'UTF-8'));
+    return htmlentities($text);
+  //  return htmlentities(mb_convert_encoding($text, 'UTF-8', 'UTF-8'));
 }
 
 ?>
