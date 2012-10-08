@@ -103,24 +103,30 @@
                 <p class="comment-content" id="show-comment-<?php echo process_text($comment_id); ?>">
                     <?php echo nl2br(detect_links(process_text($text))); ?>
                 </p>
-                <div class="edit-comment" id="edit-comment-<?php echo process_text($comment_id); ?>">
-                    <form action="check_edit_comment.php" method="POST">
-                        <textarea name="coment_text" class="body_text" rows="4"><?php echo process_text($text); ?></textarea>
-                        <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
-                        <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
-                        <input type="submit" value="Delete"/>
-                    </form>
-                </div>
-                <div class="delete">
-                    <form action="check_delete_comment.php" method="POST">
-                        <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
-                        <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
-                        <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
-                        <input type="submit" value="Delete"/>
-                     </form>
-                </div>
-                <a class="edit-comment-link" id="link-<?php echo process_text($comment_id); ?>">Edit</a>
-
+                <?php
+                    if ($admin || ($commiter_id == $user)) {
+                ?>
+                        <div class="edit-comment" id="edit-comment-<?php echo process_text($comment_id); ?>">
+                            <form action="check_edit_comment.php" method="POST">
+                                <textarea name="coment_text" class="body_text" rows="4"><?php echo process_text($text); ?></textarea>
+                                <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
+                                <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
+                                <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
+                                <input type="submit" value="Edit"/>
+                            </form>
+                        </div>
+                        <a class="edit-comment-link" id="link-<?php echo process_text($comment_id); ?>">Edit</a>
+                        <div class="delete">
+                            <form action="check_delete_comment.php" method="POST">
+                                <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
+                                <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
+                                <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
+                                <input type="submit" value="Delete"/>
+                             </form>
+                        </div>
+                <?php
+                    }
+                ?>
             </article>
     <?php
         }
