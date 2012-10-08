@@ -105,7 +105,7 @@
                 </p>
                 <?php
                     $is_user = var_dump($commiter_id == $user);
-                    echo $is_user;
+                    echo $is_user || $admin;
                     if ($admin || $is_user) {
                         echo $admin;
                         echo $commiter_id;
