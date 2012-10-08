@@ -33,7 +33,7 @@
             $stmt->close();
             
     
-            if (!$found && !$admin) {
+            if (!$found || !$admin) {
                 $_SESSION['error'] = 'You don\'t have permission for that';
                 header('Location: story.php?story='.$story_id);
                 exit();
