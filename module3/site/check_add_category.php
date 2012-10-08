@@ -58,6 +58,6 @@
 		exit();
 	}
 
-    header('Location: home.php');
+    header('Location: admin.php');
     exit();	
 ?>
