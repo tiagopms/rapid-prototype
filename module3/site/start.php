@@ -37,6 +37,7 @@
         $stmt->bind_result($name, $email, $admin);
         $stmt->fetch();
         $stmt->close();
+        $admin = ($admin == "true");
     }
     
     

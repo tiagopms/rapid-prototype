@@ -10,7 +10,7 @@
         </form>
         <a href="change_password.php">Change Password</a>
 <?php
-        if ($admin == "true") {
+        if ($admin) {
             echo '<a class="admin-cp" href="admin.php"> Admin CP </a>';
         }
     } else {

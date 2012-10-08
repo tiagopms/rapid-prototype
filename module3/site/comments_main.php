@@ -105,7 +105,7 @@
                 </p>
                 <?php
                     $is_user = $commiter_id == $user;
-                    if ($admin == "true" || $is_user) {
+                    if ($admin || $is_user) {
                 ?>
                         <div class="edit-comment" id="edit-comment-<?php echo process_text($comment_id); ?>">
                             <form action="check_edit_comment.php" method="POST">

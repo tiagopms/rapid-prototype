@@ -130,7 +130,7 @@
                             <span class="category"><a href="<?php echo process_text($_SERVER['PHP_SELF']); ?>?category=<?php echo process_text($category_id); ?>"> <?php echo process_text($category_name); ?> </a></span>
                             
                             <?php
-                                if ($user_logged && ($admin=="true" || $commiter_id==$user)) {
+                                if ($user_logged && ($admin || $commiter_id==$user)) {
                             ?>
                                     <span class="separator"> - </span>
                                     <span class="edit"><a href="edit_story.php?story=<?php echo process_text($story_id); ?>"> edit </a></span>
