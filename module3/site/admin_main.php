@@ -8,7 +8,7 @@
                 <label for="category_name">Name:</label>
                 <input type="text" name="category_name" id="category_name">
             </div>
-            <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+            <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
             <input class="submit-default" name="submit" type="submit" value="Submit">
         </form>            
     </div>
@@ -34,14 +34,14 @@
                         $stmt->bind_result($category_id, $category_name);
                          
                         while($stmt->fetch()){
-                            echo '<option value="'.htmlentities($category_id).'">'.htmlentities($category_name).'</option>';
+                            echo '<option value="'.process_text($category_id).'">'.process_text($category_name).'</option>';
                         }
                         
                         $stmt->close();
                     ?>
                 </select> 
             </div>
-            <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+            <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
             <input class="submit-default" name="submit" type="submit" value="Submit">
         </form>            
     </div>
@@ -67,14 +67,14 @@
                         $stmt->bind_result($new_admin_id, $new_admin_username);
                          
                         while($stmt->fetch()){
-                            echo '<option value="'.htmlentities($new_admin_id).'">'.htmlentities($new_admin_username).'</option>';
+                            echo '<option value="'.process_text($new_admin_id).'">'.process_text($new_admin_username).'</option>';
                         }
                         
                         $stmt->close();
                     ?>
                 </select> 
             </div>
-            <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+            <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
             <input class="submit-default" name="submit" type="submit" value="Submit">
         </form>            
     </div>

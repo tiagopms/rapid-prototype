@@ -73,36 +73,36 @@
             <article>
                 <header>
                     <div class="user">
-                        <span class="likes <?php echo htmlentities($likes_word); ?>"><?php echo htmlentities($number_likes); ?></span>
-                        <img class="user-image" src="http://en.gravatar.com/avatar/<?php echo htmlentities($commiter_gravatar);?>?s=40&d=mm">
-                        <span class="show-username"> <?php echo htmlentities($commiter_username); ?> </span>
+                        <span class="likes <?php echo process_text($likes_word); ?>"><?php echo process_text($number_likes); ?></span>
+                        <img class="user-image" src="http://en.gravatar.com/avatar/<?php echo process_text($commiter_gravatar);?>?s=40&d=mm">
+                        <span class="show-username"> <?php echo process_text($commiter_username); ?> </span>
                     </div>
-                    <div class="title"> <h2><a href="story.php?story=<?php echo htmlentities($story_id); ?>"> <?php echo htmlentities($title); ?> </a></h2> </div>
+                    <div class="title"> <h2><a href="story.php?story=<?php echo process_text($story_id); ?>"> <?php echo process_text($title); ?> </a></h2> </div>
                     <div class="info">
                         <span class="info-line1">
-                            <span class="comments"><?php echo htmlentities($number_comments); ?> comments</span><span class="separator"> - </span>
+                            <span class="comments"><?php echo process_text($number_comments); ?> comments</span><span class="separator"> - </span>
                             <span class="time">
-                                <time datetime="<?php echo htmlentities($commit_time); ?>">
+                                <time datetime="<?php echo process_text($commit_time); ?>">
                                     <?php
                                         $story_time = strtotime($commit_time); 
-                                        echo htmlentities(date("d F Y - h:ia", $story_time));
+                                        echo process_text(date("d F Y - h:ia", $story_time));
                                     ?>
                                 </time>
                             </span>
                         </span>
                         <span class="info-line2">
-                            <span class="category"><a href="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>?category=<?php echo htmlentities($category_id); ?>"> <?php echo htmlentities($category_name); ?> </a></span>
+                            <span class="category"><a href="<?php echo process_text($_SERVER['PHP_SELF']); ?>?category=<?php echo process_text($category_id); ?>"> <?php echo process_text($category_name); ?> </a></span>
                             
                             <?php
                                 if ($user_logged && ($admin=="true" || $commiter_id==$user)) {
                             ?>
                                     <span class="separator"> - </span>
-                                    <span class="edit"><a href="edit_story.php?story=<?php echo htmlentities($story_id); ?>"> edit </a></span>
+                                    <span class="edit"><a href="edit_story.php?story=<?php echo process_text($story_id); ?>"> edit </a></span>
                                     <span class="separator"> - </span>
                                     <span class="remove">
                                         <form class="form-remove" action="check_delete_story.php" method="POST">
-                                            <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                                            <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                                            <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
+                                            <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
                                             <input class="submit-remove" type="submit" value="remove"/>
                                          </form>
                                     </span>
@@ -114,7 +114,7 @@
                     </div>
 
                 </header>
-                <p class="article-content"><?php echo nl2br(detect_links(htmlentities($slice_text))); ?></p>
+                <p class="article-content"><?php echo nl2br(detect_links(process_text($slice_text))); ?></p>
             </article>
 <?php
         }
@@ -128,7 +128,7 @@
         <?php
             for($i = 1; $i <= $pages; $i++) {
                 if($i != $current_page) {
-                    echo '<li><a href="'.htmlentities($_SERVER['PHP_SELF']).'?page='.$i.'">'.$i.'</a></li>';
+                    echo '<li><a href="'.process_text($_SERVER['PHP_SELF']).'?page='.$i.'">'.$i.'</a></li>';
                 } else {
                     echo '<li><span class="current">'.$i.'</span></li>';
                 }

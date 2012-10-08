@@ -57,14 +57,14 @@
 
 <article>
     <header class="header-article-expand">
-        <span class="likes <?php echo htmlentities($likes_word); ?>"><?php echo htmlentities($number_likes); ?></span>
+        <span class="likes <?php echo process_text($likes_word); ?>"><?php echo process_text($number_likes); ?></span>
         <?php
             if ($user_logged) {
         ?>
                 <span class="like">
                     <form action="check_like.php" method="post"> 
-                        <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                        <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                        <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
+                        <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
                         <input class="submit-like" type="submit" name="positive" value="+">
                         <input class="submit-dislike" type="submit" name="negative" value="-">
                     </form>
@@ -74,36 +74,36 @@
         ?>
    
         <div class="user-expand">
-            <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo htmlentities($commiter_gravatar);?>?s=70&d=mm">
+            <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo process_text($commiter_gravatar);?>?s=70&d=mm">
         </div>
-        <div class="title"> <a href="story.php?story=<?php echo htmlentities($story_id); ?>"> <?php echo htmlentities($title); ?> </a> </div>
+        <div class="title"> <a href="story.php?story=<?php echo process_text($story_id); ?>"> <?php echo process_text($title); ?> </a> </div>
         
         <div class="info">
             <div class="clear"></div>
-            <span class="show-username"> Posted by: <?php echo htmlentities($commiter_username); ?> </span>
+            <span class="show-username"> Posted by: <?php echo process_text($commiter_username); ?> </span>
             <span class="info-line1">
-                <span class="comments"><?php echo htmlentities($number_comments); ?> comments</span><span class="separator"> - </span>
+                <span class="comments"><?php echo process_text($number_comments); ?> comments</span><span class="separator"> - </span>
                 <span class="time">
-                    <time datetime="<?php echo htmlentities($commit_time); ?>">
+                    <time datetime="<?php echo process_text($commit_time); ?>">
                         <?php
                             $story_time = strtotime($commit_time); 
-                            echo htmlentities(date("d F Y - h:ia", $story_time));
+                            echo process_text(date("d F Y - h:ia", $story_time));
                         ?>
                     </time>
                 </span>
             </span>
             <span class="info-line2">
-                <span class="category"><a href="home.php?category=<?php echo htmlentities($category_id); ?>"> <?php echo htmlentities($category_name); ?> </a></span>
+                <span class="category"><a href="home.php?category=<?php echo process_text($category_id); ?>"> <?php echo process_text($category_name); ?> </a></span>
                 <?php
                     if ($user_logged && ($admin=="true" || $commiter_id==$user)) {
                 ?>
                         <span class="separator"> - </span>
-                        <span class="edit"><a href="edit_story.php?story=<?php echo htmlentities($story_id); ?>"> edit </a></span>
+                        <span class="edit"><a href="edit_story.php?story=<?php echo process_text($story_id); ?>"> edit </a></span>
                         <span class="separator"> - </span>
                         <span class="remove">
                             <form class="form-remove" action="check_delete_story.php" method="POST">
-                                <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                                <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                                <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
+                                <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
                                 <input class="submit-remove" type="submit" value="remove"/>
                              </form>
                         </span>
@@ -115,7 +115,7 @@
 
     </header>
     <div class="article-content">
-        <p><?php echo nl2br(detect_links(htmlentities($story_text))); ?></p>
+        <p><?php echo nl2br(detect_links(process_text($story_text))); ?></p>
         <?php include "comments_main.php"; ?>
     </div>
 </article>

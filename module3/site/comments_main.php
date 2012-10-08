@@ -5,8 +5,8 @@
             <h3> Comment </h3>
             <form class="default-form" action="check_coment.php" method="post">
                 <textarea name="coment_text" class="body_text" rows="4"></textarea>
-                <input type="hidden" name="story_id" value="<?php echo htmlentities($story_id); ?>" />
-                <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                <input type="hidden" name="story_id" value="<?php echo process_text($story_id); ?>" />
+                <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
                 <input class="submit-default" type="submit" value="Comment">
             </form>
     <?php
@@ -56,40 +56,40 @@
     ?>
             <article class="comment">
                 <header>
-                    <span class="likes <?php echo htmlentities($likes_word); ?>"><?php echo htmlentities($number_of_likes); ?></span>
+                    <span class="likes <?php echo process_text($likes_word); ?>"><?php echo process_text($number_of_likes); ?></span>
                     <span class="like">
                         <form action="check_like_comment.php" method="post"> 
-                            <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                            <input type="hidden" value="<?php echo htmlentities($comment_id); ?>" name="comment_id"/>
-                            <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                            <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
+                            <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
+                            <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
                             <input class="submit-like" type="submit" name="positive" value="+">
                             <input class="submit-dislike" type="submit" name="negative" value="-">
                         </form>
                     </span>
 
                     <div class="user-expand">
-                        <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo htmlentities($commenter_gravatar); ?>?s=50&d=mm">
+                        <img class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo process_text($commenter_gravatar); ?>?s=50&d=mm">
                     </div>
 
-                    <div class="user-name"> <?php echo htmlentities($username); ?> </div>
+                    <div class="user-name"> <?php echo process_text($username); ?> </div>
                     <div class="clear"> </div>
                     <span class="time-comment">
-                        <time datetime="<?php echo htmlentities($commit_time); ?>">
+                        <time datetime="<?php echo process_text($commit_time); ?>">
                             <?php
                                 $story_time = strtotime($commit_time); 
-                                echo htmlentities(date("d F Y - h:ia", $story_time));
+                                echo process_text(date("d F Y - h:ia", $story_time));
                             ?>
                         </time>
                     </span>
                 </header>
                 <p class="comment-content">
-                    <?php echo nl2br(detect_links(htmlentities($text))); ?>
+                    <?php echo nl2br(detect_links(process_text($text))); ?>
                 </p>
                 <div class="delete">
                     <form action="check_delete_comment.php" method="POST">
-                        <input type="hidden" value="<?php echo htmlentities($story_id); ?>" name="story_id"/>
-                        <input type="hidden" value="<?php echo htmlentities($comment_id); ?>" name="comment_id"/>
-                        <input type="hidden" name="token" value="<?php echo htmlentities($_SESSION['token']); ?>" />
+                        <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
+                        <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
+                        <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
                         <input type="submit" value="Delete"/>
                      </form>
                 </div>
