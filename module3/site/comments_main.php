@@ -104,9 +104,9 @@
                     <?php echo nl2br(detect_links(process_text($text))); ?>
                 </p>
                 <?php
-                    $is_user = $commiter_id != $user;
-                    echo !$is_user;
-                    if ($admin || !$is_user) {
+                    $is_user = $commiter_id === $user;
+                    echo $is_user;
+                    if ($admin || $is_user) {
                         echo $admin;
                         echo $commiter_id;
                         echo $user;
