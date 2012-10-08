@@ -374,6 +374,7 @@ article a {
 	float: right;
 	top: 150px;
 	position: absolute;
+	display: inline;
 	
 }
 .clear {
