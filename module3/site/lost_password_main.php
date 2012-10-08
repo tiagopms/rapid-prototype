@@ -5,8 +5,8 @@
     <div class="article-content">
         <form class="default-form" action="check_lost_password.php" method="post">
             <div class="username">
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username">
+                <label for="username_password">Username:</label>
+                <input type="text" name="username" id="username_password">
             </div>
             <div class="email">
                 <label for="email">Email:</label>
