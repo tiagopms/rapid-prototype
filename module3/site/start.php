@@ -1,5 +1,6 @@
 <?php
     session_start();
+    header('Content-Type: text/html; charset=utf-8'); 
     date_default_timezone_set('America/Chicago');
     if (isset($user_logged) && (isset($_SESSION['user_id']) xor $user_logged)) {
         $c = 0;
