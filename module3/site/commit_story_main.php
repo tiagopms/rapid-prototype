@@ -35,7 +35,7 @@
             </div>
             <div class="body_text">
                 <label for="body_text">Body text:</label>
-                <textarea class="body_text" name="body_text" rows="20" cols="100"><?php echo process_text($story_body_text); ?></textarea>
+                <textarea class="body_text" id="body_text" name="body_text" rows="20" cols="100"><?php echo process_text($story_body_text); ?></textarea>
             </div>
             <input type="hidden" name="story_id" value="<?php echo process_text($story_id); ?>" />
             <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
