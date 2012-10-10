@@ -75,16 +75,21 @@
             <article class="comment">
                 <header>
                     <span class="likes <?php echo process_text($likes_word); ?>"><?php echo process_text($number_of_likes); ?></span>
-                    <div class="like">
-                        <form action="check_like_comment.php" method="post"> 
-                            <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
-                            <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
-                            <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
-                            <input class="submit-like" type="submit" name="positive" value="+">
-                            <input class="submit-dislike" type="submit" name="negative" value="-">
-                        </form>
-                    </div>
-
+                    <?php
+                        if ($user_logged) {
+                    ?>
+                            <div class="like">
+                                <form action="check_like_comment.php" method="post"> 
+                                    <input type="hidden" value="<?php echo process_text($story_id); ?>" name="story_id"/>
+                                    <input type="hidden" value="<?php echo process_text($comment_id); ?>" name="comment_id"/>
+                                    <input type="hidden" name="token" value="<?php echo process_text($_SESSION['token']); ?>" />
+                                    <input class="submit-like" type="submit" name="positive" value="+">
+                                    <input class="submit-dislike" type="submit" name="negative" value="-">
+                                </form>
+                            </div>
+                    <?php
+                        }
+                    ?>
                     <div class="user-expand">
                         <img alt="user image"  class="user-image-expand" src="http://en.gravatar.com/avatar/<?php echo process_text($commenter_gravatar); ?>?s=50&d=mm">
                     </div>
@@ -104,8 +109,7 @@
                     <?php echo nl2br(detect_links(process_text($text))); ?>
                 </p>
                 <?php
-                    $is_user = $commiter_id == $user;
-                    if ($admin || $is_user) {
+                    if ($user_logged && ($admin || ($commiter_id == $user))){
                 ?>
                         <div class="edit-comment" id="edit-comment-<?php echo process_text($comment_id); ?>">
                             <form action="check_edit_comment.php" method="POST">
