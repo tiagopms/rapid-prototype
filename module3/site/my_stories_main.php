@@ -74,7 +74,7 @@
                 <header>
                     <div class="user">
                         <span class="likes <?php echo process_text($likes_word); ?>"><?php echo process_text($number_likes); ?></span>
-                        <img alt="user image"  class="user-image" src="http://en.gravatar.com/avatar/<?php echo process_text($commiter_gravatar);?>?s=40&d=mm">
+                        <img alt="user image"  class="user-image" src="http://en.gravatar.com/avatar/<?php echo process_text($commiter_gravatar);?>?s=40&amp;d=mm">
                         <span class="show-username"> <?php echo process_text($commiter_username); ?> </span>
                     </div>
                     <div class="title"> <h2><a href="story.php?story=<?php echo process_text($story_id); ?>"> <?php echo process_text($title); ?> </a></h2> </div>
