@@ -8,8 +8,11 @@
 			var xmlHttp = new XMLHttpRequest();
 			xmlHttp.open("GET", "http://research.engineering.wustl.edu/~todd/cse330/module4/weather_json.php", true);
 			xmlHttp.addEventListener("load", function (event) {
-
-		    	alert( "Your file contains the text: " + event.target.responseText );
+				var jsonData = JSON.parse(event.target.responseText);
+				var city = jsonData.location.city;
+				var state = jsonData.location.state;
+		    	alert( "city:" + city);
+		    	alert( "state:" + state);
 			        //the_object = JSON.parse( http_request.responseText );
 
        		}, false);
