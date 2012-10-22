@@ -9,7 +9,7 @@
 			xmlHttp.open("GET", "http://research.engineering.wustl.edu/~todd/cse330/module4/weather_json.php", true);
 			xmlHttp.addEventListener("load", function (event) {
 				var jsonData = JSON.parse(event.target.responseText);
-				var weatherloc = document.getElementByClassName("weather-loc");
+				var weatherloc = document.getElementsByClassName("weather-loc")[0];
 				var city = document.createElement("strong");
 				city.appendChild(document.createTextNode(jsonData.location.city));
 				weatherloc.appendChild(city);
