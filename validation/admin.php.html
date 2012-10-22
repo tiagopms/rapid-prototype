@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Simple News - Admin</title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="admin.php_files/screen.css" rel="stylesheet" type="text/css">
+        <script src="admin.php_files/jquery.js"></script>
+    </head>
+ 
+    <body>
+        <header class="site-header">
+    <div class="wrapper">
+        <div class="left-header">
+            <a class="home-link" href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/index.php"> Simple News </a>
+                    </div>
+        <div class="right-header">
+            <img alt="user image" class="header-img" src="admin.php_files/7c6d7d37090e79ad22654ec7dd1ff2fa.jpeg"><span class="welcome"> Hello, admin! </span>        <a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/my_stories.php">View my Stories</a>
+        <form class="form-logout" action="logout.php" method="POST">
+            <input class="logout-button" value="Logout" type="submit">
+        </form>
+        <a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/change_password.php">Change Password</a>
+<a class="admin-cp" href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/admin.php"> Admin CP </a>
+
+            
+        </div>
+    </div>
+</header>        <div class="wrapper-content">
+            <section>
+                <div class="wrapper-articles">
+                    <article>
+    <header>
+        <div class="title"><h2><a href="#"> Add new category </a></h2></div>
+    </header>
+    <div class="article-content">
+        <form class="default-form" action="check_add_category.php" method="post">
+            <div class="category_name">
+                <label for="category_name">Name:</label>
+                <input name="category_name" id="category_name" type="text">
+            </div>
+            <input name="token" value="kKxBX5icRpKSmoxaChSiF1M4EQIIxwDI71aU" type="hidden">
+            <input class="submit-default" name="submit" value="Submit" type="submit">
+        </form>            
+    </div>
+</article>
+
+<article>
+    <header>
+        <div class="title"><h2><a href="#"> Delete category </a></h2></div>
+    </header>
+    <div class="article-content">
+        <form class="default-form" action="check_delete_category.php" method="post">
+            <div class="category">
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                    <option selected="selected" value="6">Gossip</option><option value="7">Scientific</option><option value="8">Interesting</option><option value="9">Contos</option><option value="11">Blablabla</option>                </select> 
+            </div>
+            <input name="token" value="kKxBX5icRpKSmoxaChSiF1M4EQIIxwDI71aU" type="hidden">
+            <input class="submit-default" name="submit" value="Submit" type="submit">
+        </form>            
+    </div>
+</article>
+
+<article>
+    <header>
+        <div class="title"><h2><a href="#"> Add admin </a></h2></div>
+    </header>
+    <div class="article-content">
+        <form class="default-form" action="check_add_admin.php" method="post">
+            <div class="user_name">
+                <label for="user">User:</label>
+                <select name="new_admin_id" id="user">
+                    <option selected="selected" value="5">Marcelinho</option><option value="6">joao</option><option value="8">t.piment</option>                </select> 
+            </div>
+            <input name="token" value="kKxBX5icRpKSmoxaChSiF1M4EQIIxwDI71aU" type="hidden">
+            <input class="submit-default" name="submit" value="Submit" type="submit">
+        </form>            
+    </div>
+</article>
+                </div>
+            </section>
+            <aside>
+                <div class="wrapper-aside">
+                    <h2>Categories</h2>
+<ul>
+	<li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php"> All </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=6"> Gossip </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=7"> Scientific </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=8"> Interesting </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=9"> Contos </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=11"> Blablabla </a></li></ul>                </div>
+            </aside>
+            <div class="clear-footer"></div>
+        </div>
+
+        <footer>
+            <p>Rapid Prototype Development and Creative Programming</p>
+            <p>João Felipe Nicolaci Pimentel</p>
+            <p>Tiago Pimentel Martins da Silva</p>
+            
+        </footer>
+    
+</body></html>

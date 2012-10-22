@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<script type="text/javascript">
+		fetchWeather = function () {
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open("GET", "http://research.engineering.wustl.edu/~todd/cse330/module4/weather_json.php", true);
+			xmlHttp.addEventListener("load", function (event) {
+
+		    	alert( "Your file contains the text: " + event.target.responseText );
+			        //the_object = JSON.parse( http_request.responseText );
+
+       		}, false);
+
+			//xmlHttp.onreadystatechange = ;
+       		xmlHttp.send(null);
+		};
+	</script>
+</head>
+<body>
+	
+</body>
+	<script type="text/javascript">
+		fetchWeather();
+		
+	</script>
+</html>

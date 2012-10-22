@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Simple News - Story</title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="story.php_files/screen.css" rel="stylesheet" type="text/css">
+        <script src="story.php_files/jquery.js"></script>
+    </head>
+ 
+    <body>
+        <header class="site-header">
+    <div class="wrapper">
+        <div class="left-header">
+            <a class="home-link" href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/index.php"> Simple News </a>
+                    </div>
+        <div class="right-header">
+            <img alt="user image" class="header-img" src="story.php_files/7c6d7d37090e79ad22654ec7dd1ff2fa_002.jpeg"><span class="welcome"> Hello, joao! </span>        <a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/my_stories.php">View my Stories</a>
+        <form class="form-logout" action="logout.php" method="POST">
+            <input class="logout-button" value="Logout" type="submit">
+        </form>
+        <a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/change_password.php">Change Password</a>
+
+
+            
+        </div>
+    </div>
+</header>        <div class="wrapper-content">
+            <section>
+                <div class="wrapper-articles">
+                    
+<article>
+    <header class="header-article-expand">
+        <span class="likes positive">3</span>
+                        <div class="like">
+                    <form action="check_like.php" method="post"> 
+                        <input value="21" name="story_id" type="hidden">
+                        <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                        <input class="submit-like" name="positive" value="+" type="submit">
+                        <input class="submit-dislike" name="negative" value="-" type="submit">
+                    </form>
+                </div>
+           
+        <div class="user-expand">
+            <img alt="user image" class="user-image-expand" src="story.php_files/2febc95459a1a72a16cb85331f54155a.jpeg">
+        </div>
+        <div class="title"> <a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/story.php?story=21"> Machine Learning </a> </div>
+        
+        <div class="info">
+            <div class="clear"></div>
+            <span class="show-username"> Posted by: tiagopms </span>
+            <span class="info-line1">
+                <span class="comments">4 comments</span><span class="separator"> - </span>
+                <span class="time">
+                    <time datetime="2012-10-08 04:59:57">
+                        08 October 2012 - 04:59am                    </time>
+                </span>
+            </span>
+            <div class="info-line2">
+                <span class="category"><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=7"> Scientific </a></span>
+                            </div>
+        </div>
+
+    </header>
+    <div class="article-content">
+        <p>Machine learning, a branch of artificial intelligence, is a 
+scientific discipline concerned with the design and development of 
+algorithms that take as input empirical data, such as that from sensors 
+or databases, and yield patterns or predictions thought to be features 
+of the underlying mechanism that generated the data. A learner can take 
+advantage of examples (data) to capture characteristics of interest of 
+their unknown underlying probability distribution. Data can be seen as 
+instances of the possible relations between observed variables. A major 
+focus of machine learning research is the design of algorithms that 
+recognize complex patterns and make intelligent decisions based on input
+ data. One fundamental difficulty is that the set of all possible 
+behaviors given all possible inputs is too large to be included in the 
+set of observed examples (training data). Hence the learner must 
+generalize from the given examples in order to produce a useful output 
+in new cases!<br>
+-- Taken from wikipedia</p>
+        <script type="text/javascript">
+    $(document).ready(function() {
+        $(".edit-comment").hide();
+        $(".edit-comment-link").click(function() {
+            var id = $(this).attr('id').split("-")[1];
+            if ($(this).text() == "Edit") {
+                $(this).text("Cancel editing");
+                $("#show-comment-"+id).hide(); 
+                $("#edit-comment-"+id).show();
+            } else {
+                $(this).text("Edit");
+                $("#show-comment-"+id).show(); 
+                $("#edit-comment-"+id).hide();
+            }
+        });
+    });
+    
+</script>
+<div class="comments">
+                <h3> Comment </h3>
+            <form class="default-form" action="check_coment.php" method="post">
+                <textarea name="coment_text" class="body_text" rows="4"></textarea>
+                <input name="story_id" value="21" type="hidden">
+                <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                <input class="submit-default" value="Comment" type="submit">
+            </form>
+        <h3> Comments </h3>
+                <article class="comment">
+                <header>
+                    <span class="likes ">0</span>
+                    <div class="like">
+                        <form action="check_like_comment.php" method="post"> 
+                            <input value="21" name="story_id" type="hidden">
+                            <input value="24" name="comment_id" type="hidden">
+                            <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                            <input class="submit-like" name="positive" value="+" type="submit">
+                            <input class="submit-dislike" name="negative" value="-" type="submit">
+                        </form>
+                    </div>
+
+                    <div class="user-expand">
+                        <img alt="user image" class="user-image-expand" src="story.php_files/7c6d7d37090e79ad22654ec7dd1ff2fa.jpeg">
+                    </div>
+
+                    <div class="user-name"> joao </div>
+                    <div class="clear"> </div>
+                    <span class="time-comment">
+                        <time datetime="2012-10-08 17:47:41">
+                            08 October 2012 - 05:47pm                        </time>
+                    </span>
+                </header>
+                <p class="comment-content" id="show-comment-24">
+                    (<a href="http://static.nomeu.com.br/img/news/fd119588968efbfb44970440e0ad233d1.jpg">http://static.nomeu.com.br/img/news/fd119588968efbfb44970440e0ad233d1.jpg</a>)                 </p>
+                                        <div style="display: none;" class="edit-comment" id="edit-comment-24">
+                            <form action="check_edit_comment.php" method="POST">
+                                <textarea name="coment_text" class="body_text" rows="4">(http://static.nomeu.com.br/img/news/fd119588968efbfb44970440e0ad233d1.jpg) </textarea>
+                                <input value="21" name="story_id" type="hidden">
+                                <input value="24" name="comment_id" type="hidden">
+                                <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                                <input value="Edit" type="submit">
+                            </form>
+                        </div>
+                        <a class="edit-comment-link" id="link-24">Edit</a>
+                        <div class="delete">
+                            <form action="check_delete_comment.php" method="POST">
+                                <input value="21" name="story_id" type="hidden">
+                                <input value="24" name="comment_id" type="hidden">
+                                <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                                <input value="Delete" type="submit">
+                             </form>
+                        </div>
+                            </article>
+                <article class="comment">
+                <header>
+                    <span class="likes ">0</span>
+                    <div class="like">
+                        <form action="check_like_comment.php" method="post"> 
+                            <input value="21" name="story_id" type="hidden">
+                            <input value="23" name="comment_id" type="hidden">
+                            <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                            <input class="submit-like" name="positive" value="+" type="submit">
+                            <input class="submit-dislike" name="negative" value="-" type="submit">
+                        </form>
+                    </div>
+
+                    <div class="user-expand">
+                        <img alt="user image" class="user-image-expand" src="story.php_files/7c6d7d37090e79ad22654ec7dd1ff2fa.jpeg">
+                    </div>
+
+                    <div class="user-name"> joao </div>
+                    <div class="clear"> </div>
+                    <span class="time-comment">
+                        <time datetime="2012-10-08 17:44:47">
+                            08 October 2012 - 05:44pm                        </time>
+                    </span>
+                </header>
+                <p class="comment-content" id="show-comment-23">
+                    ahh<br>
+                </p>
+                                        <div style="display: none;" class="edit-comment" id="edit-comment-23">
+                            <form action="check_edit_comment.php" method="POST">
+                                <textarea name="coment_text" class="body_text" rows="4">ahh
+</textarea>
+                                <input value="21" name="story_id" type="hidden">
+                                <input value="23" name="comment_id" type="hidden">
+                                <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                                <input value="Edit" type="submit">
+                            </form>
+                        </div>
+                        <a class="edit-comment-link" id="link-23">Edit</a>
+                        <div class="delete">
+                            <form action="check_delete_comment.php" method="POST">
+                                <input value="21" name="story_id" type="hidden">
+                                <input value="23" name="comment_id" type="hidden">
+                                <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                                <input value="Delete" type="submit">
+                             </form>
+                        </div>
+                            </article>
+                <article class="comment">
+                <header>
+                    <span class="likes ">0</span>
+                    <div class="like">
+                        <form action="check_like_comment.php" method="post"> 
+                            <input value="21" name="story_id" type="hidden">
+                            <input value="22" name="comment_id" type="hidden">
+                            <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                            <input class="submit-like" name="positive" value="+" type="submit">
+                            <input class="submit-dislike" name="negative" value="-" type="submit">
+                        </form>
+                    </div>
+
+                    <div class="user-expand">
+                        <img alt="user image" class="user-image-expand" src="story.php_files/b21019653f7006baa820cca6f1477dbc.jpeg">
+                    </div>
+
+                    <div class="user-name"> Marcelinho </div>
+                    <div class="clear"> </div>
+                    <span class="time-comment">
+                        <time datetime="2012-10-08 17:02:02">
+                            08 October 2012 - 05:02pm                        </time>
+                    </span>
+                </header>
+                <p class="comment-content" id="show-comment-22">
+                    blabla<br>
+s                </p>
+                            </article>
+                <article class="comment">
+                <header>
+                    <span class="likes ">0</span>
+                    <div class="like">
+                        <form action="check_like_comment.php" method="post"> 
+                            <input value="21" name="story_id" type="hidden">
+                            <input value="21" name="comment_id" type="hidden">
+                            <input name="token" value="2KLmBln4m2RHB74IakTxkwikT60t3QzVqb8R" type="hidden">
+                            <input class="submit-like" name="positive" value="+" type="submit">
+                            <input class="submit-dislike" name="negative" value="-" type="submit">
+                        </form>
+                    </div>
+
+                    <div class="user-expand">
+                        <img alt="user image" class="user-image-expand" src="story.php_files/b21019653f7006baa820cca6f1477dbc.jpeg">
+                    </div>
+
+                    <div class="user-name"> Marcelinho </div>
+                    <div class="clear"> </div>
+                    <span class="time-comment">
+                        <time datetime="2012-10-08 17:01:55">
+                            08 October 2012 - 05:01pm                        </time>
+                    </span>
+                </header>
+                <p class="comment-content" id="show-comment-21">
+                    bla                </p>
+                            </article>
+    </div>    </div>
+</article>                </div>
+            </section>
+            <aside>
+                <div class="wrapper-aside">
+                    <h2>Categories</h2>
+<ul>
+	<li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php"> All </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=6"> Gossip </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=7"> Scientific </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=8"> Interesting </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=9"> Contos </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=11"> Blablabla </a></li></ul>                </div>
+            </aside>
+            <div class="clear-footer"></div>
+        </div>
+
+        <footer>
+            <p>Rapid Prototype Development and Creative Programming</p>
+            <p>João Felipe Nicolaci Pimentel</p>
+            <p>Tiago Pimentel Martins da Silva</p>
+            
+        </footer>
+    
+		
+
+
+</body></html>

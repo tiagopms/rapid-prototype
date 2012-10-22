@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Simple News - Home</title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="home2.php_files/screen.css" rel="stylesheet" type="text/css">
+        <script src="home2.php_files/jquery.js"></script>
+    </head>
+ 
+    <body>
+        <header class="site-header">
+    <div class="wrapper">
+        <div class="left-header">
+            <a class="home-link" href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/index.php"> Simple News </a>
+                    </div>
+        <div class="right-header">
+            <img alt="user image" class="header-img" src="home2.php_files/7c6d7d37090e79ad22654ec7dd1ff2fa.jpeg"><span class="welcome"> Hello, admin! </span>        <a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/my_stories.php">View my Stories</a>
+        <form class="form-logout" action="logout.php" method="POST">
+            <input class="logout-button" value="Logout" type="submit">
+        </form>
+        <a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/change_password.php">Change Password</a>
+<a class="admin-cp" href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/admin.php"> Admin CP </a>
+
+            
+        </div>
+    </div>
+</header>        <div class="wrapper-content">
+            <section>
+                <div class="wrapper-articles">
+                                <article>
+                <header>
+                    <div class="user">
+                        <span class="likes positive">3</span>
+                        <img alt="user image" class="user-image" src="home2.php_files/2febc95459a1a72a16cb85331f54155a.jpeg">
+                        <span class="show-username"> tiagopms </span>
+                    </div>
+                    <div class="title"> <h2><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/story.php?story=21"> Machine Learning </a></h2> </div>
+                    <div class="info">
+                        <span class="info-line1">
+                            <span class="comments">4 comments</span><span class="separator"> - </span>
+                            <span class="time">
+                                <time datetime="2012-10-08 04:59:57">
+                                    08 October 2012 - 04:59am                                </time>
+                            </span>
+                        </span>
+                        <div class="info-line2">
+                            <span class="category"><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=7"> Scientific </a></span>
+                            
+                                                                <span class="separator"> - </span>
+                                    <span class="edit"><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/edit_story.php?story=21"> edit </a></span>
+                                    <span class="separator"> - </span>
+                                    <div class="remove">
+                                        <form class="form-remove" action="check_delete_story.php" method="POST">
+                                            <input value="21" name="story_id" type="hidden">
+                                            <input name="token" value="kRYV4h9d6G1KChRnZPaiExICXQZEw4gHL5tF" type="hidden">
+                                            <input class="submit-remove" value="remove" type="submit">
+                                         </form>
+                                    </div>
+                            
+                        </div>
+                    </div>
+
+                </header>
+                <p class="article-content">Machine learning, a branch of
+ artificial intelligence, is a scientific discipline concerned with the 
+design and development of al</p>
+            </article>
+
+<div class="paginate">
+    <ul>
+        <li><span class="current">1</span></li>    </ul>
+</div>
+
+        <div class="commit_story">
+            <a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/commit_story.php"> Commit new story </a>
+        </div>
+                </div>
+            </section>
+            <aside>
+                <div class="wrapper-aside">
+                    <h2>Categories</h2>
+<ul>
+	<li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php"> All </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=6"> Gossip </a></li><li><a id="current" href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=7"> Scientific </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=8"> Interesting </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=9"> Contos </a></li><li><a href="http://ec2-23-22-90-112.compute-1.amazonaws.com/%7Ejoao/site/home.php?category=11"> Blablabla </a></li></ul>                </div>
+            </aside>
+            <div class="clear-footer"></div>
+        </div>
+
+        <footer>
+            <p>Rapid Prototype Development and Creative Programming</p>
+            <p>João Felipe Nicolaci Pimentel</p>
+            <p>Tiago Pimentel Martins da Silva</p>
+            
+        </footer>
+    
+</body></html>

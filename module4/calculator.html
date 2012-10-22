@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator JS</title>
+	
+</head>
+<body>
+	<form>
+		<p>
+			<label for="first">First:</label>
+			<input type="text" name="first" id="first"/>
+		</p>
+		<p>
+			<label for="second">Second:</label>
+			<input type="text" name="second" id="second"/>
+		</p>
+		<p>
+			<input class="operation" type="radio" name="operation" value="addition" id="addition" checked="checked"/>
+			<label for="addition"> Addition </label> <br>
+			<input class="operation" type="radio" name="operation" value="subtraction" id="subtraction"/>
+			<label for="subtraction"> Subtraction </label> <br>
+			<input class="operation" type="radio" name="operation" value="multiplication" id="multiplication"/>
+   		    <label for="multiplication"> Multiplication </label> <br>
+			<input class="operation" type="radio" name="operation" value="division" id="division"/>
+    	    <label for="division"> Division </label> <br>
+		</p>
+		<p>
+			<span id="result"> </span>
+		</p>
+		
+	</form>
+
+</body>
+	<script type="text/javascript">
+		calculate = function() {
+			var first = 1*(document.getElementById("first").value);
+			var second = 1*(document.getElementById("second").value);
+			var result = 0;
+			if (document.getElementById("addition").checked) {
+				result = first + second;
+			} 
+			if (document.getElementById("subtraction").checked) {
+				result = first - second;
+			}
+			if (document.getElementById("multiplication").checked) {
+				result = first * second;
+			} 
+			if (document.getElementById("division").checked) {
+				result = first / second;
+			}
+			document.getElementById("result").innerHTML=result;
+		};
+	
+		document.getElementById("first").addEventListener("keypress", calculate, true);
+		document.getElementById("second").addEventListener("keypress", calculate, true);
+		document.getElementById("first").addEventListener("keydown", calculate, true);
+		document.getElementById("second").addEventListener("keydown", calculate, true);
+		document.getElementById("first").addEventListener("keyup", calculate, true);
+		document.getElementById("second").addEventListener("keyup", calculate, true);
+		document.getElementById("addition").addEventListener("change", calculate, true);
+		document.getElementById("subtraction").addEventListener("change", calculate, true);
+		document.getElementById("multiplication").addEventListener("change", calculate, true);
+		document.getElementById("division").addEventListener("change", calculate, true);
+	</script>
+</html>
