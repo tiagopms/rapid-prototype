@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Calendar </title>
+		
+		<link href="custom.css" rel="stylesheet" type="text/css"/>
+		<link rel='stylesheet' type='text/css' href='fullcalendar-1.5.4/fullcalendar/fullcalendar.css' />
+
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		
+		<script src="jscolor/jscolor.js"></script>
+		<script type='text/javascript' src='fullcalendar-1.5.4/fullcalendar/fullcalendar.js'></script>
+
+		<script src="custom.js"></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="wrapper">
+				<div class="left-header">
+					<a class="home-link" href="#"> Calendar </a>
+				</div>
+				<div class="right-header logged">
+					<img alt="user image" class="header-img" src="http://en.gravatar.com/avatar/11111111111111111111111111111111?s=70&amp;d=mm">
+					<span class="welcome"></span>
+					<a href="#" class="admin_button admin">Admin CP</a>
+					<a href="#" class="change_password_button">Change Password</a>
+					<button class="logout-button">Logout</button>
+				</div>
+				<div class="right-header unlogged">
+					<form class="login-form" method="post">
+						<div class="input-login">
+							<div class="username">
+								<label for="username">Username:</label>
+								<input type="text" name="username" id="username">
+							</div>
+							<div class="password">
+								<label for="password">Password:</label>
+								<input type="password" name="password" id="password">
+							</div>
+						</div>
+						<button type="button" class="submit-login"> Login </button>
+					</form>
+					<a href="#" class="lost_password_button">Lost Password?</a>
+					<a class="signup" href="#">Sign up</a>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper-content">
+			<section>
+				<div class="wrapper-articles">
+					<!--?php include "side_menu.php"; ?-->
+					<div id="calendar">
+					</div>
+				</div>
+			</section>
+			<aside>
+				<div class="wrapper-aside">
+					<!--?php include "side_menu.php"; ?-->
+					<h2>Calendars</h2>
+					<ul class="aside-calendars"></ul>
+					
+					<a href="#" class="new_calendar logged">Create new calendar</a>
+					<a href="#" class="new_event logged">Add event</a>
+				</div>
+			</aside>
+			<div class="clear-footer"></div>
+		</div>
+
+		<footer>
+			<p>Rapid Prototype Development and Creative Programming</p>
+			<p>Jo&atilde;o Felipe Nicolaci Pimentel</p>
+			<p>Tiago Pimentel Martins da Silva</p>
+		</footer>
+			
+		<div class="dialogs">
+			<div id="signup_dialog" class="dialog" title="Signup">
+				<form id="signup_form" class="default-form" action="check_signup.php" method="post">
+					<div class="username">
+						<label for="username_signup">Username:</label>
+						<input type="text" name="username" id="username_signup">
+					</div>
+					<div class="password">
+						<label for="password_signup">Password:</label>
+						<input type="password" name="password" id="password_signup">
+					</div>
+					<div class="repeat-password">
+						<label for="check_password">Repeat Password:</label>
+						<input type="password" name="check_password" id="check_password">
+					</div>
+					<div class="email">
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email">
+					</div>
+				</form>
+			</div>
+			<div id="lost_password_dialog" class="dialog" title="Change Password">
+				<form id="lost_password_form" class="default-form" method="post">
+					<div class="username">
+						<label for="username_lost_password">Username:</label>
+						<input type="text" name="username" id="username_lost_password">
+					</div>
+					<div class="email_address">
+						<label for="email_lost_password">Email:</label>
+						<input type="text" name="email" id="email_lost_password">
+					</div>
+                                        <input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="change_password_dialog" class="dialog" title="Change Password">
+				<form id="change_password_form" class="default-form" action="check_change_password.php" method="post">
+					<div class="old_password">
+						<label for="old_password_change_password">Old Password:</label>
+						<input type="password" name="old_password" id="old_password_change_password">
+					</div>
+					<div class="password">
+						<label for="password_change_password">Password:</label>
+						<input type="password" name="new_password" id="password_change_password">
+					</div>
+					<div class="repeat-password">
+						<label for="check_password_change_password">Repeat Password:</label>
+						<input type="password" name="check_password" id="check_password_change_password">
+					</div>
+                                        <input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="new_event_dialog" class="dialog" title="Add event">
+				<form id="new_event_form" class="default-form" method="post">
+					<div class="name">
+						<label for="name_new_event">Name:</label>
+						<input type="text" name="name" id="name_new_event">
+					</div>
+					<div class="new_event_calendari_div">
+						<label for="new_event_calendar">Calendar:</label>
+						<select id="new_event_calendar" class="new_event_calendar" name="calendar_id"></select>
+					</div>
+					<div class="new_event_description">
+						<label for="new_event_description">Description:</label>
+						<textarea rows="4" cols="19" name="description" id="new_event_description"></textarea>
+					</div>
+					<div class="new_event_date">
+						<label for="new_event_date">Date:</label>
+						<input type="text" name="date" id="new_event_date">
+					</div>
+					<div class="new_event_time">
+						<label for="new_event_time">Time:</label>
+						<select id="new_event_time" class="new_event_time_hour time_select" name="time_hour"></select>:
+						<select class="new_event_time_min time_select" name="time_min"></select>
+					</div>
+					<div class="chore">
+						<input type="checkbox" name="chore" id="chore">
+						<label class="chore_label" for="chore">Chore</label>
+					</div>
+					<input type="hidden" name="event_id" class="edit_event_id">
+                                        <input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="event_info_dialog" class="dialog" title="Event description">
+				<div class="name">
+					<span class="name_event_info">Name:</span>
+					<span id="name_event_info"></span>
+				</div>
+				<div class="new_event_calendari_div">
+					<span class="event_info_calendar">Calendar:</span>
+					<span class="event_info_calendar"></span>
+				</div>
+				<div class="new_event_description">
+					<span class="event_info_description">Description:</span>
+					<p id="event_info_description"></p>
+				</div>
+				<div class="new_event_date">
+					<span class="event_info_date">Date and time:</span>
+					<span id="event_info_date"></span>
+				</div>
+				<div class="event_info_complete_global">
+					<span class="complete_label_global">Complete: </span>
+					<span id="event_info_complete_global"></span>
+				</div>
+				<div class="event_info_complete">
+					<input type="checkbox" class="event_info_complete" id="event_info_complete">
+					<label class="complete_label" for="event_info_complete">Complete</label>
+				</div>
+			</div>
+			<div id="new_calendar_dialog" class="dialog" title="Add calendar">
+				<form id="new_calendar_form" class="default-form" method="post">
+					<div class="name">
+						<label for="name_new_calendar">Name:</label>
+						<input type="text" name="name" id="name_new_calendar">
+					</div>
+					<div class="color_div">
+						<label for="color">Color:</label>
+						<input type="text" class="color" name="color" id="color">
+					</div>
+					<div class="admin">
+						<input type="checkbox" name="global" id="global">
+						<label class="global_label" for="global">Global</label>
+					</div>
+					<input type="hidden" name="cal_id" class="edit_calendar_id">
+                                        <input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="admin_dialog" class="dialog" title="Admin">
+				<form id="admin_form" class="default-form" method="post">
+				    <div class="user_name">
+					<label for="user_admin">User:</label>
+					<select name="new_admin_id" id="user_admin"></select> 
+				    </div>
+				    <input type="hidden" name="token" class="token"/>
+				</form>            
+			</div>
+			<div id="calendar_second_button" class="second_button">
+				<ul>
+					<li><a href="#" class="delete_calendar">Delete</a></li>
+					<li><a href="#" class="edit_calendar">Edit</a></li>
+				</ul>
+			</div>
+			<div id="events_second_button" class="second_button">
+				<ul>
+					<li><a href="#" class="delete_events">Delete</a></li>
+					<li><a href="#" class="edit_events">Edit</a></li>
+				</ul>
+			</div>
+			<div id="error_dialog" class="dialog" title="Error"></div>
+		</div>
+	</body>
+</html>
