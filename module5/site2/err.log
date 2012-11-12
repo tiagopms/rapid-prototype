@@ -1,0 +1,12 @@
+
+ReferenceError: success is not defined
+    at Query._callback (/home/t.pimentel/.html/5module/site/server_categories_request.js:9:42)
+    at Query.Sequence.end (/home/t.pimentel/.html/5module/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
+    at Query._handleFinalResultPacket (/home/t.pimentel/.html/5module/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/home/t.pimentel/.html/5module/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/home/t.pimentel/.html/5module/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
+    at Parser.write (/home/t.pimentel/.html/5module/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
+    at Protocol.write (/home/t.pimentel/.html/5module/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
+    at Socket.ondata (stream.js:38:26)
+    at Socket.EventEmitter.emit (events.js:96:17)
+    at TCP.onread (net.js:396:14)

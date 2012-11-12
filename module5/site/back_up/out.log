@@ -1,0 +1,16 @@
+info: socket.io started
+Server is running on 8080
+game_request
+game_request
+{ msg: 'Hey', token: 'mEFArRv3a0N060dwSurc9n1U3HQGfJuucaaC' }
+Received chat message
+game_request
+info: socket.io started
+Server is running on 8080
+game_request
+game_request
+{ msg: 'hey', token: 'nAsTl1d7r1PcJ1PSyVGiNdgX74OGvaFZBb8N' }
+Received chat message
+game_request
+game_request
+game_request

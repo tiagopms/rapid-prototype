@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Calendar </title>
+		
+		<link href="custom.css" rel="stylesheet" type="text/css"/>
+		<link rel='stylesheet' type='text/css' href='fullcalendar-1.5.4/fullcalendar/fullcalendar.css' />
+
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		
+		<script src="jscolor/jscolor.js"></script>
+		<script type='text/javascript' src='fullcalendar-1.5.4/fullcalendar/fullcalendar.js'></script>
+		
+		<script src="http://ec2-50-17-138-98.compute-1.amazonaws.com:8080/socket.io/socket.io.js"></script>
+		<script src="custom.js"></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="wrapper">
+				<div class="left-header">
+					<a class="home-link" href="#"> Calendar </a>
+				</div>
+				<div class="right-header logged">
+					<img alt="user image" class="header-img" src="http://en.gravatar.com/avatar/11111111111111111111111111111111?s=70&amp;d=mm">
+					<span class="welcome"></span>
+					<a href="#" class="admin_button admin">Admin CP</a>
+					<a href="#" class="change_password_button">Change Password</a>
+					<button class="logout-button">Logout</button>
+				</div>
+				<div class="right-header unlogged">
+					<form class="login-form" method="post">
+						<div class="input-login">
+							<div class="username">
+								<label for="username">Username:</label>
+								<input type="text" name="username" id="username">
+							</div>
+							<div class="password">
+								<label for="password">Password:</label>
+								<input type="password" name="password" id="password">
+							</div>
+						</div>
+						<button type="button" class="submit-login"> Login </button>
+					</form>
+					<a href="#" class="lost_password_button">Lost Password?</a>
+					<a class="signup" href="#">Sign up</a>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper-content unlogged">
+			<section>
+				<div class="wrapper-articles">
+					<!--?php include "side_menu.php"; ?-->
+					<div id="initial_logo">
+					</div>
+				</div>
+			</section>
+			<div class="clear-footer"></div>
+		</div>
+		<div class="wrapper-content logged outside_room">
+			<section>
+				<div class="wrapper-articles">
+					<!--?php include "side_menu.php"; ?-->
+					<div id="Rooms">
+					</div>
+				</div>
+			</section>
+			<aside>
+				<div class="wrapper-aside">
+					<!--?php include "side_menu.php"; ?-->
+					<h2>Categories</h2>
+					<ul class="aside-categories"></ul>
+					
+					<a href="#" class="new_category logged admin">Create new category</a>
+				</div>
+			</aside>
+			<div class="clear-footer"></div>
+		</div>
+		<div class="wrapper-content logged in_room">
+			<section>
+				<div class="wrapper-articles">
+					<!--?php include "side_menu.php"; ?-->
+					<div id="current_draw">
+					</div>
+				</div>
+			</section>
+			<aside>
+				<div class="wrapper-aside">
+					<!--?php include "side_menu.php"; ?-->
+					<h2>Users in room</h2>
+					<ul class="aside-users"></ul>
+					
+					<a href="#" class="invite_user logged in_room">Invite user</a>
+				</div>
+			</aside>
+			<div class="clear-footer"></div>
+		</div>
+
+		<footer>
+			<p>Rapid Prototype Development and Creative Programming</p>
+			<p>Jo&atilde;o Felipe Nicolaci Pimentel</p>
+			<p>Tiago Pimentel Martins da Silva</p>
+		</footer>
+			
+		<div class="dialogs">
+			<div id="signup_dialog" class="dialog" title="Signup">
+				<form id="signup_form" class="default-form" action="check_signup.php" method="post">
+					<div class="username">
+						<label for="username_signup">Username:</label>
+						<input type="text" name="username" id="username_signup">
+					</div>
+					<div class="password">
+						<label for="password_signup">Password:</label>
+						<input type="password" name="password" id="password_signup">
+					</div>
+					<div class="repeat-password">
+						<label for="check_password">Repeat Password:</label>
+						<input type="password" name="check_password" id="check_password">
+					</div>
+					<div class="email">
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email">
+					</div>
+				</form>
+			</div>
+			<div id="lost_password_dialog" class="dialog" title="Change Password">
+				<form id="lost_password_form" class="default-form" method="post">
+					<div class="username">
+						<label for="username_lost_password">Username:</label>
+						<input type="text" name="username" id="username_lost_password">
+					</div>
+					<div class="email_address">
+						<label for="email_lost_password">Email:</label>
+						<input type="text" name="email" id="email_lost_password">
+					</div>
+                                        <input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="change_password_dialog" class="dialog" title="Change Password">
+				<form id="change_password_form" class="default-form" action="check_change_password.php" method="post">
+					<div class="old_password">
+						<label for="old_password_change_password">Old Password:</label>
+						<input type="password" name="old_password" id="old_password_change_password">
+					</div>
+					<div class="password">
+						<label for="password_change_password">Password:</label>
+						<input type="password" name="new_password" id="password_change_password">
+					</div>
+					<div class="repeat-password">
+						<label for="check_password_change_password">Repeat Password:</label>
+						<input type="password" name="check_password" id="check_password_change_password">
+					</div>
+                                        <input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="error_dialog" class="dialog" title="Error"></div>
+		</div>
+	</body>
+</html>

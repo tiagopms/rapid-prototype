@@ -1,0 +1,40 @@
+<input type="text" id="txt_msg" /> 
+<input type="submit" id="btn_send" value="Send" /> 
+<p><textarea id="txt_output" rows="20" cols="80" readonly="readonly"></textarea></p>
+<script src="http://ec2-50-17-138-98.compute-1.amazonaws.com:8080/socket.io/socket.io.js">
+</script>
+<script>
+document.addEventListener( 'DOMContentLoaded', function() {
+    var socket = io.connect( 'http://ec2-50-17-138-98.compute-1.amazonaws.com:8080' )
+      , txt_msg = document.getElementById( 'txt_msg' ) 
+      , btn_send = document.getElementById( 'btn_send' ) 
+      , txt_output = document.getElementById( 'txt_output' ); 
+
+
+    socket.on( 'error', function( data ) { 
+        if( data["code"] !== '' ) 
+            txt_output.value += data["code"] + ':' + data["message"] + '\n'; 
+    });
+
+    socket.on( 'chat_incMsg', function( data ) { 
+        if( data !== '' ) 
+            txt_output.value += data + '\n'; 
+    });
+ 
+    document.addEventListener( 'keypress', function( e ) {
+        if( e.keyCode === 13 ) { //if enter is pressed
+            sendMsg();
+        }
+    });
+ 
+    document.addEventListener( "click", function() {
+        sendMsg();
+    });
+ 
+    function sendMsg() {
+        socket.emit( 'chat_msg', txt_msg.value );
+        txt_msg.value = '';
+    }
+});
+
+</script>

@@ -1,0 +1,3 @@
+info: socket.io started
+Server is running on 8080
+warn: error raised: Error: listen EADDRINUSE
