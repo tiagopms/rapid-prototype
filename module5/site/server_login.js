@@ -1,4 +1,5 @@
 var functions     = require("./server_functions"),
+	crypto        = require("crypto"),
 	isnt_logged   = functions.isnt_logged,
 	random_token  = functions.random_token,
 	valid_entries = functions.valid_entries,
@@ -11,7 +12,7 @@ var functions     = require("./server_functions"),
 	passwordHash  = new PasswordHash();
 
 
-var login = function(socket, mysql) {
+var login = function(socket, mysql, users) {
 	socket.on("login", function(data) {
 		isnt_logged(socket.user.is_logged, socket);
 		if (socket.user.is_logged) {
@@ -41,6 +42,13 @@ var login = function(socket, mysql) {
 					socket.emit('error', {"message": "Username doesn't exists", "code": "4"});
 					return;
 				} 
+				console.log(users);
+				console.log(user);
+				console.log(Object.keys(users).indexOf(user.id))
+				if (Object.keys(users).indexOf(user.id + "") != -1) {
+					socket.emit('error', {"message": "User already signed up", "code": "4"});
+					return;
+				} 
 				var crypt_pass = user.crypt_pass;
 				if (!passwordHash.checkPassword(xss(data.password), crypt_pass)) {
 					socket.emit('error', {"message": "Password and username don't match", "code": "4"});
@@ -53,12 +61,17 @@ var login = function(socket, mysql) {
 				socket.user.email = user.email_address;
 				socket.user.admin = sanitize(user.admin).toBoolean();
 				socket.user.token = random_token();
+				users[user.id] = {
+					username: data.username,
+					gravatar: crypto.createHash('md5').update(user.email_address).digest("hex")
+				};
 
 				socket.join("user" + user.id);
 				socket.join("out");
 				
 				socket.emit('success', {"message": "Successfully logged in", "code": "4"});
-			
+				socket.broadcast.to("out").emit("update_users");
+					
 			}
 		);
 			

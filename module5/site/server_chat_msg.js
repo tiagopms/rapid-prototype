@@ -3,7 +3,8 @@ var functions     = require("./server_functions"),
 	check         = require("validator").check,
 	is_logged     = functions.is_logged,
 	in_room       = functions.in_room,
-	valid_entries = functions.valid_entries;
+	valid_entries = functions.valid_entries,
+	removeDiacritics = functions.removeDiacritics;
 
 var chat_msg = function(socket, mysql, rooms) {
 	socket.on( 'chat_msg', function( data ) {
@@ -28,6 +29,16 @@ var chat_msg = function(socket, mysql, rooms) {
 			if (!validEntries) {
 				return;
 			}
+			userWord = removeDiacritics(data.msg.toLowerCase());
+			serverWord = removeDiacritics(rooms[socket.user.room.id].word.toLowerCase());
+			if((userWord == serverWord) && (rooms[socket.user.room.id].drawer == socket.user.user_id)) {
+				var d = new Date();
+				var time = d.getHours() + ":" + d.getMinutes();
+				chat_response = {"sender": "", "msg": "Invalid atempt! You can't answer your word!", "time": time};
+				socket.emit( 'chat_response', chat_response);
+				
+				return;
+			}
 
 			var d = new Date();
 			var time = d.getHours() + ":" + d.getMinutes();
@@ -35,7 +46,9 @@ var chat_msg = function(socket, mysql, rooms) {
 			socket.broadcast.to('room' + socket.user.room.id).emit( 'chat_response', chat_response);
 			socket.emit( 'chat_response', chat_response);
 
-			if(data.msg == rooms[socket.user.room.id].word) {
+			if(userWord == serverWord) {
+				rooms[socket.user.room.id].users[socket.user.user_id].points++;
+				rooms[socket.user.room.id].users[rooms[socket.user.room.id].drawer].points++;
 				chat_response = {"sender": "", "msg": "User " + socket.user.username + " got the right answer!", "time": time};
 				socket.broadcast.to('room' + socket.user.room.id).emit( 'chat_response', chat_response);
 				socket.emit( 'chat_response', chat_response);

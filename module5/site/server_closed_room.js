@@ -18,12 +18,18 @@ var closed_room = function(socket, mysql) {
 			socket.emit('error', {"message": "Invalid request", "code": "13"});
 			return;
 		} 
+		if(socket.user.room == undefined) {
+			socket.emit('error', {"message": "A problem ocurred in your session", "code": "14"});
+			return;
+		}
+		
 		socket.user.in_room = false;
 		socket.leave('room' + socket.user.room.id);
 		socket.join('out');
 		delete socket.user.room;
 		
 		socket.emit('success', {"message": "Successfully left room", "code": "13"});
+		socket.join('out');
 	});
 };
 

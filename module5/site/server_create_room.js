@@ -7,6 +7,7 @@ var functions     = require("./server_functions"),
 	validator     = require("validator"),
 	sanitize      = validator.sanitize,
 	check         = validator.check,
+	crypto        = require('crypto'),
 	querystring   = require("querystring");
 
 var create_room = function(socket, mysql, rooms, room_id) {
@@ -23,11 +24,11 @@ var create_room = function(socket, mysql, rooms, room_id) {
 		
 		data = querystring.parse(data);
 	
-	
 		if(data.token != socket.user.token) {
 			socket.emit('error', {"message": "Invalid request", "code": "11"});
 			return;	
 		} 
+
 		var validEntries = true;
 		var is_private = sanitize(data.is_private).toBoolean();
 		var category_id = data.category_id;
@@ -55,27 +56,30 @@ var create_room = function(socket, mysql, rooms, room_id) {
 					return;
 				} 
 				var category_name = (category.found == 1) ? category.name : "All categories";
-				rooms[room_id] = {
+				rooms[room_id[0]] = {
 					name: data.name, 
 					private: is_private, 
 					category: category_id, 
 					category_name: category_name, 
 					host: socket.user.user_id, 
 					host_name: socket.user.username, 
+					drawer: socket.user.user_id, 
+					index: 0,
+					next_drawers: [socket.user.user_id],
 					drawing_time: data.drawing_time,
 					timer: (new Date).getTime(),
 					users: {}
 				};
-				rooms[room_id].users[socket.user.user_id] = socket.user.username;
+				rooms[room_id[0]].users[socket.user.user_id] = {"username": socket.user.username, "points": 0, "gravatar": crypto.createHash('md5').update(socket.user.email).digest("hex")};
 				socket.user.in_room = true;
 				socket.leave('out');
-				socket.join('room' + room_id);
+				socket.join('room' + room_id[0]);
 				socket.user.room = {
-					id: room_id, 
+					id: room_id[0], 
 					name: data.name, 
 					category: category_id
 				};
-				room_id++;	
+				room_id[0]++;	
 				socket.emit('success', {"message": "Room successfully created", "code": "11"});
 				socket.broadcast.to("out").emit('update');
 				

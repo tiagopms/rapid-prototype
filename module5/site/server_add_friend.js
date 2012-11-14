@@ -73,7 +73,7 @@ var add_friend = function(socket, mysql, rooms) {
 									response.msg = socket.user.username + " has added you, would you like to add him back?";
 									socket.broadcast.to("user" + data.user_id).emit("added_as_friend", response);
 								} 
-								if(!data.is_friend && (rooms[socket.user.room.id].host == socket.user.user_id)) {
+								if(!data.is_friend && (socket.user.in_room && rooms[socket.user.room.id].host == socket.user.user_id)) {
 									socket.broadcast.to("user" + data.user_id).emit("baned");
 								}
 							} 

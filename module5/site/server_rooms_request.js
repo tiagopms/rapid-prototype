@@ -1,9 +1,10 @@
 var functions = require("./server_functions"),
+    send_users_response = require("./server_users_request").send_users_response,
 	clone     = require("clone"),
 	is_logged = functions.is_logged,
 	xss       = functions.xss;
 
-var rooms_request = function(socket, mysql, rooms) {
+var rooms_request = function(socket, mysql, rooms, users) {
 	socket.on("rooms_request", function(data) {
 		is_logged(socket.user.is_logged, socket);
 		if (!socket.user.is_logged) {
@@ -55,6 +56,7 @@ var rooms_request = function(socket, mysql, rooms) {
 					}
 				}
 				socket.emit('rooms_response', room_response);
+				send_users_response(socket, mysql, users);
 			}
 		);
 	}); 

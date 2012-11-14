@@ -9,6 +9,7 @@ var is_logged;
 var timer_interval;
 var current_color = "#000000";
 var current_size = 2;
+var current_drawer = -1;
 var drawing = false,
 	drawer = false,
 	prev = {},
@@ -19,11 +20,11 @@ var drawing = false,
 function errorMessage(data) {
 	$("#error_dialog").text(data.message);
 	$("#error_dialog").dialog("open");
-}
+};
 
 function showLogged() {
 	socket.emit("status_request");	
-}
+};
 
 function close_btn(text_) {
 	return {
@@ -32,7 +33,7 @@ function close_btn(text_) {
           	$(this).dialog("close");
         }    
 	};
-}
+};
 
 function emit_btn(socket, text_, cmd_, func) {
 	return {
@@ -42,7 +43,14 @@ function emit_btn(socket, text_, cmd_, func) {
 			socket.emit(cmd_, data_);
 		} 
 	};
-}
+};
+
+function btn(text, func) {
+	return {
+		text: text,
+		click: func
+	};
+};
 
 function draw_line(ctx, start_x, start_y, end_x, end_y, color, size) {
 	ctx.lineCap = 'round'; 
@@ -54,8 +62,7 @@ function draw_line(ctx, start_x, start_y, end_x, end_y, color, size) {
 	ctx.moveTo(start_x  , start_y );
 	ctx.lineTo(end_x ,end_y  );
 	ctx.stroke();
-}
-
+};
 
 function getPosition(e) {
 	/*var targ;
@@ -79,6 +86,64 @@ function getPosition(e) {
 	return result;
 };
 
+function submit_login(event) {
+	socket.emit("login", $(".login-form").serialize());
+};
+
+function submit_lost_password() {
+	socket.emit("lost_password", $("#lost_password_form").serialize());
+};
+
+function submit_category() {
+	if(!is_edit_category) {
+		socket.emit("add_category", $("#new_category_form").serialize());
+	} else {
+		socket.emit("edit_category", $("#new_category_form").serialize());
+	}
+}; 
+
+function submit_logout() {
+	socket.emit("logout");
+}
+
+function submit_change_password() {
+	socket.emit("change_password", $("#change_password_form").serialize());
+}
+
+function submit_new_room() {
+	socket.emit("create_room", $("#new_room_form").serialize());
+}
+
+function submit_signup() {
+	socket.emit("signup", $("#signup_form").serialize());
+}
+
+function submit_add_friend_form() {
+	socket.emit("add_friend", {
+		form: $("#add_friend_form").serialize(), 
+		is_form: true
+	}); 
+}
+
+function sendMsg() {
+	var data = {"msg": $("#chat_msg").val(), "token": token}
+	socket.emit( 'chat_msg', data);
+	$("#chat_msg").val('');
+};
+
+
+function key_submit(func) {
+	return function(e) {
+		if (e.which == 13) {
+			func();
+			return false;
+		}
+	};
+};
+
+
+function none() {};
+
 $(document).ready(function() {
 	socket = io.connect('http://ec2-50-17-138-98.compute-1.amazonaws.com:8080');
 	
@@ -88,40 +153,9 @@ $(document).ready(function() {
 	}
 	var canvas = $('#paper'),
 		ctx = canvas[0].getContext('2d');
-	//	var c=document.getElementById("paper");
-	//	var ctx=c.getContext("2d");
 	
-	canvas[0].addEventListener('mousemove', function(e){
-		var current_time = (new Date).getTime();
-		p = getPosition(e);
-		if(drawer) {
-			if ((current_time - last_emit) > 50) {
-				socket.emit("drawing", {'x': p.x,
-										'y': p.y,
-										'color': current_color,
-										'size': current_size,
-										'drawing': drawing,
-										token: token});
-				last_emit = current_time;
-			}
-			if(drawing) {
-				draw_line(ctx, prev.x, prev.y, p.x, p.y, current_color, current_size);
-				prev.x = p.x;
-				prev.y = p.y;
-			}
-		}
-	}, false);
-	
-	canvas[0].addEventListener('mousedown',function(e) {
-		if (drawer){
-			p = getPosition(e);
-			e.preventDefault();
-			drawing = true;
-			prev.x = p.x;
-			prev.y = p.y;
-		}
-	}, false);
 
+	// Second Button
 	$(document).click(function (event) {
 		if(!second_button) {
 			$(".second_button").hide();
@@ -132,36 +166,15 @@ $(document).ready(function() {
 		return false;
 	});
 	
+
+
+	// Home link
 	$(".home-link").click(function(event) {
 		showLogged();
 	});
 
 
-	$(".search_input").keyup(function(evt) {
-		input = $(this);
-		$(".room_item").show();
-		if (input.val() != "") {
-			var rows = $(".room_item");
-			for (var i = 0; i < rows.length; i++) {
-				row = rows[i];
-				var classes = row.className.split(/\s/);
-				for (var j = 0, len = classes.length; i < len; i++){
-					if(/^category/.test(classes[i])) {
-						if (classes[i] != "category--1") {
-							if (!$("#"+classes[i]).hasClass("clicked")) {
-								$(row).hide();
-							}
-						}
-					}
-				}
-				if (($(row).find(".room_name").text().indexOf(input.val()) == -1) && ($(row).find(".room_host").text().indexOf(input.val()) == -1)) {
-					$(row).hide();
-				}
-
-			}
-		}
-	});
-
+	// Socket response
 	socket.on("draw_update", function(data) {
 		if (data.drawing) {
 			draw_line(ctx, prev.x, prev.y, data.x, data.y, data.color, data.size);
@@ -171,7 +184,6 @@ $(document).ready(function() {
 		prev.y = data.y;
 
 	});
-
 
 	socket.on("status_response", function(data) {
 		admin = false;
@@ -205,7 +217,6 @@ $(document).ready(function() {
 			}
 		}	
 	});
-
 
 	socket.on("categories_response", function(data) {
 		$(".category_select").html("");
@@ -246,31 +257,14 @@ $(document).ready(function() {
 			} );
 		}
 	});
-	$(".delete_category").click( function(event) {
-		socket.emit("del_category", {"category_id": clicked_category, "token": token});
-	} );
-	$(".add_as_admin").click( function(event) {
-		socket.emit("add_admin", {"new_admin_id": clicked_user,"token": token});
-	} );
-	$(".add_friend_user").click( function(event) {
-		socket.emit("add_friend", {"user_id": clicked_user, "is_friend": true,"token": token});
-	} );
-	$(".block_user").click( function(event) {
-		socket.emit("add_friend", {"user_id": clicked_user, "is_friend": false,"token": token});
-	} );
+
 	socket.on("added_as_friend", function(data) {
 		$("#add_friend_form")[0].reset();
 		$(".user_id_add_friend").val(data.user_id);
 		$(".is_friend_add_friend").val(true);
 		$("#add_friend_text").text(data.msg);
 		$("#answer_add_friend_dialog").dialog("open");
-	} );
-	$("#answer_add_friend_dialog").dialog({ autoOpen: false }, { 
-        buttons: [
-			emit_btn(socket, "Add as friend", "add_friend", function() { return {"form": $("#add_friend_form").serialize(), "is_form": true}; }),
-			close_btn("No")
-		]
-    });
+	});
 
 	socket.on("rooms_response", function(data) {
 		$(".rooms_list").html('<li class="head"><div class="room_row"><div class="room_name">Name</div><div class="room_category">Category</div><div class="room_host">Host</div></div></li>');
@@ -290,17 +284,33 @@ $(document).ready(function() {
 		$(".room_link").click(function(element) {
 			socket.emit("join_room", {"room_id": this.id.split("-")[1], "token": token});
 		});
-	} );
+	});
+	
 	socket.on("game_response", function(data) {
+		
+console.log("Game response!")
+console.log(data)
 		$(".room_title").html(data.name);
 		$(".aside-users").html("");
 		for(count in data.users) {
 			var is_friend = "";
+			var is_drawer = "";
 			if(data.users[count].is_friend)
 				is_friend = " is_friend";
 			if(count == data.my_id)
 				is_friend = " is_me";
-			$(".aside-users").append("<li><a href\"#\" class=\"user_item" + is_friend + "\" id=\"user-"+ count +"\">" + data.users[count].name + "</a></li>");
+			if (count == current_drawer) 
+				is_drawer = " is_drawer";
+			$(".aside-users").append(
+				"<li>"+
+					"<a href=\"#\" class=\"user_item" + is_friend + is_drawer + "\" id=\"user-"+ count +"\">"+
+						"<img class=\"room_user_image\" src=\"http://en.gravatar.com/avatar/"+data.users[count].gravatar+"?s=30&amp;d=mm\">"+
+						"<span class=\"room_username\">" + data.users[count].name + "</span>"+
+						"<span class=\"room_user_points\">" +data.users[count].points + "</span>"+
+						"<span class=\"clear\"></span>"+
+					"</a>"+
+				"</li>"
+			);
 		}
 		
 		$(".user_item").show();
@@ -328,32 +338,96 @@ $(document).ready(function() {
 		timer_interval = setInterval(function oi(){
 			socket.emit("get_timer", {token: token});
 		},500);
-	} );
+	});
+	
+	socket.on("update_users", function(data) {
+		console.log("update_users");
+		socket.emit("users_request");
+	});
+
+	socket.on("users_response", function(data) {
+		console.log(data);
+		console.log("users_response");
+		$(".aside-users-outside").html("");
+		for(count in data) {
+			var is_friend = "";
+			if(data[count].is_friend)
+				is_friend = " is_friend";
+			if(data[count].my_id)
+				is_friend = " is_me";
+			$(".aside-users-outside").append(
+				"<li>"+
+					"<a href=\"#\" class=\"user_item" + is_friend + "\" id=\"user-"+ count +"\">"+
+						"<img class=\"room_user_image\" src=\"http://en.gravatar.com/avatar/"+data[count].gravatar+"?s=30&amp;d=mm\">"+
+						"<span class=\"room_username\">" + data[count].name + "</span>"+
+						"<span class=\"clear\"></span>"+
+					"</a>"+
+				"</li>"
+			);
+		}
+		
+		$(".user_item").show();
+		
+		$(".user_item:not(.is_me)").bind("contextmenu", function(event) {
+			return false;
+		} );
+		$(".user_item:not(.is_me, .is_friend)").mousedown(function (event) {
+			second_button = true;
+			clicked_user = this.id.split("-")[1];
+			if(event.which == 3) {
+				$(".add_friend_user").show();
+				$("#user_second_button").css({top: event.pageY, left: event.pageX}).show();
+			}
+		} );
+		$(".user_item.is_friend:not(.is_me)").mousedown(function (event) {
+			second_button = true;
+			clicked_user = this.id.split("-")[1];
+			if(event.which == 3) {
+				$(".add_friend_user").hide();
+				$("#user_second_button").css({top: event.pageY, left: event.pageX}).show();
+			}
+		} );
+
+		timer_interval = setInterval(function oi(){
+			socket.emit("get_timer", {token: token});
+		},500);
+	});
+
 	socket.on("update_timer", function(data) {
 		if($(".draw_timer").text() != data)
 			$(".draw_timer").html(data);
 	});
+
 	socket.on("delete_timer_interval", function(data) {
 		drawing = false;
 		drawer = false;
 		clearInterval(timer_interval);
 	});
+
 	socket.on("new_round", function(data) {
+console.log("New round!");
+		drawer = false;
+		drawing = false;
 		$(".room_word").html("");
+		$(".give_up_btn").hide();
 		timer_interval = setInterval(function (){
 			socket.emit("get_timer", {token: token});
 		},500);
-		
+		current_drawer = data;
+		$(".user_item").removeClass("is_drawer");
+		$("#user-"+current_drawer).addClass("is_drawer");
 		ctx.clearRect (0, 0, canvas[0].width, canvas[0].height);
 	});
-	socket.on("drawing_word", function(data) {
-		drawer = true;
-		$(".room_word").html("Your word is: " + data);
-	});
-	$(document).bind('mouseup mouseleave', function(){
-		drawing = false;
-	});
 
+	socket.on("drawing_word", function(data) {
+		console.log("drawing_word");
+		console.log(data);
+		drawer = true;
+		$(".room_word").show();
+		$(".give_up_btn").show();
+		$(".room_word").html("<span class=\"room_word_general\">Your word is:</span><span class=\"room_word_specific\">" + data + "</span>");
+	});
+	
 	socket.on("edit_category_dialog_response", function(data) {
 		$("#category_name_new_category").val(data.name);
 		$("#words_new_category").val(data.words.join("\r\n"));
@@ -366,142 +440,90 @@ $(document).ready(function() {
 		socket.emit("closed_room", {"token": token});
 	});
 	
-	//socket response
 	socket.on("error", function(data) {
-		if (data.code == "0") {
-			$("#signup_dialog").dialog("close");
-			$("#new_category_dialog").dialog("close");
-			$("#change_password_dialog").dialog("close");
-			$("#lost_password_dialog").dialog("close");
-			$("#new_category_dialog").dialog("close");
-			$("#new_room_dialog").dialog("close");
-		}
-		if (data.code == "2") { //signup
-			$("#signup_dialog").dialog("close");
-		} 
-		//if (data.code == "3") {} //logout
-		if (data.code == "5") { //new_category
-			$("#new_category_dialog").dialog("close");
-		}
-		//if (data.code == "10") {} //categories_request
-		if (data.code == "11") { //create_room
-			$("#new_room_dialog").dialog("close");
-		}
-		//if (data.code == "12") {} //game_request
-		//if (data.code == "13") {} //closed_room
-		//if (data.code == "14") {} //leave_room
-		if (data.code == "14") { //change_password
-			$("#change_password_dialog").dialog("close");
-		}
-		if (data.code == "15") { //lost_password
-			$("#lost_password_dialog").dialog("close");
-		}
-		if (data.code == "20") { //add_category
-			$("#new_category_dialog").dialog("close");
-		}
-		//if (data.code == "25") {} //del_category
-		//if (data.code == "27") {} //edit_category_request_dialog
+		console.log(data.code);
+		$(".ui-dialog-content").dialog("close");
 		if (data.code == "29") { //edit_category
-			$("#new_category_dialog").dialog("close");
 			if (is_logged) {
 				socket.emit("categories_request");
 			}
 		}
-		//if (data.code == "37") {} //chat_msg
 		errorMessage(data);	
 	});
+	
 	socket.on("success", function(data) {
+		$(".ui-dialog-content:not(#error_dialog)").dialog("close");
 		if (data.code == "2") { //signup
-			$("#signup_dialog").dialog("close");
 			$("#signup_form")[0].reset();
 		}
-		if (data.code == "3") { //logout
-			showLogged();
-		}
-		if (data.code == "4") { //login
-			showLogged();
-			$(".login-form")[0].reset();
-		}
-		if (data.code == "5") { //new_category
-			$("#new_category_dialog").dialog("close");
-		}
-		//if (data.code == "10") {} //categories_request
-		//if (data.code == "11") {} //create_room
 		if (data.code == "11") { //create_room
 			$("#chat_output").val("Welcome to the game!\nThanks for creating it!\n"); 
-			$("#new_room_dialog").dialog("close");
 		}
-		if (data.code == "12") { //join_room
+		if (data.code == "19") { //join_room
+			ctx.clearRect (0, 0, canvas[0].width, canvas[0].height);
+			$(".room_word").hide();
+			$(".give_up_btn").hide();
+console.log("Join!");
 			$("#chat_output").val("Welcome to the game!\n"); 
 		}
-		//if (data.code == "12") {} //game_request
-		//if (data.code == "13") {} //closed_room
-		//if (data.code == "14") {} //leave_room
 		if (data.code == "14") { //change_password
-			$("#change_password_dialog").dialog("close");
 			$("#change_password_form")[0].reset();
 		}
 		if (data.code == "15") { //lost_password
-			$("#lost_password_dialog").dialog("close");
 			$("#lost_password_form")[0].reset();
 		}
-		if (data.code == "20") { //add_category
-			$("#new_category_dialog").dialog("close");
-		}
-		//if (data.code == "25") {} //del_category
-		//if (data.code == "27") {} //edit_category_request_dialog
-		if (data.code == "29") { //edit_category
-			$("#new_category_dialog").dialog("close");
-		}
-		//if (data.code == "37") {} //chat_msg
-		if (data.code == "40") { //add friend
-			$("#answer_add_friend_dialog").dialog("close");
-		}
-
 		showLogged();	
 	});
+	
 	socket.on("update", function() {
 		showLogged();	
-	} );
+	});
+	
 	socket.on("baned", function() {
 		socket.emit("leave_room", {"token": token});
-	} );
+	});
 
-	//dialogs	
-	//signup dialog
-	$("#signup_dialog").dialog({ autoOpen: false }, { 
+	socket.on("erase", function(data) {
+		ctx.clearRect (0, 0, canvas[0].width, canvas[0].height);
+	});
+
+
+	//Signup
+	$("#signup_form").keypress(key_submit(submit_signup));
+	$("#signup_dialog").dialog({ autoOpen: false, modal: true }, { 
         buttons: [
-			emit_btn(socket, "Sign up", "signup", function() { return $("#signup_form").serialize(); }),
+			btn("Sign up", submit_signup),
 			close_btn("Cancel")
 		]
     });
-	//error dialog
-	$("#error_dialog").dialog({ autoOpen: false }, { 
+	
+	
+	//Error
+	$("#error_dialog").dialog({ autoOpen: false, modal: true }, { 
 		buttons: [close_btn("Ok")]
     });
 	
 
-	//change password dialog
-	$("#change_password_dialog").dialog({ autoOpen: false }, {
+	//Change Password
+	$("#change_password_form input").keypress(key_submit(submit_change_password));
+	$("#change_password_dialog").dialog({ autoOpen: false, modal: true }, {
         buttons: [
-			emit_btn(socket, "Submit", "change_password", function() { return $("#change_password_form").serialize(); }),
+			btn("Submit", submit_change_password),
 			close_btn("Cancel")			
         ] 
     });
-	$("#new_room_dialog").dialog({ autoOpen: false }, {
-		buttons: [
-			emit_btn(socket, "Submit", "create_room", function() { return $("#new_room_form").serialize(); }),
-			close_btn("Cancel")
-		]
-	});
+
 	$(".change_password_button").click(function(event) {
 		$("#change_password_form")[0].reset();
 		$("#change_password_dialog").dialog("open");
 	});
-	//lost password dialog
-	$("#lost_password_dialog").dialog({ autoOpen: false }, { 
+
+
+	//Lost Password
+	$("#lost_password_form input").keypress(key_submit(submit_lost_password));
+	$("#lost_password_dialog").dialog({ autoOpen: false, modal: true }, { 
 		buttons: [
-            emit_btn(socket, "Submit", "lost_password", function() { return $("#lost_password_form").serialize();}),	
+            btn("Submit", submit_lost_password),	
 			close_btn("Cancel")
         ] 
     });
@@ -511,8 +533,40 @@ $(document).ready(function() {
 	});
 
 
-	socket.on("erase", function(data) {
-		ctx.clearRect (0, 0, canvas[0].width, canvas[0].height);
+	//Drawing
+	canvas[0].addEventListener('mousemove', function(e){
+		var current_time = (new Date).getTime();
+		p = getPosition(e);
+		if(drawer) {
+			if ((current_time - last_emit) > 50) {
+				socket.emit("drawing", {'x': p.x,
+										'y': p.y,
+										'color': current_color,
+										'size': current_size,
+										'drawing': drawing,
+										token: token});
+				last_emit = current_time;
+			}
+			if(drawing) {
+				draw_line(ctx, prev.x, prev.y, p.x, p.y, current_color, current_size);
+				prev.x = p.x;
+				prev.y = p.y;
+			}
+		}
+	}, false);
+	
+	canvas[0].addEventListener('mousedown',function(e) {
+		if (drawer){
+			p = getPosition(e);
+			e.preventDefault();
+			drawing = true;
+			prev.x = p.x;
+			prev.y = p.y;
+		}
+	}, false);
+
+	$(document).bind('mouseup mouseleave', function(){
+		drawing = false;
 	});
 
 	$(".erase").click(function(evt) {
@@ -541,20 +595,97 @@ $(document).ready(function() {
 		}
 	});
 
-	//headers
+
+	// Search
+	$(".search_input").keypress(key_submit(none));
+
+	$(".search_input").keyup(function(evt) {
+		input = $(this);
+		$(".room_item").show();
+		if (input.val() != "") {
+			var rows = $(".room_item");
+			for (var i = 0; i < rows.length; i++) {
+				row = rows[i];
+				var classes = row.className.split(/\s/);
+				for (var j = 0, len = classes.length; i < len; i++){
+					if(/^category/.test(classes[i])) {
+						if (classes[i] != "category--1") {
+							if (!$("#"+classes[i]).hasClass("clicked")) {
+								$(row).hide();
+							}
+						}
+					}
+				}
+				if (($(row).find(".room_name").text().indexOf(input.val()) == -1) && ($(row).find(".room_host").text().indexOf(input.val()) == -1)) {
+					$(row).hide();
+				}
+
+			}
+		}
+	});
+
+
+	// Signup
 	$(".signup").click(function(event) {
 		$("#signup_form")[0].reset();
 		$("#signup_dialog").dialog("open");
 	});
 	
-	$(".logout-button").click(function(event) {
-		socket.emit("logout");
-	});
+
+	// Logout
+	$(".logout-button").click(submit_logout);
+
+
+	// Login
+	$(".submit-login").click(submit_login);
+	$(".login-form input").keypress(key_submit(submit_login));
 	
-	$(".submit-login").click( function(event) {
-		socket.emit("login", $(".login-form").serialize());
+
+	// New Room
+	$(".new_room").click(function(event) {
+		$("#new_room_form")[0].reset();
+		$("#room_time_new_room").val("60");
+		$("#new_room_dialog").dialog("open");
 	});
-	
+
+	$("#new_room_form input").keypress(key_submit(submit_new_room));
+	$("#new_room_dialog").dialog({ autoOpen: false, modal: true }, {
+		buttons: [
+			btn("Submit", submit_new_room),
+			close_btn("Cancel")
+		]
+	});
+
+
+	// Leave Room
+	$(".leave_room").click(function(event) {
+		socket.emit("leave_room", {"token": token});
+    });
+	$(".give_up_btn").click(function(event) {
+		socket.emit("give_up", {"token": token});
+	});
+
+
+
+	// Chat
+    $("#chat_msg").keypress(key_submit(sendMsg));
+    
+	$("#btn_send_chat_msg").click(sendMsg);
+    socket.on('chat_response', function( data ) { 
+    	$("#chat_output").val($("#chat_output").val() + data.time + " - " + data.sender + ":" + data.msg + '\n'); 
+		$("#chat_output").scrollTop($("#chat_output")[0].scrollHeight - $("#chat_output").height());
+    });
+
+
+	// Category 
+	$("#new_category_dialog").dialog({ autoOpen: false, width: 700, height: 600, modal: true }, { 
+		buttons: [	
+			btn("Submit", submit_category), 
+			close_btn("Cancel")
+		] 
+	});
+	$("#new_category_form input").keypress(key_submit(submit_category));
+     
 	$(".new_category").click(function(event) {
 		$("#new_category_form")[0].reset();
 		$("#new_category_dialog").dialog('option', 'title', 'New Category');
@@ -567,50 +698,41 @@ $(document).ready(function() {
 		$("#new_category_dialog").dialog('option', 'title', 'Edit Category');
 		socket.emit("edit_category_dialog_request", {category_id: clicked_category});
 	});
-
-	$(".new_room").click(function(event) {
-		$("#new_room_form")[0].reset();
-		$("#room_time_new_room").val("60");
-		$("#new_room_dialog").dialog("open");
-	});
-	$(".leave_room").click(function(event) {
-		socket.emit("leave_room", {"token": token});
-    });
-
-    $("#chat_msg").keypress(function(event) {
-        if( event.keyCode === 13 ) { //if enter is pressed
-            sendMsg();
-        }
-    });
-    $("#btn_send_chat_msg").click(function() {
-        sendMsg();
-    });
-    function sendMsg() {
-		var data = {"msg": $("#chat_msg").val(), "token": token}
-        socket.emit( 'chat_msg', data);
-        $("#chat_msg").val('');
-    }
-    socket.on('chat_response', function( data ) { 
-    	$("#chat_output").val($("#chat_output").val() + data.time + " - " + data.sender + ":" + data.msg + '\n'); 
-		$("#chat_output").scrollTop($("#chat_output")[0].scrollHeight - $("#chat_output").height());
-    });
 	
-	//right bar
-	$("#new_category_dialog").dialog({ autoOpen: false }, { 
-		buttons: [	
-			{
-				text: "Submit",
-				click: function() {
-					if(!is_edit_category) {
-						socket.emit("add_category", $("#new_category_form").serialize());
-					} else {
-						socket.emit("edit_category", $("#new_category_form").serialize());
-					}
-				} 
-			}, close_btn("Cancel")
-		] 
+	$(".delete_category").click( function(event) {
+		socket.emit("del_category", {"category_id": clicked_category, "token": token});
 	});
 
-	
+
+	// Add friend
+	$("#answer_add_friend_dialog").dialog({ autoOpen: false, modal: true }, { 
+        buttons: [
+			btn("Add as friend", submit_add_friend_form),
+			close_btn("No")
+		]
+    });
+
+	$(".add_friend_user").click( function(event) {
+		socket.emit("add_friend", {"user_id": clicked_user, "is_friend": true,"token": token});
+	} );
+
+
+	// Add admin
+	$(".add_as_admin").click( function(event) {
+		socket.emit("add_admin", {"new_admin_id": clicked_user,"token": token});
+	} );
+
+
+	// Block user
+	$(".block_user").click( function(event) {
+		socket.emit("add_friend", {"user_id": clicked_user, "is_friend": false,"token": token});
+	} );
+
+
+	// Close Dialog
+	$('.ui-widget-overlay').click(function() { $(".ui-dialog-content").dialog("close"); });
+$(".ui-widget-overlay").live("click", function() {  $(".ui-dialog-content").dialog("close"); } );
+
+	// Reload	
 	showLogged();
 } );

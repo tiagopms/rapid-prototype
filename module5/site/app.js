@@ -60,6 +60,7 @@ var signup                       = require("./server_signup").signup,
     change_password              = require("./server_change_password").change_password,
     categories_request           = require("./server_categories_request").categories_request,
     rooms_request                = require("./server_rooms_request").rooms_request,
+    users_request                = require("./server_users_request").users_request,
     game_request                 = require("./server_game_request").game_request,
     add_category                 = require("./server_add_category").add_category,
     edit_category                = require("./server_edit_category").edit_category,
@@ -75,8 +76,10 @@ var signup                       = require("./server_signup").signup,
     get_word                     = require("./server_get_word").get_word,
     add_admin                    = require("./server_admin").add_admin;
 
+var users = {};
 var rooms = {};
-var room_id = 0;
+var room_id = [];
+    room_id[0] = 0;
 
 var sessions = {};
 
@@ -99,13 +102,14 @@ server.sockets.on( 'connection', function( socket ) {
  
 	
     status_request (socket, mysql);
-    signup (socket, mysql);
-    logout (socket, sessions, hs.sessionID, rooms); 
-    login (socket, mysql);
+    signup (socket, mysql, users);
+    logout (socket, mysql, sessions, hs.sessionID, rooms, users); 
+    login (socket, mysql, users);
     lost_password (socket, mysql);
     change_password (socket, mysql);
     categories_request (socket, mysql);
-    rooms_request (socket, mysql, rooms);
+    rooms_request (socket, mysql, rooms, users);
+    users_request (socket, mysql, users);
     game_request (socket, mysql, rooms);
     add_category (socket, mysql);
     edit_category (socket, mysql);
@@ -117,7 +121,7 @@ server.sockets.on( 'connection', function( socket ) {
     add_friend (socket, mysql, rooms);
     edit_category_dialog_request (socket, mysql);
     chat_msg (socket, mysql, rooms);
-    disconnect (socket, mysql, rooms);
+    disconnect (socket, mysql, rooms, users);
     add_admin (socket, mysql, rooms);
 	
 	socket.on('get_timer', function(data) {
@@ -129,6 +133,10 @@ server.sockets.on( 'connection', function( socket ) {
 			socket.emit('error', {"message": "Invalid request", "code": "50"});
 			return;
 		} 
+		if(socket.user.room == undefined || rooms[socket.user.room.id] == undefined) {
+			socket.emit('error', {"message": "Room was closed", "code": "50"});
+			return;
+		}
 		var time = (rooms[socket.user.room.id].drawing_time - Math.floor(((new Date).getTime() - rooms[socket.user.room.id].timer)/1000));
 		if(time > 0) {
 			//console.log((new Date).getTime() - rooms[socket.user.room.id].timer);
@@ -136,21 +144,60 @@ server.sockets.on( 'connection', function( socket ) {
 		} else { //time over
 			socket.emit("delete_timer_interval");
 			
+			rooms[socket.user.room.id].timer = (new Date).getTime();
+			
 			var d = new Date();
 			var time = d.getHours() + ":" + d.getMinutes();
 			chat_response = {"sender": "", "msg": "Time over, no one got it right", "time": time};
 			socket.broadcast.to('room' + socket.user.room.id).emit( 'chat_response', chat_response);
 			socket.emit( 'chat_response', chat_response);
+			chat_response = {"sender": "", "msg": "The word was: " + rooms[socket.user.room.id].word, "time": time};
+			socket.broadcast.to('room' + socket.user.room.id).emit( 'chat_response', chat_response);
+			socket.emit( 'chat_response', chat_response);
+console.log("getting timer over!")
 			
 			get_word (socket, mysql, rooms);
 		}
 	} );
+	
+	socket.on('give_up', function(data){
+		if (!socket.user.is_logged || !socket.user.in_room) {
+			return;
+		}
+		if(data.token != socket.user.token) {
+			socket.emit('error', {"message": "Invalid request", "code": "50"});
+			return;
+		} 
+		if(socket.user.room == undefined || rooms[socket.user.room.id] == undefined) {
+			socket.emit('error', {"message": "Room was closed", "code": "50"});
+			return;
+		}
+		
+		var d = new Date();
+		var time = d.getHours() + ":" + d.getMinutes();
+		chat_response = {"sender": "", "msg": "User " + socket.user.username + " gave up!", "time": time};
+		socket.broadcast.to('room' + socket.user.room.id).emit( 'chat_response', chat_response);
+		socket.emit( 'chat_response', chat_response);
+		chat_response = {"sender": "", "msg": "The word was: " + rooms[socket.user.room.id].word, "time": time};
+		socket.broadcast.to('room' + socket.user.room.id).emit( 'chat_response', chat_response);
+		socket.emit( 'chat_response', chat_response);
+		
+		get_word (socket, mysql, rooms);
+	});
 	
 	socket.on('drawing', function(data) {
 		if(data.token != socket.user.token) {
 			socket.emit('error', {"message": "Invalid request", "code": "50"});
 			return;
 		} 
+		if(socket.user.room == undefined || rooms[socket.user.room.id] == undefined) {
+			socket.emit('error', {"message": "Room was closed", "code": "50"});
+			return;
+		}
+		if(rooms[socket.user.room.id].drawer != socket.user.user_id) {
+			//socket.emit('error', {"message": "Ilegal action. You're not the drawer.", "code": "58"});
+			return;
+		}
 		
 		delete data.token;
 		socket.broadcast.to('room' + socket.user.room.id).emit('draw_update', data);
@@ -161,6 +208,14 @@ server.sockets.on( 'connection', function( socket ) {
 			socket.emit('error', {"message": "Invalid request", "code": "58"});
 			return;
 		} 
+		if(socket.user.room == undefined || rooms[socket.user.room.id] == undefined) {
+			socket.emit('error', {"message": "Room was closed", "code": "58"});
+			return;
+		}
+		if(rooms[socket.user.room.id].drawer != socket.user.user_id) {
+			//socket.emit('error', {"message": "Ilegal action. You're not the drawer.", "code": "58"});
+			return;
+		}
 		
 		delete data.token;
 		socket.broadcast.to('room' + socket.user.room.id).emit('erase', data);

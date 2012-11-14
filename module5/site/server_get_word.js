@@ -3,19 +3,35 @@ var functions = require("./server_functions"),
 	in_room   = functions.in_room,
 	xss       = functions.xss;
 
-var get_word = function(socket, mysql, rooms) {
-	var users_in_room = rooms[socket.user.room.id].users;
-	var chosen_user = Math.floor(Math.random()*Object.keys(users_in_room).length);
-console.log(Object.keys(users_in_room));
-	var chosen_user_id = Object.keys(users_in_room)[chosen_user];
-
+var get_word = function(socket, mysql, rooms, users_room, leaving) {
+	console.log(leaving)
+	if(leaving == undefined) {
+		users_room = socket.user.room;
+	}
+	if(users_room == undefined) {
+		return;
+	}
+	
+	var users_in_room = rooms[users_room.id].users;
+console.log("Getting word");
+	rooms[users_room.id].next_drawers[rooms[users_room.id].next_drawers.length] = rooms[users_room.id].next_drawers[0];
+	rooms[users_room.id].next_drawers.splice(0,1);
+	var chosen_user_id = rooms[users_room.id].next_drawers[0]; 
+	
+	if (leaving != undefined && chosen_user_id==users_room.user_id) {
+		rooms[users_room.id].next_drawers[rooms[users_room.id].next_drawers.length] = rooms[users_room.id].next_drawers[0];
+		rooms[users_room.id].next_drawers.splice(0,1);
+		var chosen_user_id = rooms[users_room.id].next_drawers[0]; 
+	}
+	if (leaving != undefined && chosen_user_id==users_room.user_id) {
+		return;
+	}
+	
 	var selected_user = {};
 	selected_user.id = chosen_user_id;
-	selected_user.name = users_in_room[chosen_user_id];
-console.log(selected_user)
-
+	selected_user.name = users_in_room[chosen_user_id].username;
 	
-	var category = socket.user.room.category;
+	var category = users_room.category;
 	mysql.query(
 		'SELECT id FROM categories',
 		function(err, result, fields) {
@@ -39,18 +55,20 @@ console.log(selected_user)
 					var word_number = Math.floor(Math.random()*result.length);
 					
 					var word = result[word_number].word;
-		console.log("word is :")
-		console.log(word)
-					socket.broadcast.to("room" + socket.user.room.id).emit("new_round", selected_user.username);
-					socket.emit("new_round", selected_user.username);
-					if(selected_user.id != socket.user.user_id) {
+					socket.broadcast.to("room" + users_room.id).emit("new_round", selected_user.id);
+					socket.emit("new_round", selected_user.id);
+					if(socket.user.user_id == undefined || selected_user.id != socket.user.user_id) {
 						socket.broadcast.to("user" + selected_user.id).emit("drawing_word", word);
 					} else {
 						socket.emit("drawing_word", word);
 					}
-console.log(selected_user)
-					rooms[socket.user.room.id].word = word;
-					rooms[socket.user.room.id].timer = (new Date).getTime();
+					
+					socket.broadcast.to("room" + users_room.id).emit("update");
+					socket.emit("update");
+					
+					rooms[users_room.id].word = word;
+					rooms[users_room.id].drawer = selected_user.id;
+					rooms[users_room.id].timer = (new Date).getTime();
 				}   
 			);
 		}

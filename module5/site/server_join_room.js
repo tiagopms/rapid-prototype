@@ -1,5 +1,6 @@
 var functions     = require("./server_functions"),
 	check         = require("validator").check,
+	crypto        = require('crypto'),
 	is_logged     = functions.is_logged,
 	outside_room  = functions.outside_room,
 	xss           = functions.xss,
@@ -53,7 +54,8 @@ var join_room = function(socket, mysql, rooms, room_id) {
 					socket.emit('error', {"message": "Invalid room chosen", "code": "19"});
 					return;
 				} 
-				rooms[data.room_id].users[socket.user.user_id] = socket.user.username;
+				rooms[data.room_id].users[socket.user.user_id] = {"username": socket.user.username, "points": 0, "gravatar": crypto.createHash('md5').update(socket.user.email).digest("hex")};
+				rooms[data.room_id].next_drawers[rooms[data.room_id].next_drawers.length] = socket.user.user_id;
 				socket.user.in_room = true;
 				socket.leave('out');
 				socket.join('room' + data.room_id);

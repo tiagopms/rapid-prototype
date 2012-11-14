@@ -182,7 +182,7 @@ a.new_calendar:hover, a.new_event:hover {
 
 .wrapper-articles {
 	margin: 10px;
-	min-height: 800px;	
+	min-height: 475px;	
 }
 
 
@@ -579,7 +579,7 @@ article a {
 
 ul.rooms_list {
 	list-style-type: none;
-	padding: 0;
+	padding: 10px 0 0 0;
 	margin: 0;
 }
 
@@ -686,9 +686,6 @@ input {
 	background-image: -moz-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.2));
 }
 
-.new_room {
-	margin-bottom: 10px;
-}
 
 .home-link {
 	padding: 20px;
@@ -711,7 +708,6 @@ input {
 
 .right-header a {
 	margin-right: 20px;
-	margin-top: 5px;
 	display: inline-block;
 }
 
@@ -899,6 +895,112 @@ input {
 }
 
 .chat_container textarea {
-	height: 400px;
+	height: 470px;
 	width: 320px;
+}
+
+#chat_msg {
+	width: 266px;
+}
+
+#words_new_category {
+	width: 659px;
+	height: 355px;
+}
+
+a.new_category {
+	width: 208px;
+	text-align: center;
+}
+
+.search_input {
+	display: inline-block;
+	width: 770px;
+	height: 30px;
+	margin-left: 15px;
+	padding-left: 5px;
+}
+
+.search-form {
+	display: inline-block;
+	float: right;
+}
+
+.new_room {
+	float:left;
+}
+
+
+.rooms-header {
+	margin-bottom: 10px;
+}
+
+.rooms_list {
+	clear:both;
+	margin-top: 15px;
+}
+
+.user_item {
+	text-decoration:none;
+	color: white;
+	display: block;
+	height: 30px;
+}
+
+.room_username {
+	float: left;
+	margin-top: 7px;
+	margin-left: 7px;
+}
+
+.room_user_points {
+	float: right;
+	margin-top: 7px;
+	margin-right: 7px;
+}
+
+.room_user_image {
+	float: left;
+}
+
+.room_title {
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	margin-bottom: 14px;
+	color: white;
+	font-weight: bold;
+}
+
+.room_word {
+	display: block;
+}
+
+.room_word_specific {
+	display: block;
+	margin-bottom: 14px;
+	color: white;
+}
+
+.room_word_general {
+	display: block;
+}
+
+.draw_timer {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+}
+
+.root_page {
+	width: 1200px;
+	text-align: center;
+}
+
+.is_friend {
+	color: #AFA;
+}
+
+.is_drawer {
+	color: red;
 }

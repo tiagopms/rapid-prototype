@@ -21,7 +21,6 @@
 				<div class="right-header logged">
 					<img alt="user image" class="header-img" src="http://en.gravatar.com/avatar/11111111111111111111111111111111?s=70&amp;d=mm">
 					<span class="welcome"></span>
-					<a href="#" class="admin_button admin">Admin CP</a>
 					<a href="#" class="change_password_button">Change Password</a>
 					<button class="logout-button">Logout</button>
 				</div>
@@ -47,9 +46,10 @@
 			</div>
 		</header>
 		<div class="wrapper-content unlogged">
-			<section>
+			<section class="root_page">
 				<div class="wrapper-articles">
 					<div id="initial_logo">
+						<img src="logo.png">
 					</div>
 				</div>
 			</section>
@@ -79,8 +79,10 @@
 				<div class="wrapper-aside">
 					<h2>Categories</h2>
 					<ul class="aside-categories"></ul>
-					
 					<a href="#" class="new_category logged admin btn">Create new category</a>
+					<h2>Users</h2>
+					<ul class="aside-users-outside"></ul>
+					
 				</div>
 			</aside>
 			<div class="clear-footer"></div>
@@ -92,6 +94,7 @@
 						<!-- The mouse pointer will be created here -->
 					</div>
 					<div class="tools">
+						<span class="draw_timer"></span>
 						<ul>
 							<li class="size" id="size1"><span class="dot"></span></li>
 							<li class="size" id="size2"><span class="dot"></span></li>
@@ -139,12 +142,11 @@
 					<div id="draw_info">
 						<span class="room_title"></span>
 						<span class="room_word"></span>
-						<span class="draw_timer"></span>
 					</div>
 					<h2>Users in room</h2>
 					<ul class="aside-users"></ul>
 					<button class="btn leave_room">Leave room</button>	
-					<a href="#" class="invite_user logged in_room btn">Invite user</a>
+					<button class="btn give_up_btn">Give up</a>
 				</div>
 			</aside>
 			<div class="clear-footer"></div>
@@ -207,15 +209,6 @@
 					<input type="hidden" name="token" class="token"/>
 				</form>
 			</div>
-			<div id="admin_dialog" class="dialog" title="Admin">
-				<form id="admin_form" class="default-form" method="post">
-				    <div class="user_name">
-					<label for="user_admin">User:</label>
-					<select name="new_admin_id" id="user_admin"></select> 
-				    </div>
-				    <input type="hidden" name="token" class="token"/>
-				</form>            
-			</div>
 			<div id="new_category_dialog" class="dialog" title="New Category">
 				<form id="new_category_form" class="default-form" method="post">
 					<div class="category_name">
@@ -261,6 +254,7 @@
 					<input type="hidden" name="token" class="token"/>
 				</form>
 			</div>
+			<div class="second_button"> </div>
 			<div id="user_second_button" class="second_button">
 				<ul>
 					<li><a href="#" class="add_friend_user"> Add friend </a></li>

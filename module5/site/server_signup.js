@@ -1,4 +1,5 @@
 var functions     = require("./server_functions"),
+	crypto        = require("crypto"),
 	inst_logged   = functions.inst_logged,
 	random_token  = functions.random_token,
 	xss           = functions.xss,
@@ -10,7 +11,7 @@ var functions     = require("./server_functions"),
 	passwordHash  = new PasswordHash();
 
 
-var signup = function(socket, mysql) {
+var signup = function(socket, mysql, users) {
 	socket.on("signup", function(data) {
 		isnt_logged(socket.user.is_logged, socket);
 		if (socket.user.is_logged) {
@@ -65,6 +66,10 @@ var signup = function(socket, mysql) {
 								socket.user.email = data.email;
 								socket.user.admin = false;
 								socket.user.token = random_token();
+								users[user.id] = {
+									username: data.username,
+									gravatar: crypto.createHash('md5').update(data.email).digest("hex")
+								};
 								
 								socket.join("user" + user.id);
 								socket.join("out");

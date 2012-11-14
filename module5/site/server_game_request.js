@@ -24,7 +24,7 @@ var game_request = function(socket, mysql, rooms) {
 		delete game_response.users;
 		game_response.users = {};
 		for(var i in users_in_room) {
-			game_response.users[i] = {name: users_in_room[i], is_friend: false};
+			game_response.users[i] = {name: users_in_room[i].username, points:  users_in_room[i].points, gravatar: users_in_room[i].gravatar, is_friend: false};
 		}
 		
 		mysql.query(
