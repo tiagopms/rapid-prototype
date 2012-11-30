@@ -25,7 +25,7 @@ class Image(models.Model):
     image = models.ImageField(
         null = False,
         blank = False,
-        upload_to = 'static/userimages'
+        upload_to = 'userimages'
     )
     location = models.ForeignKey(Location, null=True, blank=True)
     pubdate = models.DateTimeField(auto_now=True)
