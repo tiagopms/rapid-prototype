@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="with_aside">
+        <div class="show_image">
+            {% if image %}
+                <span class="img_name">
+                    {{ image.title }}
+                </span>
+                <div class="image_link">
+                    <img class="main-img" src="/{{ image.image.url }}">
+                </div>
+                <span class="img_tags"> Image Tags </span>
+                {% include "pictureTheWorld/search.html" with show_number=0 tags_list=image_tags div="image_tags_list" %}
+                <div class="clear"> </div>
+                {% if image.location %}
+                    <span class="img_location"> Image Location </span>
+                    <span class="img_location_info">
+                        {% if image.has_latlng %}
+                            <a class="location_link" href="{% url world_map_location image.location.lat image.location.lng %}"> {{ image.location.name }} </a>
+                        {% else %}
+                            {{ image.location.name }} 
+                        {% endif %}
+                    </span>
+                {% endif %}
+            {% else %}
+                <p>No image in this tag.</p>
+            {% endif %}
+        </div>
+    </section>
+    <aside>
+        <div class="wrapper-aside">
+            <ul>
+            {% for tag in all_tags %}
+                <li class="aside_tag"><a href="/tags/{{ tag.id }}/0/">{{ tag.name }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    </aside>
+{% endblock %}

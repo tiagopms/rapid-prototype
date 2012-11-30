@@ -34,7 +34,7 @@ var create_room = function(socket, mysql, rooms, room_id) {
 		var category_id = data.category_id;
 		
 		var validEntries = valid_entries(socket, "11", function() {
-			check(data.name, "Invalid name").isAlphanumeric().len(3,20);
+			check(data.name, "Invalid name").is(/^[A-Za-z0-9!\?\. ]+$/).len(3,20);
 			check(category_id, "Invalid category").isNumeric();
 			check(data.drawing_time, "Invalid drawing time").isNumeric();
 		}); 

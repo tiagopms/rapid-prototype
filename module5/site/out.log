@@ -731,3 +731,2861 @@ undefined
 Getting word
 undefined
 Getting word
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+Add friend final!
+Add friend final!
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+warn: error raised: Error: listen EACCES
+info: socket.io started
+Server is running on 8080
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$lMO0gNv74LTQmAnMMszWOunQ5AuN8GeM5f08GykQZt7h2cI2gKVE.',
+  id: 48,
+  email_address: 'unneon@gmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+1
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$83kr/2TFUIpdc0KyI69uJuulodqyrLv9D0rsLxRgHzcuwUc.pyJFm',
+  id: 53,
+  email_address: 'anapaula313@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+1
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+undefined
+Getting word
+Add friend final!
+undefined
+Getting word
+Add friend final!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$4CmeG8b8HcdbjtCS3mkU9.C6q0b/yz50zCBl3X95Oh.HXeQ2fYJ7S',
+  id: 54,
+  email_address: 'carol.zampiron@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$xI56BNNiNj7i3vYWuDO4duUxp6lU/4zH62f/aDE4lFZcf4JqMQnlO',
+  id: 57,
+  email_address: 'lovelykrollzinha@gmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+{ '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+{ '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+{ '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '54': 
+   { username: 'Kerols',
+     gravatar: '0669d6b130416281f4eedaaba6adf775' },
+  '55': 
+   { username: 'mauriciojr',
+     gravatar: 'e6056c6e83eb36f9702767bee5c17dcb' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '57': 
+   { username: 'carolcbz',
+     gravatar: '0433e7a167f037f2b48e6fb73b775fac' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$lMO0gNv74LTQmAnMMszWOunQ5AuN8GeM5f08GykQZt7h2cI2gKVE.',
+  id: 48,
+  email_address: 'unneon@gmail.com',
+  admin: 'false' }
+-1
+info: socket.io started
+Server is running on 8080
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$83kr/2TFUIpdc0KyI69uJuulodqyrLv9D0rsLxRgHzcuwUc.pyJFm',
+  id: 53,
+  email_address: 'anapaula313@gmail.com',
+  admin: 'false' }
+-1
+{ '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$QX8bOP4S9Vo1tVIL3TilruONsZhEYD0h.70t7mdT8wMfBAaVcw2qC',
+  id: 58,
+  email_address: 'amora@gmail.com',
+  admin: 'false' }
+-1
+{ '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ny6OKHMCmZ8nE1gpWsC5H.xziVXoN.J9RBhls/fCLCdoVbXu8cUtq',
+  id: 56,
+  email_address: 'alexpms92@hotmail.com',
+  admin: 'false' }
+-1
+{ '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ny6OKHMCmZ8nE1gpWsC5H.xziVXoN.J9RBhls/fCLCdoVbXu8cUtq',
+  id: 56,
+  email_address: 'alexpms92@hotmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+{ '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$83kr/2TFUIpdc0KyI69uJuulodqyrLv9D0rsLxRgHzcuwUc.pyJFm',
+  id: 53,
+  email_address: 'anapaula313@gmail.com',
+  admin: 'false' }
+-1
+{ '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$lMO0gNv74LTQmAnMMszWOunQ5AuN8GeM5f08GykQZt7h2cI2gKVE.',
+  id: 48,
+  email_address: 'unneon@gmail.com',
+  admin: 'false' }
+-1
+{ '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$83kr/2TFUIpdc0KyI69uJuulodqyrLv9D0rsLxRgHzcuwUc.pyJFm',
+  id: 53,
+  email_address: 'anapaula313@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+{ '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$83kr/2TFUIpdc0KyI69uJuulodqyrLv9D0rsLxRgHzcuwUc.pyJFm',
+  id: 53,
+  email_address: 'anapaula313@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+{ '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$08x12gLL2zn2s4hfeLtCLemchkJGCVXSWwfrV85x0Fy2WZDxRDIjq',
+  id: 45,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+{ '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$08x12gLL2zn2s4hfeLtCLemchkJGCVXSWwfrV85x0Fy2WZDxRDIjq',
+  id: 45,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+getting timer over!
+undefined
+Getting word
+1
+Getting word
+1
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+warn: websocket parser error: continuation frame cannot follow current opcode
+{ '45': 
+   { username: 'blabla',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' },
+  '59': 
+   { username: 'jonasss',
+     gravatar: '0faac121a7232b096e6a5932ad0f106b' },
+  '60': 
+   { username: 'Fazevedo',
+     gravatar: 'd5452265352dee6a6708a7a77c20ce1f' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+undefined
+Getting word
+warn: client not handshaken client should reconnect
+warn: client not handshaken client should reconnect
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '45': 
+   { username: 'blabla',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' },
+  '59': 
+   { username: 'jonasss',
+     gravatar: '0faac121a7232b096e6a5932ad0f106b' },
+  '60': 
+   { username: 'Fazevedo',
+     gravatar: 'd5452265352dee6a6708a7a77c20ce1f' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '45': 
+   { username: 'blabla',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' },
+  '59': 
+   { username: 'jonasss',
+     gravatar: '0faac121a7232b096e6a5932ad0f106b' },
+  '60': 
+   { username: 'Fazevedo',
+     gravatar: 'd5452265352dee6a6708a7a77c20ce1f' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$08x12gLL2zn2s4hfeLtCLemchkJGCVXSWwfrV85x0Fy2WZDxRDIjq',
+  id: 45,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '45': 
+   { username: 'blabla',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' },
+  '59': 
+   { username: 'jonasss',
+     gravatar: '0faac121a7232b096e6a5932ad0f106b' },
+  '60': 
+   { username: 'Fazevedo',
+     gravatar: 'd5452265352dee6a6708a7a77c20ce1f' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ZJk3jb9CYSRB6tybKj2S9ed/jMgmVAU58mApW/3iuxVd0iSdpxGVK',
+  id: 46,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '45': 
+   { username: 'blabla',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' },
+  '53': 
+   { username: 'aalbuque',
+     gravatar: '14dae86898ba6971fdc5319faed14408' },
+  '56': 
+   { username: 'alexpms92',
+     gravatar: '4ddc737e0792e4e5f7b13d8049477cef' },
+  '58': 
+   { username: 'amora123',
+     gravatar: 'dc2a62131c8563bcde9ad475b83c941b' },
+  '59': 
+   { username: 'jonasss',
+     gravatar: '0faac121a7232b096e6a5932ad0f106b' },
+  '60': 
+   { username: 'Fazevedo',
+     gravatar: 'd5452265352dee6a6708a7a77c20ce1f' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ZJk3jb9CYSRB6tybKj2S9ed/jMgmVAU58mApW/3iuxVd0iSdpxGVK',
+  id: 46,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+warn: websocket parser error: continuation frame cannot follow current opcode
+warn: websocket parser error: continuation frame cannot follow current opcode
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ZJk3jb9CYSRB6tybKj2S9ed/jMgmVAU58mApW/3iuxVd0iSdpxGVK',
+  id: 46,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+undefined
+Getting word
+{ '61': 
+   { username: 'matheus',
+     gravatar: '6e83d2fc09e35b77d1d65966775f4438' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$lMO0gNv74LTQmAnMMszWOunQ5AuN8GeM5f08GykQZt7h2cI2gKVE.',
+  id: 48,
+  email_address: 'unneon@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+{ '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '61': 
+   { username: 'matheus',
+     gravatar: '6e83d2fc09e35b77d1d65966775f4438' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$g7xqT2qVaGGneAqVRfGCLOGKTP3Ln/fU3/y7rg75Eo/wQJ2w51Op2',
+  id: 51,
+  email_address: 'luizcagliari@gmail.com',
+  admin: 'false' }
+-1
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+1
+Getting word
+1
+Getting word
+getting timer over!
+undefined
+Getting word
+{ '48': 
+   { username: 'marcelinho',
+     gravatar: 'b21019653f7006baa820cca6f1477dbc' },
+  '51': 
+   { username: 'qwerty',
+     gravatar: '14b83c0a3ab23b29cae005c735613a38' },
+  '61': 
+   { username: 'matheus',
+     gravatar: '6e83d2fc09e35b77d1d65966775f4438' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$vHfco68c1UhhCRIRUq8e/.B69SbNOx1qwzjO.xa0.ZqgvFyqMV2aG',
+  id: 62,
+  email_address: 'lalala@fjh11.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+1
+Getting word
+undefined
+Getting word
+1
+Getting word
+getting timer over!
+undefined
+Getting word
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+1
+Getting word
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+{ '43': 
+   { username: 'tiagopms',
+     gravatar: '7c6d7d37090e79ad22654ec7dd1ff2fa' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$2gE7djcVeKzLm1wdEFlzqeDxxLO23WFGo1vOgOiYqUXdbQ97w.8ZS',
+  id: 63,
+  email_address: 'guilhermeanselmo2@gmail.com',
+  admin: 'false' }
+-1
+getting timer over!
+undefined
+Getting word
+undefined
+Getting word
+undefined
+Getting word
+{ '64': 
+   { username: 'marcela',
+     gravatar: '214b52b86edd90ab231bcc9830672931' } }
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+undefined
+Getting word
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+{}
+{ is_used: '1',
+  crypt_pass: '$2a$08$ih2BMXGGt5JCxVJak9VfwexTeXGvfkOTAcbFFui0DjJE2QemadjSq',
+  id: 43,
+  email_address: 'joaofelipenp@gmail.com',
+  admin: 'true' }
+-1
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080
+info: socket.io started
+Server is running on 8080

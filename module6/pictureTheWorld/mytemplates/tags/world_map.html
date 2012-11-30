@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block navlist %}
+    <div class="site-navlist">
+        <ul>
+            <li><a href="/"> Home </a></li>
+            <li><a href="{% url 'world_map' %}" {% if world %} class="current" {% endif %}> World Map </a></li>
+            {% if user_logged %}
+            <li><a href="/mymap" {% if not world %} class="current" {% endif %}> My Map </a></li>
+                <li><a href="{% url 'add_image' %}"> Add Image </a></li>
+            {% endif %}
+            <li><a href="{% url 'random_tag' %}"> Random Tag </a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+<section>
+<h1 class="map_title"> 
+    {% if world %}
+        World Map 
+    {% else %}
+        My Map
+    {% endif %}
+</h1>
+{{ form.map }}
+</section>
+{% endblock %} 

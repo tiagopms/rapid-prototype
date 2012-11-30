@@ -1,0 +1,9 @@
+{% load url from future %}
+{% load i18n %}
+<div id="add_image_locations" class="form-row">
+    {{ image_form.location.errors }}
+    <label for="id_location" class="optional">{% trans 'Location' %}:</label>{{ image_form.location }}
+    <a href="#" class="open_add_location">
+        <img src="http://icons.iconarchive.com/icons/deleket/button/256/Button-Add-icon.png" width="15" height="15" alt="Add new location"/>
+    </a>
+</div>

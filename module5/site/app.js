@@ -33,7 +33,7 @@ app.configure(function () {
        secret: 'iaa_secret', 
        key: 'express.sid'//,
     }));
-    app.use(express.static(__dirname));
+    app.use(express.static(__dirname+"/static"));
 });
 
 var s = app.listen(8080);
@@ -221,6 +221,9 @@ console.log("getting timer over!")
 		socket.broadcast.to('room' + socket.user.room.id).emit('erase', data);
 	});
 
+	socket.on('reconnect', function(data) {
+		console.log("Reconnect!-----------------------")
+	});
 });
 
 sys.puts( "Server is running on 8080" );

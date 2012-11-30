@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block navlist %}
+    <div class="site-navlist">
+        <ul>
+            <li><a href="/"> Home </a></li>
+            <li><a href="{% url 'world_map' %}"> World Map </a></li>
+            {% if user_logged %}
+                <li><a href="/mymap"> My Map </a></li>
+                <li><a href="{% url 'add_image' %}" class="current"> Add Image </a></li>
+            {% endif %}
+            <li><a href="{% url 'random_tag' %}"> Random Tag </a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<script type="text/javascript" src="/media/js/admin/RelatedObjectLookups.js"></script>
+<section>
+
+    <form class="form add_image_form" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            {% if image_form.errors %}
+                <p class="errornote">
+                    {% blocktrans count counter=image_form.errors.items|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}
+                </p>
+            {% endif %}
+
+            <h1>{% trans 'Add Image' %}</h1>
+
+
+            <fieldset class="module aligned wide">
+                <div class="form-row">
+                    {{ image_form.title.errors }}
+                    <label for="id_title" class="required">{% trans 'Title' %}:</label>{{ image_form.title }}
+                </div>
+                <div class="form-row">
+                    {{ image_form.image.errors }}
+                    <label for="id_image" class="required">{% trans 'Image' %}:</label>{{ image_form.image }}
+                </div>
+                <div id="add_image_locations" class="form-row">
+                    {{ image_form.location.errors }}
+                    <label for="id_location" class="optional">{% trans 'Location' %}:</label>{{ image_form.location }}
+                    <a href="#" class="open_add_location">
+                        <img src="http://icons.iconarchive.com/icons/deleket/button/256/Button-Add-icon.png" width="15" height="15" alt="Add new location"/>
+                    </a>
+                </div>
+                <div id="add_image_tags" class="form-row">
+                    {{ image_form.tag.errors }}
+                    <label for="id_tag" class="required">{% trans 'Tags' %}:</label>{{ image_form.tag }}
+                    <a href="#" class="open_add_tag">
+                        <img src="http://icons.iconarchive.com/icons/deleket/button/256/Button-Add-icon.png" width="15" height="15" alt="Add new tag"/>
+                    </a>
+                </div>
+            </fieldset>
+
+            <div class="submit-row">
+                <input type="submit" value="{% trans 'Add' %}" class="default" />
+            </div>
+
+            <script type="text/javascript">document.getElementById("id_title").focus();</script>
+        </div>
+
+    </form>
+</section>
+<div id="add_tag_dialog">
+</div>
+<div id="add_location_dialog">
+</div>
+<div class="location-autocomplete">
+</div>
+{% endblock %}

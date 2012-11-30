@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% block navlist %}
+    <div class="site-navlist">
+        <ul>
+            <li><a href="/" class="current"> Home </a></li>
+            <li><a href="{% url 'world_map' %}"> World Map </a></li>
+            {% if user_logged %}
+                <li><a href="/mymap"> My Map </a></li>
+                <li><a href="{% url 'add_image' %}"> Add Image </a></li>
+            {% endif %}
+            <li><a href="{% url 'random_tag' %}"> Random Tag </a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section class="with_aside">
+        <div class="search_form">
+            <form id="search_form" action="" method="get">
+                <div class="search_field">
+                    {{ search_form.search }}
+                </div>
+                <div class="submit-inline">
+                    <input type="submit" value="Search" class="default" />
+                </div>
+                <div class="clear"></div>
+            </form>
+        </div>
+
+        <div class="list_tags">
+           {% include "pictureTheWorld/search.html" with div="all" tags_list=tags_list show_number=1 zero_list=zero_list %}
+        </div>
+        {% include "pictureTheWorld/search.html" with div="tags" tags_list=all_tags_list show_number=0 show_message=1 zero_list=zero_list %}
+    </section>
+    <aside>
+        <div id="tag_canvas_container">
+            <h1 class="tag_cloud_title"> Tag Cloud </h1>
+            <canvas width="250" height="250" id="tag_canvas">
+                <p> Your browser doesn't support canvas </p>
+            </canvas>
+        </div>
+    </aside>
+{% endblock %}

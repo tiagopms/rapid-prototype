@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="with_aside">
+        <div class="show_image">
+            {% if image %}
+                <span class="img_name">
+                    {{ image.title }}
+                </span>
+                <a class="image_link" href="/tags/{{ tag_id }}/{{ next_img }}/">
+                    <div class="next-img">Next</div>
+                    <img class="main-img" src="/{{ image.image.url }}">
+                </a>
+                <span class="img_tags"> Image Tags </span>
+                {% include "pictureTheWorld/search.html" with show_number=0 tags_list=image_tags div="image_tags_list" %}
+                <div class="clear"> </div>
+                {% if image.location %}
+                    <span class="img_location"> Image Location </span>
+                    <span class="img_location_info"> 
+                        {% if image.has_latlng %}
+                        <a class="location_link" href="{% url world_map_location image.location.lat image.location.lng %}"> {{ image.location.name }} </a>
+                        {% else %}
+                            {{ image.location.name }} 
+                        {% endif %}
+                    </span>
+                {% endif %}
+            {% else %}
+                <p>No image in this tag.</p>
+            {% endif %}
+        </div>
+    </section>
+    <aside>
+        <div class="wrapper-aside">
+            <ul>
+            {% for tag in all_tags %}
+                {% if tag == chosen_tag %}
+                    <li class="aside_tag"><a class="current_tag" href="/tags/{{ tag.id }}/0/">{{ tag.name|slice:":18" }}</a></li>
+                {% else %}
+                <li class="aside_tag"><a href="/tags/{{ tag.id }}/0/">{{ tag.name|slice:":18" }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+    </aside>
+{% endblock %}

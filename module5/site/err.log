@@ -1,106 +1,9 @@
 
-TypeError: Object #<Object> has no method 'indexOf'
-    at Query.login [as _callback] (/home/t.pimentel/rapid-prototype/module5/site/server_login.js:45:15)
-    at Query.Sequence.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
-    at Query._handleFinalResultPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
-    at Parser.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
-    at Protocol.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
-    at Socket.ondata (stream.js:38:26)
-    at Socket.EventEmitter.emit (events.js:96:17)
-    at TCP.onread (net.js:396:14)
-
-TypeError: Object #<Object> has no method 'indexOf'
-    at Query.login [as _callback] (/home/t.pimentel/rapid-prototype/module5/site/server_login.js:45:15)
-    at Query.Sequence.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
-    at Query._handleFinalResultPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
-    at Parser.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
-    at Protocol.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
-    at Socket.ondata (stream.js:38:26)
-    at Socket.EventEmitter.emit (events.js:96:17)
-    at TCP.onread (net.js:396:14)
-
-TypeError: Object #<Object> has no method 'indexOf'
-    at Query.login [as _callback] (/home/t.pimentel/rapid-prototype/module5/site/server_login.js:45:15)
-    at Query.Sequence.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
-    at Query._handleFinalResultPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
-    at Parser.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
-    at Protocol.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
-    at Socket.ondata (stream.js:38:26)
-    at Socket.EventEmitter.emit (events.js:96:17)
-    at TCP.onread (net.js:396:14)
-
-TypeError: Object #<Object> has no method 'indexOf'
-    at Query.login [as _callback] (/home/t.pimentel/rapid-prototype/module5/site/server_login.js:45:15)
-    at Query.Sequence.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
-    at Query._handleFinalResultPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
-    at Parser.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
-    at Protocol.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
-    at Socket.ondata (stream.js:38:26)
-    at Socket.EventEmitter.emit (events.js:96:17)
-    at TCP.onread (net.js:396:14)
-
-TypeError: Object #<Object> has no method 'indexOf'
-    at Query.login [as _callback] (/home/t.pimentel/rapid-prototype/module5/site/server_login.js:45:15)
-    at Query.Sequence.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
-    at Query._handleFinalResultPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
-    at Parser.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
-    at Protocol.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
-    at Socket.ondata (stream.js:38:26)
-    at Socket.EventEmitter.emit (events.js:96:17)
-    at TCP.onread (net.js:396:14)
-
-TypeError: Object #<Object> has no method 'indexOf'
-    at Query.login [as _callback] (/home/t.pimentel/rapid-prototype/module5/site/server_login.js:45:15)
-    at Query.Sequence.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
-    at Query._handleFinalResultPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
-    at Parser.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
-    at Protocol.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
-    at Socket.ondata (stream.js:38:26)
-    at Socket.EventEmitter.emit (events.js:96:17)
-    at TCP.onread (net.js:396:14)
-
-TypeError: Object #<Object> has no method 'indexOf'
-    at Query.login [as _callback] (/home/t.pimentel/rapid-prototype/module5/site/server_login.js:45:15)
-    at Query.Sequence.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
-    at Query._handleFinalResultPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
-    at Parser.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
-    at Protocol.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
-    at Socket.ondata (stream.js:38:26)
-    at Socket.EventEmitter.emit (events.js:96:17)
-    at TCP.onread (net.js:396:14)
-
-TypeError: Object #<Object> has no method 'indexOf'
-    at Query.login [as _callback] (/home/t.pimentel/rapid-prototype/module5/site/server_login.js:45:15)
-    at Query.Sequence.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Sequence.js:66:24)
-    at Query._handleFinalResultPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:156:24)
-    at Parser.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Parser.js:60:12)
-    at Protocol.write (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:31:16)
-    at Socket.ondata (stream.js:38:26)
-    at Socket.EventEmitter.emit (events.js:96:17)
-    at TCP.onread (net.js:396:14)
-
-/home/t.pimentel/rapid-prototype/module5/site/server_users_request.js:23
-	users_response[socket.user.user_id].my_id = true;
-	                                          ^
-TypeError: Cannot set property 'my_id' of undefined
-    at send_users_response (/home/t.pimentel/rapid-prototype/module5/site/server_users_request.js:23:44)
-    at Socket.users_request (/home/t.pimentel/rapid-prototype/module5/site/server_users_request.js:52:3)
+/home/t.pimentel/rapid-prototype/module5/site/server_game_request.js:20
+		delete game_response.category;
+		       ^
+TypeError: Cannot convert null to object
+    at Socket.game_request (/home/t.pimentel/rapid-prototype/module5/site/server_game_request.js:20:10)
     at Socket.EventEmitter.emit [as $emit] (events.js:93:17)
     at SocketNamespace.handlePacket (/home/t.pimentel/rapid-prototype/module5/site/node_modules/socket.io/lib/namespace.js:335:22)
     at Manager.onClientMessage (/home/t.pimentel/rapid-prototype/module5/site/node_modules/socket.io/lib/manager.js:487:38)
@@ -109,3 +12,2104 @@ TypeError: Cannot set property 'my_id' of undefined
     at Parser.EventEmitter.emit (events.js:96:17)
     at opcodeHandlers.1.finish (/home/t.pimentel/rapid-prototype/module5/site/node_modules/socket.io/lib/transports/websocket/hybi-16.js:288:16)
     at Parser.opcodeHandlers.1.expectData [as expectHandler] (/home/t.pimentel/rapid-prototype/module5/site/node_modules/socket.io/lib/transports/websocket/hybi-16.js:299:15)
+    at Parser.add (/home/t.pimentel/rapid-prototype/module5/site/node_modules/socket.io/lib/transports/websocket/hybi-16.js:466:24)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+/home/t.pimentel/rapid-prototype/module5/site/app.js:227
+});
+^
+SyntaxError: Unexpected token }
+    at Module._compile (module.js:437:25)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)
+
+events.js:71
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/t.pimentel/rapid-prototype/module5/site/node_modules/mysql/lib/protocol/Protocol.js:59:13)
+    at Socket.onend (stream.js:66:10)
+    at Socket.EventEmitter.emit (events.js:126:20)
+    at TCP.onread (net.js:417:51)

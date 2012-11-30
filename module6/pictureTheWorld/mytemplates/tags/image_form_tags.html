@@ -1,0 +1,9 @@
+{% load url from future %}
+{% load i18n %}
+<div id="add_image_tags" class="form-row">
+    {{ image_form.tag.errors }}
+    <label for="id_tag" class="required">{% trans 'Tags' %}:</label>{{ image_form.tag }}
+    <a href="#" class="open_add_tag">
+        <img src="http://icons.iconarchive.com/icons/deleket/button/256/Button-Add-icon.png" width="15" height="15" alt="Add new tag"/>
+    </a>
+</div>

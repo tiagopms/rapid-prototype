@@ -1,0 +1,86 @@
+{% load url from future %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> {% block title %}Picture the World{% endblock %}</title>
+        <link rel="stylesheet" href="/static/reset.css" />
+
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="/static/style.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"></script>
+        <script type="text/javascript" src="/static/jquery.gmapi.min.js"></script>
+        <script src="/static/jquery.tagcanvas.js"></script>
+        <script src="/static/jquery.autocomplete.js"></script>
+        <script src="/static/custom.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="wrapper">
+                <div class="left-header">
+                    <a class="home-link" href="/"> Picture the World </a>
+                    <span class="error">{% block error %}{{ alert }}{% endblock %}</span>
+                    <span class="success">{% block success %}{{ notice }}{% endblock %}</span>
+                </div>
+                {% if user_logged %}
+                    <div class="right-header logged">
+                        <img alt="user image" class="header-img" src="http://en.gravatar.com/avatar/{{ gravatar }}?s=70&amp;d=mm">
+                        <span class="welcome">Hello, {{user.username}}</span>
+                        <a href="{% url 'user_change_password' %}" class="change_password_button"> Change Password </a>
+                        <a href="{% url 'auth_logout' %}" class="logout-button">Logout</a>
+                        {% if user.is_superuser %}
+                            <a href="/admin" class="admin-cp">Admin CP</a>
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <div class="login-container">
+                        {% block login_form %}
+                            <form class="login-form" method="POST" action="{% url 'auth_login' %}">
+                                {% csrf_token %}
+                                <div class="input-login">
+                                    <div class="username">
+                                        <label for="username">Username: </label>
+                                        <input type="text" name="username" maxlength="30"/>
+                                    </div>
+                                    <div class="password">
+                                        <label for="password">Password:</label>
+                                        <input type="password" name="password" id="password"/>
+                                    </div>
+                                </div>
+                                <input type="submit" class="submit-login btn" value="Login"/>
+                                <input type="hidden" name="next" value="{{ request.get_full_path }}" />
+                            </form>
+                        {% endblock %}
+                        <div class="clear"></div>
+                        <a href="{% url 'user_lost_password' %}" class="lost_password_button">Lost Password?</a>
+                        <a class="signup" href="{% url 'user_signup' %}">Sign up</a>
+                    </div>
+                {% endif %}
+            </div>
+            {% block navlist %}
+            <div class="site-navlist">
+                <ul>
+                    <li><a href="/"> Home </a></li>
+                    <li><a href="{% url 'world_map' %}"> World Map </a></li>
+                    {% if user_logged %}
+                        <li><a href="/mymap"> My Map </a></li>
+                        <li><a href="{% url 'add_image' %}"> Add Image </a></li>
+                    {% endif %}
+                    <li><a href="{% url 'random_tag' %}"> Random Tag </a></li>
+                </ul>
+            </div>
+            {% endblock %}
+        </header>
+        <div class="wrapper-content">
+            {% block content %}{% endblock %}
+            <div class="clear-footer"></div>
+        </div>
+        <footer>
+            <p>Rapid Prototype Development and Creative Programming</p>
+            <p>Jo&atilde;o Felipe Nicolaci Pimentel</p>
+            <p>Tiago Pimentel Martins da Silva</p>
+        </footer>
+    </body>
+</html>
+

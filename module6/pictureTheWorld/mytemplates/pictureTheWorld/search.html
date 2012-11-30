@@ -1,0 +1,13 @@
+
+<div id="{{ div }}">
+{% if tags_list %}
+    <ul>
+        {% include "pictureTheWorld/for_tags.html" with tags_list=tags_list zero=0 show_number=show_number %}
+        {% include "pictureTheWorld/for_tags.html" with tags_list=zero_list zero=1 show_number=show_number %}
+   </ul>
+{% else %}
+    {% if show_message %}
+        <p>No tags are available.</p>
+    {% endif %}
+{% endif %}
+</div>

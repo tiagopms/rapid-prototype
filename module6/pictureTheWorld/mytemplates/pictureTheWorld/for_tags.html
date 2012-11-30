@@ -1,0 +1,17 @@
+    {% for tag in tags_list %}
+    <li>
+        <a href="/tags/{{ tag.id }}/0/">
+            {% if show_number %}
+            <span class="tag_count">
+                {% if not zero %}
+                    {{ tag.itemcount }}
+                {% else %}
+                    0
+                {% endif %}
+            </span>
+            {% endif %}
+            {{ tag.name }}
+        </a>
+    </li>
+    {% endfor %}
+ 

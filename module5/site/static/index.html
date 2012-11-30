@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Images And Action </title>
+		
+		<link href="reset.css" rel="stylesheet" type="text/css"/>
+		<link href="custom.css" rel="stylesheet" type="text/css"/>
+
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script src="http://ec2-50-17-138-98.compute-1.amazonaws.com:8080/socket.io/socket.io.js"></script>
+		<script src="custom.js"></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="wrapper">
+				<div class="left-header">
+					<a class="home-link" href="#"> Images And Action! </a>
+				</div>
+				<div class="right-header logged">
+					<img alt="user image" class="header-img" src="http://en.gravatar.com/avatar/11111111111111111111111111111111?s=70&amp;d=mm">
+					<span class="welcome"></span>
+					<a href="#" class="change_password_button">Change Password</a>
+					<button class="logout-button">Logout</button>
+				</div>
+				<div class="right-header unlogged">
+					<div class="login-container">
+						<form class="login-form" method="post">
+							<div class="input-login">
+								<div class="username">
+									<label for="username">Username:</label>
+									<input type="text" name="username" id="username">
+								</div>
+								<div class="password">
+									<label for="password">Password:</label>
+									<input type="password" name="password" id="password">
+								</div>
+							</div>
+							<button type="button" class="submit-login btn"> Login </button>
+						</form>
+						<a href="#" class="lost_password_button">Lost Password?</a>
+						<a class="signup" href="#">Sign up</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper-content unlogged">
+			<section class="root_page">
+				<div class="wrapper-articles">
+					<div id="initial_logo">
+						<img src="logo.png">
+					</div>
+				</div>
+			</section>
+			<div class="clear-footer"></div>
+		</div>
+		<div class="wrapper-content logged outside_room">
+			<section>
+				<div class="wrapper-articles">
+					<div id="Rooms">
+						<div class="rooms-header">
+							<a href="#" class="new_room btn"> Create Room </a>
+							<form class="search-form">
+								<input type="text" placeholder="Room name or Host name" name="search_room" class="search_input">
+							</form>
+						</div>
+						<ul class="rooms_list">
+							<li class="head">
+								<div class="room_name">Name</div>
+								<div class="room_category">Category</div>
+								<div class="room_host">Host</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<aside>
+				<div class="wrapper-aside">
+					<h2>Categories</h2>
+					<ul class="aside-categories"></ul>
+					<a href="#" class="new_category logged admin btn">Create new category</a>
+					<h2>Users</h2>
+					<ul class="aside-users-outside"></ul>
+					
+				</div>
+			</aside>
+			<div class="clear-footer"></div>
+		</div>
+		<div class="wrapper-content logged in_room">
+			<section>
+				<div class="wrapper-articles">
+					<div id="drawing_cursor">
+						<!-- The mouse pointer will be created here -->
+					</div>
+					<div class="tools">
+						<span class="draw_timer"></span>
+						<ul>
+							<li class="size" id="size1"><span class="dot"></span></li>
+							<li class="size" id="size2"><span class="dot"></span></li>
+							<li class="size" id="size3"><span class="dot"></span></li>
+							<li class="size" id="size4"><span class="dot"></span></li>
+							<li class="color" id="color-000000"><span class="dcolor"></span></li>
+							<li class="color" id="color-FFFFFF"><span class="dcolor"></span></li>
+							<li class="color" id="color-7F7F7F"><span class="dcolor"></span></li>
+							<li class="color" id="color-C3C3C3"><span class="dcolor"></span></li>
+							<li class="color" id="color-880015"><span class="dcolor"></span></li>
+							<li class="color" id="color-B97A57"><span class="dcolor"></span></li>
+							<li class="color" id="color-ED1C24"><span class="dcolor"></span></li>
+							<li class="color" id="color-FFAEC9"><span class="dcolor"></span></li>
+							<li class="color" id="color-FF7F27"><span class="dcolor"></span></li>
+							<li class="color" id="color-FFC90E"><span class="dcolor"></span></li>
+							<li class="color" id="color-FFF200"><span class="dcolor"></span></li>
+							<li class="color" id="color-EFE4B0"><span class="dcolor"></span></li>
+							<li class="color" id="color-22B14C"><span class="dcolor"></span></li>
+							<li class="color" id="color-B5E61D"><span class="dcolor"></span></li>
+							<li class="color" id="color-00A2E8"><span class="dcolor"></span></li>
+							<li class="color" id="color-99D9EA"><span class="dcolor"></span></li>
+							<li class="color" id="color-3F48CC"><span class="dcolor"></span></li>
+							<li class="color" id="color-7092BE"><span class="dcolor"></span></li>
+							<li class="color" id="color-A349A4"><span class="dcolor"></span></li>
+							<li class="color" id="color-C8BFE7"><span class="dcolor"></span></li>
+							<li class="erase" id="erase"><span class="derase"></span></li>
+
+						</ul>
+					</div>
+					<canvas id="paper" width="500px" height="500px">
+						Your browser needs to support canvas for this to work!
+					</canvas>
+					<div class="chat_container">
+						<p><textarea id="chat_output" readonly="readonly"></textarea></p>
+						<input type="text" id="chat_msg"/> 
+						<input type="submit" id="btn_send_chat_msg" value="Send"/> 
+					</div>
+					<div class="clear">
+
+					</div>
+				</div>
+			</section>
+			<aside>
+				<div class="wrapper-aside">
+					<div id="draw_info">
+						<span class="room_title"></span>
+						<span class="room_word"></span>
+					</div>
+					<h2>Users in room</h2>
+					<ul class="aside-users"></ul>
+					<button class="btn leave_room">Leave room</button>	
+					<button class="btn give_up_btn">Give up</a>
+				</div>
+			</aside>
+			<div class="clear-footer"></div>
+		</div>
+
+		<footer>
+			<p>Rapid Prototype Development and Creative Programming</p>
+			<p>Jo&atilde;o Felipe Nicolaci Pimentel</p>
+			<p>Tiago Pimentel Martins da Silva</p>
+		</footer>
+			
+		<div class="dialogs">
+			<div id="signup_dialog" class="dialog" title="Signup">
+				<form id="signup_form" class="default-form" action="check_signup.php" method="post">
+					<div class="username">
+						<label for="username_signup">Username:</label>
+						<input type="text" name="username" id="username_signup">
+					</div>
+					<div class="password">
+						<label for="password_signup">Password:</label>
+						<input type="password" name="password" id="password_signup">
+					</div>
+					<div class="repeat-password">
+						<label for="check_password">Repeat Password:</label>
+						<input type="password" name="check_password" id="check_password">
+					</div>
+					<div class="email">
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email">
+					</div>
+				</form>
+			</div>
+			<div id="lost_password_dialog" class="dialog" title="Lost Password">
+				<form id="lost_password_form" class="default-form" method="post">
+					<div class="username">
+						<label for="username_lost_password">Username:</label>
+						<input type="text" name="username" id="username_lost_password">
+					</div>
+					<div class="email_address">
+						<label for="email_lost_password">Email:</label>
+						<input type="text" name="email" id="email_lost_password">
+					</div>
+                    <input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="change_password_dialog" class="dialog" title="Change Password">
+				<form id="change_password_form" class="default-form" method="post">
+					<div class="old_password">
+						<label for="old_password_change_password">Old Password:</label>
+						<input type="password" name="old_password" id="old_password_change_password">
+					</div>
+					<div class="password">
+						<label for="password_change_password">Password:</label>
+						<input type="password" name="new_password" id="password_change_password">
+					</div>
+					<div class="repeat-password">
+						<label for="check_password_change_password">Repeat Password:</label>
+						<input type="password" name="check_password" id="check_password_change_password">
+					</div>
+					<input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="new_category_dialog" class="dialog" title="New Category">
+				<form id="new_category_form" class="default-form" method="post">
+					<div class="category_name">
+						<label for="category_name_new_category">Name:</label>
+						<input type="text" name="name" id="category_name_new_category">
+					</div>
+					<div class="words">
+						<label for="words_new_category">Words:</label>
+						<textarea name="words" id="words_new_category"></textarea>
+					</div>
+					<input type="hidden" name="token" class="token"/>
+					<input type="hidden" name="category_id" class="category_id_edit_category"/>
+				</form>
+			</div>
+			<div id="answer_add_friend_dialog" class="dialog" title="Add friend!">
+				<form id="add_friend_form" class="default-form" method="post">
+					<span id="add_friend_text"></span>
+					<input type="hidden" name="user_id" class="user_id_add_friend"/>
+					<input type="hidden" name="is_friend" class="is_friend_add_friend"/>
+					<input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div id="new_room_dialog" class="dialog" title="New Room">
+				<form id="new_room_form" class="default-form" method="post">
+					<div class="room_name">
+						<label for="room_name_new_room">Name:</label>
+						<input type="text" name="name" id="room_name_new_room">
+					</div>
+					<div class="room_is_private">
+						<label for="room_is_private_new_room">Private:</label>
+						<input type="checkbox" name="is_private" id="room_is_private_new_room">
+					</div>
+					<div class="room_category">
+						<label for="category_new_room">Category:</label>
+						<select name="category_id" class="category_select">
+
+						</select>
+					</div>
+					<div class="room_time">
+						<label for="room_time_new_room">Drawing Time:</label>
+						<input type="text" name="drawing_time" id="room_time_new_room">
+					</div>
+					<input type="hidden" name="token" class="token"/>
+				</form>
+			</div>
+			<div class="second_button"> </div>
+			<div id="user_second_button" class="second_button">
+				<ul>
+					<li><a href="#" class="add_friend_user"> Add friend </a></li>
+					<li><a href="#" class="block_user"> Block </a></li>
+					<li><a href="#" class="add_as_admin admin"> Add admin </a></li>
+				</ul>
+			</div>
+			<div id="category_second_button" class="second_button">
+				<ul>
+					<li><a href="#" class="delete_category"> Delete </a></li>
+					<li><a href="#" class="edit_category"> Edit </a></li>
+				</ul>
+			</div>
+			<div id="error_dialog" class="dialog" title="Error"></div>			
+		</div>
+	</body>
+</html>

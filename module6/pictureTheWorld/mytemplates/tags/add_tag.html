@@ -1,0 +1,24 @@
+{% load url from future %}
+{% load i18n %}
+<div>
+    <form id="add_tag_form" action="" method="post">
+        {% csrf_token %}
+        <div>
+            {% if tag_form.errors %}
+                <p class="errornote">
+                    {% blocktrans count counter=tag_form.errors.items|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}
+                </p>
+            {% endif %}
+
+            <fieldset class="module aligned wide">
+                <div class="form-row">
+                    {{ tag_form.name.errors }}
+                    <label for="id_name" class="required">{% trans 'Name' %}:</label>{{ tag_form.name }}
+                </div>
+            </fieldset>
+
+            <script type="text/javascript">document.getElementById("id_name").focus();</script>
+        </div>
+
+    </form>
+</div>
